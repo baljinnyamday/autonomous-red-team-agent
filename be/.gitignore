@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.eggs/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv
+
+# Environment and secrets
+.env
+.env.local
+*.pem
+*.key
+
+# Engagement artifacts (local runs)
+.runs/
+
+# Local agent workflow
+.rules/
+.claude/
+.cursor/commands/
+.cursor/rules/
+.cursor/hooks/
+scripts/hooks/
+scripts/spawn-agent-worktree
+scripts/codex-review
+docs/specs/
+.worktreeinclude
+AGENTS.md
+CLAUDE.md
+RULE_CATALOG.md

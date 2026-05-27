@@ -1,0 +1,41 @@
+---
+description: Frontend conventions for this Vite + React 19 + Tailwind v4 + shadcn app
+globs:
+  - "src/**/*.{ts,tsx,css}"
+alwaysApply: true
+---
+
+# Frontend conventions
+
+## Stack
+- Vite + React 19, TypeScript, React Router 7, TanStack Query 5.
+- Tailwind CSS v4 (CSS-first config in `src/index.css`, no `tailwind.config.js`).
+- shadcn/ui (style `base-nova`), Base UI primitives, lucide-react icons.
+
+## Package manager
+- Use **pnpm** only. Never `npm` or `yarn`. Add deps with `pnpm add` / `pnpm add -D`.
+
+## Components
+- Function components only. No class components. React 19 — no need to `import React` for JSX.
+- Prefer composition over props explosion; lift shared UI into `@/components`.
+- UI primitives live in `@/components/ui` (shadcn-generated). Don't hand-edit unless customizing intentionally.
+- Add new shadcn components via the CLI, not by copy-paste.
+
+## Imports & structure
+- Use the `@/` path aliases: `@/components`, `@/lib`, `@/hooks`, `@/components/ui`.
+- Merge class names with `cn()` from `@/lib/utils`. Use `cva` for variant-based styling.
+- Organize by feature/domain, not by file type. Keep files small (<400 lines).
+
+## Styling
+- Tailwind utility classes; let `prettier-plugin-tailwindcss` handle class ordering.
+- Use design tokens / CSS variables from `src/index.css` over hardcoded colors.
+
+## Data
+- Server state via TanStack Query (`useQuery`/`useMutation`). Don't store server data in `useState`.
+- Keep query keys structured and colocated with their hooks.
+
+## Quality
+- `const` and `readonly` by default; never mutate props, state, arrays, or objects — spread/map/filter.
+- Early returns over deep nesting. Handle errors at boundaries (fetch, router loaders, user input).
+- No `console.log` in committed code. No dead/commented-out code.
+- Run `pnpm lint` before considering a change done.

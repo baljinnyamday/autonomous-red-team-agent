@@ -1,0 +1,123 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/ibm-plex-sans";
+@import "@fontsource/ibm-plex-mono/400.css";
+@import "@fontsource/ibm-plex-mono/500.css";
+@import "@fontsource/ibm-plex-mono/600.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+    --font-sans: 'IBM Plex Sans Variable', ui-sans-serif, system-ui, sans-serif;
+    --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+    --font-heading: 'IBM Plex Mono', ui-monospace, monospace;
+    --color-sidebar-ring: var(--sidebar-ring);
+    --color-sidebar-border: var(--sidebar-border);
+    --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+    --color-sidebar-accent: var(--sidebar-accent);
+    --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+    --color-sidebar-primary: var(--sidebar-primary);
+    --color-sidebar-foreground: var(--sidebar-foreground);
+    --color-sidebar: var(--sidebar);
+    --color-chart-5: var(--chart-5);
+    --color-chart-4: var(--chart-4);
+    --color-chart-3: var(--chart-3);
+    --color-chart-2: var(--chart-2);
+    --color-chart-1: var(--chart-1);
+    --color-ring: var(--ring);
+    --color-input: var(--input);
+    --color-border: var(--border);
+    --color-destructive: var(--destructive);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-accent: var(--accent);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-muted: var(--muted);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-secondary: var(--secondary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-primary: var(--primary);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-popover: var(--popover);
+    --color-card-foreground: var(--card-foreground);
+    --color-card: var(--card);
+    --color-foreground: var(--foreground);
+    --color-background: var(--background);
+    --radius-sm: calc(var(--radius) * 0.6);
+    --radius-md: calc(var(--radius) * 0.8);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) * 1.4);
+    --radius-2xl: calc(var(--radius) * 1.8);
+}
+
+/*
+ * Palantir/Gotham dark theme — near-black navy canvas, hairline borders,
+ * electric-azure accent. Light tokens kept in sync with dark so the app is
+ * dark-by-default even if the .dark class is ever dropped.
+ */
+:root,
+.dark {
+    --radius: 0.3rem;
+
+    --background: #090c12;
+    --foreground: #c3ccd8;
+
+    --card: #0f141c;
+    --card-foreground: #c3ccd8;
+    --popover: #0f141c;
+    --popover-foreground: #c3ccd8;
+
+    --primary: #5b9dff;
+    --primary-foreground: #050810;
+
+    --secondary: #151c27;
+    --secondary-foreground: #c3ccd8;
+    --muted: #121822;
+    --muted-foreground: #66717f;
+    --accent: #1a2331;
+    --accent-foreground: #dbe3ee;
+
+    --destructive: #ef5350;
+
+    --border: #1c2532;
+    --input: #1c2532;
+    --ring: #5b9dff;
+
+    --chart-1: #5b9dff;
+    --chart-2: #38bdf8;
+    --chart-3: #22d3ee;
+    --chart-4: #f5a524;
+    --chart-5: #ef5350;
+
+    --sidebar: #0b0f16;
+    --sidebar-foreground: #c3ccd8;
+    --sidebar-primary: #5b9dff;
+    --sidebar-primary-foreground: #050810;
+    --sidebar-accent: #1a2331;
+    --sidebar-accent-foreground: #dbe3ee;
+    --sidebar-border: #1c2532;
+    --sidebar-ring: #5b9dff;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    /* Blueprint grid + a cold azure glow bleeding from the top-left, the
+       signature "intelligence console" backdrop. */
+    background-image:
+      radial-gradient(900px circle at 12% -8%, rgba(91, 157, 255, 0.10), transparent 55%),
+      linear-gradient(to right, rgba(122, 150, 190, 0.045) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(122, 150, 190, 0.045) 1px, transparent 1px);
+    background-size: 100% 100%, 44px 44px, 44px 44px;
+    background-attachment: fixed;
+  }
+
+  /* Mono labels: the recurring uppercase tracked caption used across the UI. */
+  .label-mono {
+    @apply font-mono text-[10px] font-medium uppercase tracking-[0.18em] text-muted-foreground;
+  }
+}
