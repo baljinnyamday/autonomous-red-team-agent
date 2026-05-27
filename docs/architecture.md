@@ -1,0 +1,26 @@
+# Architecture
+
+## Layers
+
+| Layer | Package | Responsibility |
+|-------|---------|----------------|
+| CLI / API | `cli/`, `api/` | Operator and HTTP boundaries |
+| Services | `services/` | Use cases and transaction boundaries |
+| Orchestration | `orchestration/` | Multi-agent workflows |
+| Agents | `agents/` | Single-role LLM agents and tools |
+| Domain | `targets/`, `techniques/` | Core models and registries |
+| Guardrails | `guardrails/` | Authorization and scope enforcement |
+| Core | `core/` | Config, logging, shared errors |
+
+## Default workflow
+
+1. Operator enables `AUTHORIZED_ENGAGEMENT` and sets `ALLOWED_TARGETS`.
+2. `EngagementService` validates guardrails.
+3. `EngagementWorkflow` runs planner → executor → reporter.
+4. The reporter returns a structured run summary for review.
+
+## Extension points
+
+- Add LLM providers under a future `llm/` package.
+- Register techniques in `techniques/registry.py`.
+- Expose REST via FastAPI in `api/v1/` using existing route modules.
