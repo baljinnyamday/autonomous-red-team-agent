@@ -4,7 +4,7 @@ import typer
 
 from agent_redteam import __version__
 from agent_redteam.core.logging import configure_logging
-from agent_redteam.services.engagement_service import EngagementService
+from agent_redteam.orchestration.workflow import EngagementWorkflow
 
 app = typer.Typer(
     name="redteam",
@@ -30,10 +30,10 @@ def run(
     operator: str = typer.Option("cli", help="Operator identity."),
 ) -> None:
     """Run the default planner → executor → reporter workflow."""
-    service = EngagementService()
+    workflow = EngagementWorkflow()
 
     async def _run() -> dict[str, object]:
-        return await service.run(engagement_id, target)
+        return await workflow.run(engagement_id, target)
 
     try:
         result = asyncio.run(_run())

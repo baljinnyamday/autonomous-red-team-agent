@@ -5,8 +5,7 @@
 | Layer | Package | Responsibility |
 |-------|---------|----------------|
 | CLI / API | `cli/`, `api/` | Operator and HTTP boundaries |
-| Services | `services/` | Use cases and transaction boundaries |
-| Orchestration | `orchestration/` | Multi-agent workflows |
+| Orchestration | `orchestration/` | Multi-agent workflows and guardrail enforcement |
 | Agents | `agents/` | Single-role LLM agents and tools |
 | Domain | `targets/`, `techniques/` | Core models and registries |
 | Guardrails | `guardrails/` | Authorization and scope enforcement |
@@ -15,9 +14,8 @@
 ## Default workflow
 
 1. Operator enables `AUTHORIZED_ENGAGEMENT` and sets `ALLOWED_TARGETS`.
-2. `EngagementService` validates guardrails.
-3. `EngagementWorkflow` runs planner → executor → reporter.
-4. The reporter returns a structured run summary for review.
+2. `EngagementWorkflow` validates guardrails, then runs planner → executor → reporter.
+3. The reporter returns a structured run summary for review.
 
 ## Extension points
 

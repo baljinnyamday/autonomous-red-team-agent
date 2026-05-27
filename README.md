@@ -34,9 +34,8 @@ be/
 │   ├── cli/               # `redteam` CLI entry point
 │   ├── core/              # Config, logging, shared exceptions
 │   ├── guardrails/        # Authorization and in-scope enforcement
-│   ├── orchestration/     # Multi-agent workflows
+│   ├── orchestration/     # Multi-agent workflows and guardrail enforcement
 │   ├── schemas/           # Shared Pydantic DTOs
-│   ├── services/          # Domain services (use cases)
 │   ├── targets/           # Authorized target definitions
 │   └── techniques/        # Technique / playbook registry
 ├── scripts/               # Operational helpers (non-package)

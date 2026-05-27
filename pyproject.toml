@@ -5,6 +5,8 @@ description = "Agentic red teaming framework for authorized security assessments
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "anthropic>=0.104.1",
+    "openai>=2.38.0",
     "pydantic>=2.10",
     "pydantic-settings>=2.7",
     "typer>=0.15",
@@ -12,10 +14,12 @@ dependencies = [
 
 [project.scripts]
 redteam = "agent_redteam.cli.main:app"
+"main.py" = "agent_redteam.simple_react:main"
 
 [dependency-groups]
-dev = [{ include-group = "lint" }]
+dev = [{ include-group = "lint" }, { include-group = "test" }]
 lint = ["ruff>=0.9", "ty>=0.0.1a20"]
+test = ["pytest>=8.3"]
 
 [build-system]
 requires = ["hatchling"]
