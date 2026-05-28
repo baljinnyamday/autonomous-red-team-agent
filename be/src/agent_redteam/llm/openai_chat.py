@@ -210,13 +210,17 @@ class OpenAIChatCompletionsHarness:
     def _resolve_client(self) -> AsyncOpenAI:
         if self._client is not None:
             return self._client
+        if self.api_key is None:
+            msg = (
+                "OpenAI-compatible API key must be provided explicitly. "
+                "Use a dummy value for local servers that do not require authentication."
+            )
+            raise ValueError(msg)
         from openai import AsyncOpenAI
 
-        kwargs: dict[str, Any] = {}
+        kwargs: dict[str, Any] = {"api_key": self.api_key}
         if self.base_url is not None:
             kwargs["base_url"] = self.base_url
-        if self.api_key is not None:
-            kwargs["api_key"] = self.api_key
         self._client = AsyncOpenAI(**kwargs)
         return self._client
 

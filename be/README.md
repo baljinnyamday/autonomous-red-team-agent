@@ -12,11 +12,23 @@ Python backend for **authorized agentic red teaming**: multi-agent orchestration
 ```bash
 cd be
 cp .env.example .env
-# Set AUTHORIZED_ENGAGEMENT=true and scope variables before running anything.
+# Set AUTHORIZED_ENGAGEMENT=true before running anything.
 
 uv sync --all-groups
 uv run redteam --help
+uv run main.py --help
 ```
+
+`uv run main.py` starts the simple agent loop. Its default config uses the OpenAI
+Responses provider (`AGENT_PROVIDER=openai`) and registers the local `bash` tool.
+Set `OPENAI_API_KEY` and `AUTHORIZED_ENGAGEMENT=true` in `.env` before running
+an agent task. Describe hosts and scope in the task prompt or engagement metadata.
+Interactive `main.py` sessions keep chat history for the current process and append
+observable user, assistant, tool, and usage events to `AUDIT_LOG_PATH`.
+
+Use `uv run redteam replay .runs/audit.jsonl` to inspect the saved transcript and
+`uv run redteam usage .runs/audit.jsonl` to summarize input/output tokens, cached
+input tokens, and prompt-cache hit rate.
 
 ## Editor setup
 
@@ -44,4 +56,4 @@ be/
 
 ## Authorized use
 
-This codebase is intended **only** for engagements with explicit written authorization. See [docs/authorized-use.md](docs/authorized-use.md). Runtime guardrails in `guardrails/` enforce scope before agents execute.
+This codebase is intended **only** for engagements with explicit written authorization. See [docs/authorized-use.md](docs/authorized-use.md). Runtime guardrails in `guardrails/` require explicit authorization before agents execute.

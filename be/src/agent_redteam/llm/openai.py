@@ -6,8 +6,8 @@ Follows the official OpenAI Responses API contract (October 2025+):
   and ``parallel_tool_calls``.
 - ``input`` is a list of input items. User/assistant text uses
   ``{"role": ..., "content": <str>}`` (EasyInputMessage); replays of prior
-  ``function_call`` and ``custom_tool_call`` items go back in verbatim so the
-  model has full context when stateless.
+  response output items go back in verbatim so reasoning and tool-call context
+  stays intact when managed manually.
 - Tool results are ``{"type": "function_call_output", "call_id", "output"}``
   items, and ``{"type": "custom_tool_call_output", ...}`` for custom tools.
 - Function tools are ``{"type": "function", "name", "description", "parameters", "strict"}``;
@@ -39,12 +39,16 @@ class OpenAIResponsesHarness:
         api_key: str | None = None,
         parallel_tool_calls: bool = True,
         apply_patch_mode: ApplyPatchMode = "function",
+        reasoning_summary: bool = True,
+        prompt_cache_key: str | None = None,
         client: AsyncOpenAI | None = None,
     ) -> None:
         self.model = model
         self.api_key = api_key
         self.parallel_tool_calls = parallel_tool_calls
         self.apply_patch_mode = apply_patch_mode
+        self.reasoning_summary = reasoning_summary
+        self.prompt_cache_key = prompt_cache_key
         self._client = client
 
     async def stream(self, request: ModelRequest) -> AsyncIterator[ModelEvent]:
@@ -61,6 +65,10 @@ class OpenAIResponsesHarness:
             kwargs["tools"] = tools
         if instructions is not None:
             kwargs["instructions"] = instructions
+        if self.reasoning_summary:
+            kwargs["reasoning"] = {"summary": "auto"}
+        if self.prompt_cache_key:
+            kwargs["prompt_cache_key"] = self.prompt_cache_key
 
         response = await client.responses.create(**kwargs)
         response_dict = _model_to_dict(response)
@@ -105,8 +113,15 @@ class OpenAIResponsesHarness:
                 )
             )
         elif response.get("status") in {"completed", None}:
+            output_items = response.get("output", [])
             events.append(
-                ModelEvent(event_type="completed", provider_metadata={"response": response})
+                ModelEvent(
+                    event_type="completed",
+                    provider_metadata={
+                        "response": response,
+                        "input_items": output_items if isinstance(output_items, list) else [],
+                    },
+                )
             )
         return events
 
@@ -125,7 +140,11 @@ class OpenAIResponsesHarness:
                 continue
             item = cast(dict[str, Any], raw_item)
             item_type = item.get("type")
-            if item_type == "message":
+            if item_type == "reasoning":
+                summary = _extract_reasoning_summary(item)
+                if summary:
+                    events.append(ModelEvent(event_type="thinking", content=summary))
+            elif item_type == "message":
                 events.append(
                     ModelEvent(
                         event_type="message_done",
@@ -155,6 +174,8 @@ class OpenAIResponsesHarness:
                 input_items.append({"role": "user", "content": message.content})
                 continue
             if message.role == "assistant":
+                if _append_input_items(input_items, message.provider_metadata.get("input_items")):
+                    continue
                 for call in message.provider_metadata.get("tool_calls", []):
                     input_items.append(_assistant_tool_call_item(call))
                 if message.content:
@@ -198,6 +219,9 @@ class OpenAIResponsesHarness:
     def _resolve_client(self) -> AsyncOpenAI:
         if self._client is not None:
             return self._client
+        if self.api_key is None:
+            msg = "OpenAI API key must be provided explicitly by runtime settings."
+            raise ValueError(msg)
         from openai import AsyncOpenAI
 
         self._client = AsyncOpenAI(api_key=self.api_key)
@@ -229,6 +253,27 @@ def _assistant_tool_call_item(call: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+# Server-generated fields present on response output items that the Responses API
+# rejects when those items are echoed back as input.
+_OUTPUT_ONLY_KEYS = ("status",)
+
+
+def _append_input_items(input_items: list[dict[str, Any]], raw_items: object) -> bool:
+    if not isinstance(raw_items, list):
+        return False
+
+    appended = False
+    for raw_item in raw_items:
+        if isinstance(raw_item, dict):
+            input_items.append(_as_input_item(cast(dict[str, Any], raw_item)))
+            appended = True
+    return appended
+
+
+def _as_input_item(item: dict[str, Any]) -> dict[str, Any]:
+    return {key: value for key, value in item.items() if key not in _OUTPUT_ONLY_KEYS}
+
+
 def _function_tool_call(item: dict[str, Any]) -> ToolCall:
     arguments = item.get("arguments", "{}")
     parsed_arguments: dict[str, Any] = {}
@@ -254,6 +299,19 @@ def _custom_tool_call(item: dict[str, Any]) -> ToolCall:
         freeform_input=str(item.get("input", "")),
         provider_metadata=item,
     )
+
+
+def _extract_reasoning_summary(item: dict[str, Any]) -> str:
+    summary = item.get("summary", [])
+    if not isinstance(summary, list):
+        return ""
+    parts: list[str] = []
+    for part in summary:
+        if isinstance(part, dict) and part.get("type") == "summary_text":
+            text = part.get("text")
+            if isinstance(text, str):
+                parts.append(text)
+    return "\n".join(parts)
 
 
 def _extract_message_text(item: dict[str, Any]) -> str:

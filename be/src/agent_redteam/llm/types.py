@@ -9,6 +9,7 @@ MessageRole = Literal["system", "user", "assistant", "tool"]
 ModelEventType = Literal[
     "message_delta",
     "message_done",
+    "thinking",
     "tool_call",
     "usage",
     "completed",

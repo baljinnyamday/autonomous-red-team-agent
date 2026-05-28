@@ -96,6 +96,35 @@ def test_tool_executor_returns_model_visible_errors_and_runs_bash() -> None:
     assert "hello" in results[2].output
 
 
+def test_bash_blocks_rm_command(tmp_path) -> None:
+    protected_file = tmp_path / "protected.txt"
+    protected_file.write_text("keep", encoding="utf-8")
+
+    output = asyncio.run(
+        bash(
+            _context(),
+            ToolCall(call_id="call_1", name="bash", arguments={"command": f"rm {protected_file}"}),
+        )
+    )
+
+    assert protected_file.exists()
+    assert "exit_code=126" in output
+    assert "Command blocked" in output
+    assert "'rm' command is not allowed" in output
+
+
+def test_bash_allows_rm_as_plain_text() -> None:
+    output = asyncio.run(
+        bash(
+            _context(),
+            ToolCall(call_id="call_1", name="bash", arguments={"command": "printf rm"}),
+        )
+    )
+
+    assert "exit_code=0" in output
+    assert "stdout:\nrm" in output
+
+
 def test_loop_stops_at_max_iterations() -> None:
     provider = FakeProviderHarness(
         [
@@ -134,4 +163,4 @@ def test_loop_stops_at_max_iterations() -> None:
 
 
 def _context() -> AgentContext:
-    return AgentContext(engagement_id="engagement-1", target="example.com", metadata={})
+    return AgentContext(engagement_id="engagement-1", metadata={})

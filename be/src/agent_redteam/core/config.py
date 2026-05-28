@@ -5,6 +5,8 @@ from uuid import uuid4
 from pydantic import Field, SecretStr, field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
+from agent_redteam.core.exceptions import ConfigurationError
+
 
 class AgentProvider(StrEnum):
     OPENAI = "openai"
@@ -30,21 +32,20 @@ class Settings(BaseSettings):
     )
     engagement_id: str = Field(default_factory=_default_engagement_id)
     engagement_operator: str = "cli"
-    allowed_targets: str = Field(
-        default="localhost,127.0.0.1,::1",
-        description="Comma-separated allowlist of hosts or URLs.",
-    )
     agent_provider: AgentProvider = AgentProvider.OPENAI
-    agent_target: str = "localhost"
     openai_api_key: SecretStr | None = None
     openai_model: str = "gpt-5.5"
+    openai_prompt_cache_key: str | None = None
     anthropic_api_key: SecretStr | None = None
     anthropic_model: str = "claude-sonnet-4-5"
     audit_log_path: str = ".runs/audit.jsonl"
     log_level: str = "INFO"
 
-    def allowed_target_list(self) -> list[str]:
-        return [t.strip() for t in self.allowed_targets.split(",") if t.strip()]
+    def require_openai_api_key(self) -> str:
+        return _required_secret_value(self.openai_api_key, "OPENAI_API_KEY")
+
+    def require_anthropic_api_key(self) -> str:
+        return _required_secret_value(self.anthropic_api_key, "ANTHROPIC_API_KEY")
 
     @field_validator("engagement_id", mode="before")
     @classmethod
@@ -60,12 +61,24 @@ class Settings(BaseSettings):
             return "cli"
         return value
 
-    @field_validator("openai_api_key", "anthropic_api_key", mode="before")
+    @field_validator(
+        "openai_api_key",
+        "anthropic_api_key",
+        "openai_prompt_cache_key",
+        mode="before",
+    )
     @classmethod
-    def _blank_secret_to_none(cls, value: object) -> object:
+    def _blank_optional_to_none(cls, value: object) -> object:
         if value == "":
             return None
         return value
+
+
+def _required_secret_value(secret: SecretStr | None, env_name: str) -> str:
+    if secret is None:
+        msg = f"{env_name} is required for the selected agent provider. Set it in .env."
+        raise ConfigurationError(msg)
+    return secret.get_secret_value()
 
 
 @lru_cache

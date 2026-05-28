@@ -6,7 +6,6 @@ from typing import Any
 @dataclass(frozen=True)
 class AgentContext:
     engagement_id: str
-    target: str
     metadata: dict[str, Any]
 
 

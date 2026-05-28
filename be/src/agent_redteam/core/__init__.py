@@ -1,13 +1,13 @@
 from agent_redteam.core.config import Settings, get_settings
 from agent_redteam.core.exceptions import (
     AuthorizationError,
-    OutOfScopeError,
+    ConfigurationError,
     RedTeamError,
 )
 
 __all__ = [
     "AuthorizationError",
-    "OutOfScopeError",
+    "ConfigurationError",
     "RedTeamError",
     "Settings",
     "get_settings",

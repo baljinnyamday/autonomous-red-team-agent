@@ -21,7 +21,7 @@ from agent_redteam.tools.fake import build_test_tool_registry
 
 
 def _context() -> AgentContext:
-    return AgentContext(engagement_id="engagement-1", target="example.com", metadata={})
+    return AgentContext(engagement_id="engagement-1", metadata={})
 
 
 @dataclass
@@ -66,11 +66,19 @@ def test_openai_loop_runs_tool_then_finishes_and_replays_function_call_history()
                 "status": "completed",
                 "output": [
                     {
+                        "type": "reasoning",
+                        "id": "rs_1",
+                        "summary": [],
+                        "status": "completed",
+                    },
+                    {
                         "type": "function_call",
+                        "id": "fc_1",
                         "call_id": "call_1",
                         "name": "echo_json",
                         "arguments": '{"value": "ok"}',
-                    }
+                        "status": "completed",
+                    },
                 ],
                 "usage": {"input_tokens": 10, "output_tokens": 5},
             },
@@ -87,7 +95,11 @@ def test_openai_loop_runs_tool_then_finishes_and_replays_function_call_history()
         ]
     )
     client = _FakeOpenAIClient(responses=responses)
-    harness = OpenAIResponsesHarness(model="gpt-test", client=client)  # type: ignore[arg-type]
+    harness = OpenAIResponsesHarness(
+        model="gpt-test",
+        prompt_cache_key="engagement-1",
+        client=client,  # type: ignore[arg-type]
+    )
     loop = AgentLoop(provider=harness, tool_registry=build_test_tool_registry())
 
     result = asyncio.run(
@@ -107,6 +119,7 @@ def test_openai_loop_runs_tool_then_finishes_and_replays_function_call_history()
     first_call = responses.calls[0].kwargs
     assert first_call["model"] == "gpt-test"
     assert first_call["instructions"] == "be careful"
+    assert first_call["prompt_cache_key"] == "engagement-1"
     assert first_call["parallel_tool_calls"] is True
     assert {"role": "user", "content": "please echo"} in first_call["input"]
     tool_spec = first_call["tools"][0]
@@ -115,9 +128,12 @@ def test_openai_loop_runs_tool_then_finishes_and_replays_function_call_history()
 
     second_call = responses.calls[1].kwargs
     items = second_call["input"]
+    reasoning_items = [item for item in items if item.get("type") == "reasoning"]
     function_call_items = [item for item in items if item.get("type") == "function_call"]
     function_output_items = [item for item in items if item.get("type") == "function_call_output"]
+    assert reasoning_items == [{"type": "reasoning", "id": "rs_1", "summary": []}]
     assert len(function_call_items) == 1
+    assert items.index(reasoning_items[0]) < items.index(function_call_items[0])
     assert function_call_items[0]["call_id"] == "call_1"
     assert function_call_items[0]["name"] == "echo_json"
     assert json.loads(function_call_items[0]["arguments"]) == {"value": "ok"}

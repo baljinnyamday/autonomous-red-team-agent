@@ -33,6 +33,12 @@
       "command": "uv run ty check",
       "group": "test",
       "problemMatcher": []
+    },
+    {
+      "label": "jsonl: pretty",
+      "type": "shell",
+      "command": "uv run python scripts/pretty_jsonl.py ${file}",
+      "problemMatcher": []
     }
   ]
 }

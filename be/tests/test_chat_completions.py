@@ -19,7 +19,7 @@ from agent_redteam.tools.patch import apply_patch_tool_definition
 
 
 def _context() -> AgentContext:
-    return AgentContext(engagement_id="engagement-1", target="example.com", metadata={})
+    return AgentContext(engagement_id="engagement-1", metadata={})
 
 
 @dataclass

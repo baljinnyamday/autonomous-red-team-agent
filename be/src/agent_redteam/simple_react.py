@@ -1,106 +1,126 @@
 import argparse
 import asyncio
 from collections.abc import Sequence
+from importlib.resources import files
+
+from rich.console import Console
 
 from agent_redteam.agents.base import AgentContext
-from agent_redteam.agents.loop import AgentLoop
-from agent_redteam.core.audit import AuditRecorder
+from agent_redteam.agents.events import LoopEvent, LoopObserver, fan_out
+from agent_redteam.agents.loop import AgentLoop, AgentLoopResult
+from agent_redteam.cli.render import console_observer
+from agent_redteam.core.audit import AuditRecorder, audit_observer
 from agent_redteam.core.config import AgentProvider, Settings, get_settings
-from agent_redteam.guardrails import assert_target_in_scope, require_authorized_engagement
+from agent_redteam.guardrails import require_authorized_engagement
 from agent_redteam.llm.claude import ClaudeMessagesHarness
 from agent_redteam.llm.openai import OpenAIResponsesHarness
 from agent_redteam.llm.types import AgentMessage, ProviderHarness
 from agent_redteam.tools.bash import bash, bash_definition
 from agent_redteam.tools.registry import ToolRegistry
-from agent_redteam.tools.types import ToolCall
 
-SYSTEM_PROMPT = """You are an authorized local operator assistant.
-Use tools only for the explicitly requested, in-scope target.
-Do not print private keys, raw credentials, tokens, or secrets. Report paths,
-fingerprints, configuration facts, and next steps instead."""
+SYSTEM_PROMPT_FILE = "system.md"
 
 
 def main(argv: Sequence[str] | None = None) -> None:
     settings = get_settings()
-    args = _parse_args(argv, settings)
+    args = _parse_args(argv)
 
     require_authorized_engagement(settings)
-    assert_target_in_scope(args.target, settings)
 
+    console = Console()
     provider = _build_provider(settings)
     audit = AuditRecorder(settings.audit_log_path)
-    registry = _build_registry(audit)
+    registry = _build_registry()
     context = AgentContext(
         engagement_id=settings.engagement_id,
-        target=args.target,
         metadata={
             "operator": settings.engagement_operator,
             "provider": settings.agent_provider,
         },
     )
+    observer = fan_out(
+        [
+            console_observer(console),
+            audit_observer(audit, context.engagement_id),
+        ]
+    )
     audit.record(
         "agent_run_started",
         engagement_id=context.engagement_id,
-        target=context.target,
         operator=settings.engagement_operator,
         provider=str(settings.agent_provider),
         model=_provider_model(settings),
     )
 
-    print(f"provider={settings.agent_provider} model={_provider_model(settings)}")
-    print(f"engagement_id={settings.engagement_id} target={args.target}")
-    print(f"audit_log={settings.audit_log_path}")
+    model = _provider_model(settings)
+    console.print(f"[dim]provider={settings.agent_provider} model={model}[/dim]")
+    console.print(f"[dim]engagement_id={settings.engagement_id}[/dim]")
+    console.print(f"[dim]audit_log={settings.audit_log_path}[/dim]")
 
+    history = [AgentMessage(role="system", content=_load_system_prompt())]
     if args.task:
-        asyncio.run(_run_task(context, provider, registry, args.task))
+        asyncio.run(_run_task(context, provider, registry, observer, args.task, history))
         return
 
     while True:
-        task = input("\nagent> ").strip()
+        task = console.input("\n[bold]agent>[/bold] ").strip()
         if task in {"exit", "quit", ":q"}:
             return
         if not task:
             continue
-        asyncio.run(_run_task(context, provider, registry, task))
+        result = asyncio.run(_run_task(context, provider, registry, observer, task, history))
+        history = list(result.messages)
 
 
 async def _run_task(
     context: AgentContext,
     provider: ProviderHarness,
     registry: ToolRegistry,
+    observer: LoopObserver,
     task: str,
-) -> None:
-    loop = AgentLoop(provider=provider, tool_registry=registry)
-    result = await loop.run(
+    history: Sequence[AgentMessage] | None = None,
+) -> AgentLoopResult:
+    observer(LoopEvent(type="run_started", text=task))
+    loop = AgentLoop(provider=provider, tool_registry=registry, observer=observer)
+    messages = (
+        list(history)
+        if history is not None
+        else [AgentMessage(role="system", content=_load_system_prompt())]
+    )
+    messages.append(AgentMessage(role="user", content=task))
+    return await loop.run(
         context,
-        [
-            AgentMessage(role="system", content=SYSTEM_PROMPT),
-            AgentMessage(role="user", content=f"Target: {context.target}\nTask: {task}"),
-        ],
+        messages,
     )
 
-    if result.success:
-        print(result.final_message or "")
-        return
 
-    print(f"error: {result.error}")
+def _load_system_prompt() -> str:
+    return (
+        files("agent_redteam.prompts")
+        .joinpath(SYSTEM_PROMPT_FILE)
+        .read_text(encoding="utf-8")
+        .strip()
+    )
 
 
-def _build_registry(audit: AuditRecorder) -> ToolRegistry:
+def _build_registry() -> ToolRegistry:
     registry = ToolRegistry()
-    registry.register(bash_definition(), _audited_bash(audit))
+    registry.register(bash_definition(), bash)
     return registry
 
 
 def _build_provider(settings: Settings) -> ProviderHarness:
     if settings.agent_provider is AgentProvider.OPENAI:
-        api_key = settings.openai_api_key.get_secret_value() if settings.openai_api_key else None
-        return OpenAIResponsesHarness(model=settings.openai_model, api_key=api_key)
-    if settings.agent_provider is AgentProvider.CLAUDE:
-        api_key = (
-            settings.anthropic_api_key.get_secret_value() if settings.anthropic_api_key else None
+        return OpenAIResponsesHarness(
+            model=settings.openai_model,
+            api_key=settings.require_openai_api_key(),
+            prompt_cache_key=settings.openai_prompt_cache_key or settings.engagement_id,
         )
-        return ClaudeMessagesHarness(model=settings.anthropic_model, api_key=api_key)
+    if settings.agent_provider is AgentProvider.CLAUDE:
+        return ClaudeMessagesHarness(
+            model=settings.anthropic_model,
+            api_key=settings.require_anthropic_api_key(),
+        )
 
     msg = f"Unsupported provider: {settings.agent_provider}"
     raise ValueError(msg)
@@ -112,32 +132,7 @@ def _provider_model(settings: Settings) -> str:
     return settings.openai_model
 
 
-def _audited_bash(audit: AuditRecorder):
-    async def run(context: AgentContext, tool_call: ToolCall) -> str:
-        command = (tool_call.arguments or {}).get("command")
-        audit.record(
-            "tool_call_started",
-            engagement_id=context.engagement_id,
-            target=context.target,
-            tool_name=tool_call.name,
-            call_id=tool_call.call_id,
-            command=command,
-        )
-        output = await bash(context, tool_call)
-        audit.record(
-            "tool_call_finished",
-            engagement_id=context.engagement_id,
-            target=context.target,
-            tool_name=tool_call.name,
-            call_id=tool_call.call_id,
-        )
-        return output
-
-    return run
-
-
-def _parse_args(argv: Sequence[str] | None, settings: Settings) -> argparse.Namespace:
+def _parse_args(argv: Sequence[str] | None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Simple authorized ReAct loop.")
     parser.add_argument("task", nargs="?", help="Optional one-shot task. Omit for REPL mode.")
-    parser.add_argument("--target", default=settings.agent_target, help="In-scope target.")
     return parser.parse_args(argv)

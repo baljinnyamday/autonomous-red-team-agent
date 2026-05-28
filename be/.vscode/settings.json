@@ -1,4 +1,16 @@
 {
+  "files.associations": {
+    "*.jsonl": "json"
+  },
+
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "prettier.configPath": "${workspaceFolder}/.prettierrc.json",
+  "prettier.ignorePath": "${workspaceFolder}/.prettierignore",
+  "prettier.documentSelectors": ["**/*.json", "**/*.jsonc", "**/*.jsonl"],
+
   "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
   "python.terminal.activateEnvironment": true,
   "python.languageServer": "None",

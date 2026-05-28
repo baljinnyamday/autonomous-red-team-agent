@@ -25,6 +25,7 @@ if TYPE_CHECKING:
     from anthropic import AsyncAnthropic
 
 DEFAULT_MAX_TOKENS = 4096
+DEFAULT_THINKING_BUDGET_TOKENS = 1024
 
 
 class ClaudeMessagesHarness:
@@ -34,11 +35,13 @@ class ClaudeMessagesHarness:
         model: str,
         api_key: str | None = None,
         max_tokens: int = DEFAULT_MAX_TOKENS,
+        thinking_budget_tokens: int = DEFAULT_THINKING_BUDGET_TOKENS,
         client: AsyncAnthropic | None = None,
     ) -> None:
         self.model = model
         self.api_key = api_key
         self.max_tokens = max_tokens
+        self.thinking_budget_tokens = thinking_budget_tokens
         self._client = client
 
     async def stream(self, request: ModelRequest) -> AsyncIterator[ModelEvent]:
@@ -55,6 +58,11 @@ class ClaudeMessagesHarness:
             kwargs["system"] = system
         if tools:
             kwargs["tools"] = tools
+        if self._thinking_enabled():
+            kwargs["thinking"] = {
+                "type": "enabled",
+                "budget_tokens": self.thinking_budget_tokens,
+            }
 
         message = await client.messages.create(**kwargs)
         message_dict = _model_to_dict(message)
@@ -98,11 +106,20 @@ class ClaudeMessagesHarness:
         for block in content:
             if not isinstance(block, dict):
                 continue
-            if block.get("type") == "text":
+            block_type = block.get("type")
+            if block_type == "text":
                 text = block.get("text")
                 if isinstance(text, str):
                     text_parts.append(text)
-            elif block.get("type") == "tool_use":
+            elif block_type in {"thinking", "redacted_thinking"}:
+                events.append(
+                    ModelEvent(
+                        event_type="thinking",
+                        content=_thinking_text(block),
+                        provider_metadata={"block": block},
+                    )
+                )
+            elif block_type == "tool_use":
                 events.append(ModelEvent(event_type="tool_call", tool_call=_tool_use_call(block)))
 
         if text_parts:
@@ -140,6 +157,9 @@ class ClaudeMessagesHarness:
 
             if message.role == "assistant":
                 blocks: list[dict[str, Any]] = []
+                for thinking_block in message.provider_metadata.get("thinking_blocks", []):
+                    if isinstance(thinking_block, dict):
+                        blocks.append(thinking_block)
                 if message.content:
                     blocks.append({"type": "text", "text": message.content})
                 for call in message.provider_metadata.get("tool_calls", []):
@@ -169,9 +189,15 @@ class ClaudeMessagesHarness:
             "input_schema": input_schema,
         }
 
+    def _thinking_enabled(self) -> bool:
+        return 0 < self.thinking_budget_tokens < self.max_tokens
+
     def _resolve_client(self) -> AsyncAnthropic:
         if self._client is not None:
             return self._client
+        if self.api_key is None:
+            msg = "Anthropic API key must be provided explicitly by runtime settings."
+            raise ValueError(msg)
         from anthropic import AsyncAnthropic
 
         self._client = AsyncAnthropic(api_key=self.api_key)
@@ -198,6 +224,13 @@ def _assistant_tool_use_block(call: dict[str, Any]) -> dict[str, Any]:
         "name": call.get("name", ""),
         "input": call.get("arguments") or {},
     }
+
+
+def _thinking_text(block: dict[str, Any]) -> str:
+    if block.get("type") == "redacted_thinking":
+        return "[redacted thinking]"
+    thinking = block.get("thinking")
+    return thinking if isinstance(thinking, str) else ""
 
 
 def _tool_use_call(block: dict[str, Any]) -> ToolCall:
