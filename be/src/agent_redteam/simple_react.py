@@ -2,13 +2,28 @@ import argparse
 import asyncio
 from collections.abc import Sequence
 from importlib.resources import files
+from pathlib import Path
+from typing import Any
 
 from rich.console import Console
 
 from agent_redteam.agents.base import AgentContext
 from agent_redteam.agents.events import LoopEvent, LoopObserver, fan_out
 from agent_redteam.agents.loop import AgentLoop, AgentLoopResult
+from agent_redteam.cli.expand import ExpandableHistory
+from agent_redteam.cli.keyboard import listen_for_keyboard_events
+from agent_redteam.cli.prompt import TaskReader
 from agent_redteam.cli.render import console_observer
+from agent_redteam.cli.shortcuts import (
+    PROMPT_KEY_EVENTS,
+    TERMINAL_KEY_EVENTS,
+    default_keyboard_handlers,
+)
+from agent_redteam.cli.slash import (
+    SlashCommandContext,
+    default_slash_commands,
+    handle_slash_command,
+)
 from agent_redteam.core.audit import AuditRecorder, audit_observer
 from agent_redteam.core.config import AgentProvider, Settings, get_settings
 from agent_redteam.guardrails import require_authorized_engagement
@@ -31,6 +46,7 @@ def main(argv: Sequence[str] | None = None) -> None:
     provider = _build_provider(settings)
     audit = AuditRecorder(settings.audit_log_path)
     registry = _build_registry()
+    usage_events: list[dict[str, Any]] = []
     context = AgentContext(
         engagement_id=settings.engagement_id,
         metadata={
@@ -38,10 +54,13 @@ def main(argv: Sequence[str] | None = None) -> None:
             "provider": settings.agent_provider,
         },
     )
+    history_view = ExpandableHistory(console)
     observer = fan_out(
         [
             console_observer(console),
             audit_observer(audit, context.engagement_id),
+            _usage_observer(usage_events),
+            history_view.observer(),
         ]
     )
     audit.record(
@@ -56,19 +75,59 @@ def main(argv: Sequence[str] | None = None) -> None:
     console.print(f"[dim]provider={settings.agent_provider} model={model}[/dim]")
     console.print(f"[dim]engagement_id={settings.engagement_id}[/dim]")
     console.print(f"[dim]audit_log={settings.audit_log_path}[/dim]")
+    console.print("[dim]ctrl+o toggles the expanded history · ↑↓ history · tab completes /[/dim]")
 
     history = [AgentMessage(role="system", content=_load_system_prompt())]
+    slash_commands = default_slash_commands()
+    keyboard_handlers = default_keyboard_handlers(history_view, console)
+    reader = TaskReader(
+        Path(settings.audit_log_path).parent / "repl-history",
+        slash_commands.keys(),
+        keyboard_handlers,
+        PROMPT_KEY_EVENTS,
+    )
     if args.task:
-        asyncio.run(_run_task(context, provider, registry, observer, args.task, history))
-        return
+        if handle_slash_command(
+            args.task,
+            SlashCommandContext(
+                console=console,
+                history=history,
+                usage_events=usage_events,
+                audit_log_path=settings.audit_log_path,
+            ),
+            slash_commands,
+        ):
+            return
+        with listen_for_keyboard_events(keyboard_handlers, TERMINAL_KEY_EVENTS):
+            result = asyncio.run(
+                _run_task(context, provider, registry, observer, args.task, history)
+            )
+        history = list(result.messages)
 
     while True:
-        task = console.input("\n[bold]agent>[/bold] ").strip()
+        try:
+            task = reader.read().strip()
+        except EOFError:
+            return
+        except KeyboardInterrupt:
+            continue
         if task in {"exit", "quit", ":q"}:
             return
         if not task:
             continue
-        result = asyncio.run(_run_task(context, provider, registry, observer, task, history))
+        if handle_slash_command(
+            task,
+            SlashCommandContext(
+                console=console,
+                history=history,
+                usage_events=usage_events,
+                audit_log_path=settings.audit_log_path,
+            ),
+            slash_commands,
+        ):
+            continue
+        with listen_for_keyboard_events(keyboard_handlers, TERMINAL_KEY_EVENTS):
+            result = asyncio.run(_run_task(context, provider, registry, observer, task, history))
         history = list(result.messages)
 
 
@@ -92,6 +151,14 @@ async def _run_task(
         context,
         messages,
     )
+
+
+def _usage_observer(usage_events: list[dict[str, Any]]) -> LoopObserver:
+    def observe(event: LoopEvent) -> None:
+        if event.type == "usage":
+            usage_events.append(event.usage)
+
+    return observe
 
 
 def _load_system_prompt() -> str:
@@ -134,5 +201,5 @@ def _provider_model(settings: Settings) -> str:
 
 def _parse_args(argv: Sequence[str] | None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Simple authorized ReAct loop.")
-    parser.add_argument("task", nargs="?", help="Optional one-shot task. Omit for REPL mode.")
+    parser.add_argument("task", nargs="?", help="Optional starting task.")
     return parser.parse_args(argv)

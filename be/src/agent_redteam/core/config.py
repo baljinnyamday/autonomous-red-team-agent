@@ -38,7 +38,7 @@ class Settings(BaseSettings):
     openai_prompt_cache_key: str | None = None
     anthropic_api_key: SecretStr | None = None
     anthropic_model: str = "claude-sonnet-4-5"
-    audit_log_path: str = ".runs/audit.jsonl"
+    audit_log_path: str = ".runs"
     log_level: str = "INFO"
 
     def require_openai_api_key(self) -> str:

@@ -1,10 +1,10 @@
 import asyncio
 
 from agent_redteam.agents.base import AgentContext
-from agent_redteam.agents.events import fan_out
+from agent_redteam.agents.events import LoopEvent, fan_out
 from agent_redteam.llm.fake import FakeProviderHarness
 from agent_redteam.llm.types import AgentMessage, ModelEvent
-from agent_redteam.simple_react import _load_system_prompt, _run_task
+from agent_redteam.simple_react import _load_system_prompt, _run_task, _usage_observer
 from agent_redteam.tools.registry import ToolRegistry
 
 
@@ -68,3 +68,13 @@ def test_run_task_appends_new_task_to_existing_history() -> None:
         "new task",
         "new done",
     ]
+
+
+def test_usage_observer_collects_usage_events() -> None:
+    usage_events: list[dict[str, object]] = []
+    observe = _usage_observer(usage_events)
+
+    observe(LoopEvent(type="usage", usage={"input_tokens": 10}))
+    observe(LoopEvent(type="assistant_message", text="done"))
+
+    assert usage_events == [{"input_tokens": 10}]

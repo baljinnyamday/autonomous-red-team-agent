@@ -23,11 +23,14 @@ uv run main.py --help
 Responses provider (`AGENT_PROVIDER=openai`) and registers the local `bash` tool.
 Set `OPENAI_API_KEY` and `AUTHORIZED_ENGAGEMENT=true` in `.env` before running
 an agent task. Describe hosts and scope in the task prompt or engagement metadata.
-Interactive `main.py` sessions keep chat history for the current process and append
-observable user, assistant, tool, and usage events to `AUDIT_LOG_PATH`.
+Interactive `main.py` sessions keep chat history for the current process and write
+observable user, assistant, tool, and usage events under `AUDIT_LOG_PATH` using
+dated per-run logs like `.runs/YYYY-MM-DD/analytics/run-0001.jsonl`.
+Inside an interactive session, run `/analysis` to see current-session token usage,
+prompt-cache hit rate, and chat-history counts without sending a task to the model.
 
-Use `uv run redteam replay .runs/audit.jsonl` to inspect the saved transcript and
-`uv run redteam usage .runs/audit.jsonl` to summarize input/output tokens, cached
+Use `uv run redteam replay .runs` to inspect the latest saved transcript and
+`uv run redteam usage .runs` to summarize input/output tokens, cached
 input tokens, and prompt-cache hit rate.
 
 ## Editor setup

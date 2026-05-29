@@ -21,6 +21,7 @@ from rich.panel import Panel
 from rich.text import Text
 
 from agent_redteam.agents.events import LoopEvent, LoopObserver
+from agent_redteam.core.audit import latest_audit_log_path
 from agent_redteam.llm.usage import UsageSummary, format_usage_summary, summarize_usage
 
 # Live view collapses any block taller than this to a preview; replay shows all.
@@ -28,7 +29,7 @@ COLLAPSED_PREVIEW_LINES = 6
 # Hard ceiling so a single enormous line cannot flood the terminal in any view.
 MAX_BLOCK_CHARS = 8000
 
-_EXPAND_HINT = "run `redteam replay` to expand"
+_EXPAND_HINT = "ctrl+o to expand"
 
 
 def console_observer(console: Console | None = None) -> LoopObserver:
@@ -44,7 +45,7 @@ def console_observer(console: Console | None = None) -> LoopObserver:
         if event.type == "usage":
             usages.append(event.usage)
             return
-        render_event(target, event.type, _event_fields(event), collapse=True)
+        render_event(target, event.type, event_fields(event), collapse=True)
         if event.type == "run_finished":
             print_usage_summary(target, summarize_usage(usages))
             usages.clear()
@@ -82,7 +83,7 @@ def print_usage_summary(console: Console, summary: UsageSummary) -> None:
 
 
 def load_audit(path: str | Path) -> list[dict[str, Any]]:
-    text = Path(path).read_text(encoding="utf-8")
+    text = latest_audit_log_path(path).read_text(encoding="utf-8")
     records: list[dict[str, Any]] = []
     for line in text.splitlines():
         stripped = line.strip()
@@ -103,25 +104,40 @@ def render_event(
         model = fields.get("model", "?")
         console.rule(f"[bold]engagement {fields.get('engagement_id', '?')}[/bold]")
         console.print(f"[dim]{provider} · {model}[/dim]")
-    elif event_type == "run_started":
-        console.print(_block("📋 task", "yellow", _text(fields), collapse))
-    elif event_type == "thinking":
-        console.print(_block("💭 thinking", "magenta", _text(fields), collapse))
-    elif event_type == "tool_call":
-        name = fields.get("tool_name") or "tool"
-        console.print(_block(f"🔧 {name}", "cyan", _tool_call_body(fields), collapse))
-    elif event_type == "tool_result":
-        ok = bool(fields.get("success"))
-        title = "📤 result · ok" if ok else "📤 result · error"
-        console.print(_block(title, "green" if ok else "red", _result_body(fields), collapse))
-    elif event_type == "assistant_message":
-        console.print(_block("💬 assistant", "bold green", _text(fields), collapse))
     elif event_type == "run_finished":
         if fields.get("success"):
             console.rule("[bold green]✓ done[/bold green]")
         else:
             console.rule("[bold red]✗ failed[/bold red]")
             console.print(f"[red]{_text(fields) or fields.get('error', 'failed')}[/red]")
+        return
+
+    block = block_content(event_type, fields)
+    if block is not None:
+        title, style, body = block
+        console.print(_block(title, style, body, collapse))
+
+
+def block_content(event_type: str, fields: dict[str, Any]) -> tuple[str, str, str] | None:
+    """Return ``(title, border_style, body)`` for a block event, else ``None``.
+
+    Single source of truth for block labels/styles so the live Rich stream and
+    the interactive TUI render the same thing.
+    """
+    if event_type == "run_started":
+        return ("📋 task", "yellow", _text(fields))
+    if event_type == "thinking":
+        return ("💭 thinking", "magenta", _text(fields))
+    if event_type == "tool_call":
+        name = fields.get("tool_name") or "tool"
+        return (f"🔧 {name}", "cyan", _tool_call_body(fields))
+    if event_type == "tool_result":
+        ok = bool(fields.get("success"))
+        title = "📤 result · ok" if ok else "📤 result · error"
+        return (title, "green" if ok else "red", _result_body(fields))
+    if event_type == "assistant_message":
+        return ("💬 assistant", "green", _text(fields))
+    return None
 
 
 def _block(title: str, style: str, body: str, collapse: bool) -> Panel:
@@ -176,7 +192,7 @@ def _text(fields: dict[str, Any]) -> str:
     return text if isinstance(text, str) else ""
 
 
-def _event_fields(event: LoopEvent) -> dict[str, Any]:
+def event_fields(event: LoopEvent) -> dict[str, Any]:
     return {
         "iteration": event.iteration,
         "text": event.text,

@@ -1,4 +1,5 @@
 import asyncio
+from datetime import UTC, datetime
 from pathlib import Path
 
 from rich.console import Console
@@ -90,6 +91,48 @@ def test_audit_observer_round_trips_through_load_audit(tmp_path: Path) -> None:
     assert "output" not in records[1]
 
 
+def test_audit_recorder_creates_dated_incrementing_analytics_logs(tmp_path: Path) -> None:
+    now = datetime(2026, 5, 29, tzinfo=UTC)
+    root = tmp_path / "runs"
+
+    first = AuditRecorder.for_new_run(root, now=now)
+    second = AuditRecorder.for_new_run(root, now=now)
+
+    assert first.run_id == 1
+    assert first.path == root / "2026-05-29" / "analytics" / "run-0001.jsonl"
+    assert second.run_id == 2
+    assert second.path == root / "2026-05-29" / "analytics" / "run-0002.jsonl"
+
+    first.record("agent_run_started", engagement_id="engagement-1")
+    records = load_audit(first.path)
+    assert records[0]["run_id"] == 1
+
+
+def test_legacy_audit_jsonl_path_allocates_under_parent_directory(tmp_path: Path) -> None:
+    legacy_path = tmp_path / "audit.jsonl"
+
+    recorder = AuditRecorder.for_new_run(
+        legacy_path,
+        now=datetime(2026, 5, 29, tzinfo=UTC),
+    )
+
+    assert not legacy_path.exists()
+    assert recorder.path == tmp_path / "2026-05-29" / "analytics" / "run-0001.jsonl"
+
+
+def test_load_audit_from_run_root_uses_latest_incrementing_run(tmp_path: Path) -> None:
+    now = datetime(2026, 5, 29, tzinfo=UTC)
+    root = tmp_path / "runs"
+    first = AuditRecorder.for_new_run(root, now=now)
+    first.record("thinking", text="first")
+    second = AuditRecorder.for_new_run(root, now=now)
+    second.record("thinking", text="second")
+
+    records = load_audit(root)
+
+    assert [record["text"] for record in records] == ["second"]
+
+
 def test_usage_summary_from_audit_counts_cache_hits() -> None:
     records = [
         {
@@ -158,7 +201,7 @@ def test_live_view_collapses_long_blocks_but_replay_shows_all() -> None:
     render_event(live, "tool_result", fields, collapse=True)
     live_text = live.export_text()
     assert "more lines" in live_text
-    assert "redteam replay" in live_text
+    assert "ctrl+o" in live_text
     assert lines[-1] not in live_text
 
     full = Console(record=True, width=100)

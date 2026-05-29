@@ -37,11 +37,11 @@ def replay(
     audit_log: Annotated[
         Path,
         typer.Argument(
-            help="Path to a raw audit JSONL file.",
+            help="Path to a raw audit JSONL file or audit run directory.",
             exists=True,
-            dir_okay=False,
+            dir_okay=True,
         ),
-    ] = Path(".runs/audit.jsonl"),
+    ] = Path(".runs"),
 ) -> None:
     """Pretty-print a recorded agent run from its raw audit log."""
     render_audit(load_audit(audit_log))
@@ -52,11 +52,11 @@ def usage(
     audit_log: Annotated[
         Path,
         typer.Argument(
-            help="Path to a raw audit JSONL file.",
+            help="Path to a raw audit JSONL file or audit run directory.",
             exists=True,
-            dir_okay=False,
+            dir_okay=True,
         ),
-    ] = Path(".runs/audit.jsonl"),
+    ] = Path(".runs"),
 ) -> None:
     """Summarize token usage and prompt-cache hit rate from an audit log."""
     console = Console()
