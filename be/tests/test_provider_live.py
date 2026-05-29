@@ -114,7 +114,14 @@ def test_openai_loop_runs_tool_then_finishes_and_replays_function_call_history()
 
     assert result.success is True
     assert result.final_message == "all done"
-    assert [usage for usage in result.usage] == [{"input_tokens": 10, "output_tokens": 5}]
+    assert [usage for usage in result.usage] == [
+        {
+            "input_tokens": 10,
+            "output_tokens": 5,
+            "provider": "openai",
+            "model": "gpt-test",
+        }
+    ]
 
     first_call = responses.calls[0].kwargs
     assert first_call["model"] == "gpt-test"

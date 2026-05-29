@@ -135,7 +135,16 @@ class OpenAIChatCompletionsHarness:
 
         usage = completion.get("usage")
         if isinstance(usage, dict):
-            events.append(ModelEvent(event_type="usage", usage=usage))
+            events.append(
+                ModelEvent(
+                    event_type="usage",
+                    usage={
+                        **usage,
+                        "provider": "openai-compatible",
+                        "model": _string(completion.get("model")) or self.model,
+                    },
+                )
+            )
 
         finish_reason = (
             first_choice.get("finish_reason") if isinstance(first_choice, dict) else None
@@ -287,3 +296,9 @@ def _model_to_dict(completion: object) -> dict[str, Any]:
         if isinstance(result, dict):
             return cast(dict[str, Any], result)
     raise TypeError("Chat completion is not convertible to dict.")
+
+
+def _string(value: object) -> str | None:
+    if isinstance(value, str) and value:
+        return value
+    return None

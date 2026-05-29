@@ -134,7 +134,16 @@ class ClaudeMessagesHarness:
 
         usage = message.get("usage")
         if isinstance(usage, dict):
-            events.append(ModelEvent(event_type="usage", usage=usage))
+            events.append(
+                ModelEvent(
+                    event_type="usage",
+                    usage={
+                        **usage,
+                        "provider": "anthropic",
+                        "model": _string(message.get("model")) or self.model,
+                    },
+                )
+            )
 
         events.append(ModelEvent(event_type="completed", provider_metadata=message))
         return events
@@ -267,3 +276,9 @@ def _model_to_dict(message: object) -> dict[str, Any]:
         if isinstance(result, dict):
             return cast(dict[str, Any], result)
     raise TypeError("Anthropic message is not convertible to dict.")
+
+
+def _string(value: object) -> str | None:
+    if isinstance(value, str) and value:
+        return value
+    return None

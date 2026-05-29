@@ -1,6 +1,7 @@
 import argparse
 import asyncio
 from collections.abc import Sequence
+from datetime import UTC, datetime
 from importlib.resources import files
 from pathlib import Path
 from typing import Any
@@ -47,6 +48,7 @@ def main(argv: Sequence[str] | None = None) -> None:
     audit = AuditRecorder(settings.audit_log_path)
     registry = _build_registry()
     usage_events: list[dict[str, Any]] = []
+    session_started_at = datetime.now(UTC)
     context = AgentContext(
         engagement_id=settings.engagement_id,
         metadata={
@@ -89,11 +91,12 @@ def main(argv: Sequence[str] | None = None) -> None:
     if args.task:
         if handle_slash_command(
             args.task,
-            SlashCommandContext(
+            _slash_context(
                 console=console,
                 history=history,
                 usage_events=usage_events,
-                audit_log_path=settings.audit_log_path,
+                settings=settings,
+                session_started_at=session_started_at,
             ),
             slash_commands,
         ):
@@ -117,11 +120,12 @@ def main(argv: Sequence[str] | None = None) -> None:
             continue
         if handle_slash_command(
             task,
-            SlashCommandContext(
+            _slash_context(
                 console=console,
                 history=history,
                 usage_events=usage_events,
-                audit_log_path=settings.audit_log_path,
+                settings=settings,
+                session_started_at=session_started_at,
             ),
             slash_commands,
         ):
@@ -159,6 +163,25 @@ def _usage_observer(usage_events: list[dict[str, Any]]) -> LoopObserver:
             usage_events.append(event.usage)
 
     return observe
+
+
+def _slash_context(
+    *,
+    console: Console,
+    history: Sequence[AgentMessage],
+    usage_events: Sequence[dict[str, Any]],
+    settings: Settings,
+    session_started_at: datetime,
+) -> SlashCommandContext:
+    return SlashCommandContext(
+        console=console,
+        history=history,
+        usage_events=usage_events,
+        audit_log_path=settings.audit_log_path,
+        provider=str(settings.agent_provider),
+        model=_provider_model(settings),
+        session_started_at=session_started_at,
+    )
 
 
 def _load_system_prompt() -> str:

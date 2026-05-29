@@ -103,7 +103,16 @@ class OpenAIResponsesHarness:
         events = self.normalize_output_items(response.get("output", []))
         usage = response.get("usage")
         if isinstance(usage, dict):
-            events.append(ModelEvent(event_type="usage", usage=usage))
+            events.append(
+                ModelEvent(
+                    event_type="usage",
+                    usage={
+                        **usage,
+                        "provider": "openai",
+                        "model": _string(response.get("model")) or self.model,
+                    },
+                )
+            )
         if response.get("error") is not None:
             events.append(
                 ModelEvent(
@@ -351,3 +360,9 @@ def _model_to_dict(response: object) -> dict[str, Any]:
         if isinstance(result, dict):
             return cast(dict[str, Any], result)
     raise TypeError("OpenAI response is not convertible to dict.")
+
+
+def _string(value: object) -> str | None:
+    if isinstance(value, str) and value:
+        return value
+    return None

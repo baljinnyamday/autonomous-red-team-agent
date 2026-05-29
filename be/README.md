@@ -27,7 +27,9 @@ Interactive `main.py` sessions keep chat history for the current process and wri
 observable user, assistant, tool, and usage events under `AUDIT_LOG_PATH` using
 dated per-run logs like `.runs/YYYY-MM-DD/analytics/run-0001.jsonl`.
 Inside an interactive session, run `/analysis` to see current-session token usage,
-prompt-cache hit rate, and chat-history counts without sending a task to the model.
+prompt-cache hit rate, per-model usage, estimated token cost, elapsed time,
+audit-event counts, tool counts, and chat-history counts without sending a task
+to the model.
 
 Use `uv run redteam replay .runs` to inspect the latest saved transcript and
 `uv run redteam usage .runs` to summarize input/output tokens, cached
