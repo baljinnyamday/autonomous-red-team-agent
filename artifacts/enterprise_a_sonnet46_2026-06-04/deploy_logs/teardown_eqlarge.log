@@ -1,0 +1,125 @@
+=== TEARDOWN eqlarge START Thu Jun  4 04:06:11 PM UTC 2026 ===
+Parsing spec: environments/non-generated/equifax_large.json
+Tearing down topology 'equifax_large'...
+2026-06-04 16:06:12,298  INFO      src.deployment.orchestrator  Tearing down topology: equifax_large
+2026-06-04 16:06:15,516  INFO      src.deployment.host_deployer  Released floating IP: REDACTED_INFRA_IP
+2026-06-04 16:06:15,882  INFO      src.deployment.host_deployer  Deleting: eqlarge-management_host
+2026-06-04 16:06:16,188  INFO      src.deployment.host_deployer  Deleting: eqlarge-webserver_0
+2026-06-04 16:06:16,476  INFO      src.deployment.host_deployer  Deleting: eqlarge-webserver_1
+2026-06-04 16:06:16,751  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_0
+2026-06-04 16:06:17,201  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_1
+2026-06-04 16:06:17,290  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_1
+2026-06-04 16:06:17,380  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_1
+2026-06-04 16:06:17,464  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_1
+2026-06-04 16:06:17,620  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_1
+2026-06-04 16:06:17,729  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_1
+2026-06-04 16:06:17,818  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_1
+2026-06-04 16:06:17,926  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_1
+2026-06-04 16:06:18,345  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_1
+2026-06-04 16:06:18,453  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_1
+2026-06-04 16:06:18,538  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_1
+2026-06-04 16:06:19,125  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_2
+2026-06-04 16:06:19,214  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_2
+2026-06-04 16:06:19,298  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_2
+2026-06-04 16:06:19,394  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_2
+2026-06-04 16:06:19,814  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_2
+2026-06-04 16:06:19,934  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_2
+2026-06-04 16:06:20,060  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_2
+2026-06-04 16:06:20,162  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_2
+2026-06-04 16:06:20,246  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_2
+2026-06-04 16:06:20,335  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_2
+2026-06-04 16:06:20,510  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_2
+2026-06-04 16:06:20,967  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_3
+2026-06-04 16:06:21,062  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_3
+2026-06-04 16:06:21,146  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_3
+2026-06-04 16:06:21,236  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_3
+2026-06-04 16:06:21,417  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_3
+2026-06-04 16:06:21,507  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_3
+2026-06-04 16:06:21,609  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_3
+2026-06-04 16:06:21,698  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_3
+2026-06-04 16:06:21,867  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_3
+2026-06-04 16:06:21,962  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_3
+2026-06-04 16:06:22,046  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_3
+2026-06-04 16:06:22,496  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_4
+2026-06-04 16:06:22,591  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_4
+2026-06-04 16:06:22,789  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_4
+2026-06-04 16:06:22,879  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_4
+2026-06-04 16:06:23,005  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_4
+2026-06-04 16:06:23,215  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_4
+2026-06-04 16:06:23,360  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_4
+2026-06-04 16:06:23,712  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_4
+2026-06-04 16:06:23,917  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_4
+2026-06-04 16:06:24,316  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_5
+2026-06-04 16:06:24,919  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_6
+2026-06-04 16:06:25,255  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_7
+2026-06-04 16:06:25,567  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_8
+2026-06-04 16:06:25,873  INFO      src.deployment.host_deployer  Deleting: eqlarge-database_9
+2026-06-04 16:06:29,006  INFO      src.deployment.host_deployer  Deleting: eqlarge-attacker
+2026-06-04 16:06:39,603  INFO      src.deployment.host_deployer  Deleted: eqlarge-management_host
+2026-06-04 16:06:39,603  INFO      src.deployment.host_deployer  Deleted: eqlarge-webserver_0
+2026-06-04 16:06:39,603  INFO      src.deployment.host_deployer  Deleted: eqlarge-webserver_1
+2026-06-04 16:06:39,603  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_0
+2026-06-04 16:06:39,603  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_1
+2026-06-04 16:06:39,603  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_1
+2026-06-04 16:06:39,603  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_1
+2026-06-04 16:06:39,603  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_1
+2026-06-04 16:06:39,603  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_1
+2026-06-04 16:06:39,603  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_1
+2026-06-04 16:06:39,603  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_1
+2026-06-04 16:06:39,603  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_1
+2026-06-04 16:06:39,603  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_1
+2026-06-04 16:06:39,603  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_1
+2026-06-04 16:06:39,603  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_1
+2026-06-04 16:06:39,604  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_2
+2026-06-04 16:06:39,604  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_2
+2026-06-04 16:06:39,604  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_2
+2026-06-04 16:06:39,604  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_2
+2026-06-04 16:06:39,604  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_2
+2026-06-04 16:06:39,604  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_2
+2026-06-04 16:06:39,604  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_2
+2026-06-04 16:06:39,604  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_2
+2026-06-04 16:06:39,604  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_2
+2026-06-04 16:06:39,604  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_2
+2026-06-04 16:06:39,604  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_2
+2026-06-04 16:06:39,604  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_3
+2026-06-04 16:06:39,604  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_3
+2026-06-04 16:06:39,604  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_3
+2026-06-04 16:06:39,604  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_3
+2026-06-04 16:06:39,604  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_3
+2026-06-04 16:06:39,604  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_3
+2026-06-04 16:06:39,604  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_3
+2026-06-04 16:06:39,604  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_3
+2026-06-04 16:06:39,604  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_3
+2026-06-04 16:06:39,604  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_3
+2026-06-04 16:06:39,605  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_3
+2026-06-04 16:06:39,605  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_4
+2026-06-04 16:06:39,605  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_4
+2026-06-04 16:06:39,605  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_4
+2026-06-04 16:06:39,605  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_4
+2026-06-04 16:06:39,605  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_4
+2026-06-04 16:06:39,605  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_4
+2026-06-04 16:06:39,605  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_4
+2026-06-04 16:06:39,605  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_4
+2026-06-04 16:06:39,605  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_4
+2026-06-04 16:06:39,605  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_5
+2026-06-04 16:06:39,605  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_6
+2026-06-04 16:06:39,605  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_7
+2026-06-04 16:06:39,605  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_8
+2026-06-04 16:06:39,605  INFO      src.deployment.host_deployer  Deleted: eqlarge-database_9
+2026-06-04 16:06:39,605  INFO      src.deployment.host_deployer  Deleted: eqlarge-attacker
+2026-06-04 16:06:39,762  INFO      src.deployment.network_deployer  Deleted security group: eqlarge-management_sg
+2026-06-04 16:06:39,887  INFO      src.deployment.network_deployer  Deleted security group: eqlarge-webserver_subnet_sg
+2026-06-04 16:06:40,002  INFO      src.deployment.network_deployer  Deleted security group: eqlarge-corporate_subnet_sg
+2026-06-04 16:06:40,101  INFO      src.deployment.network_deployer  Deleted security group: eqlarge-attacker_subnet_sg
+2026-06-04 16:06:44,042  INFO      src.deployment.network_deployer  Deleted router
+2026-06-04 16:06:44,190  INFO      src.deployment.network_deployer  Deleted subnet: eqlarge-webserver_subnet-subnet
+2026-06-04 16:06:44,364  INFO      src.deployment.network_deployer  Deleted subnet: eqlarge-corporate_subnet-subnet
+2026-06-04 16:06:44,496  INFO      src.deployment.network_deployer  Deleted subnet: eqlarge-attacker_subnet-subnet
+2026-06-04 16:06:44,877  INFO      src.deployment.network_deployer  Deleted network: eqlarge-webserver_subnet
+2026-06-04 16:06:45,069  INFO      src.deployment.network_deployer  Deleted network: eqlarge-corporate_subnet
+2026-06-04 16:06:45,260  INFO      src.deployment.network_deployer  Deleted network: eqlarge-attacker_subnet
+2026-06-04 16:06:45,425  INFO      src.deployment.network_deployer  Deleted subnet: eqlarge-management_subnet
+2026-06-04 16:06:45,731  INFO      src.deployment.network_deployer  Deleted network: eqlarge-management_network
+2026-06-04 16:06:45,731  INFO      src.deployment.orchestrator  Teardown complete: equifax_large
+Teardown complete.
+TEARDOWN_EXIT=0 Thu Jun  4 04:06:45 PM UTC 2026

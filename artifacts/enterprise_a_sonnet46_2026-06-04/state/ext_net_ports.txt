@@ -1,0 +1,5 @@
+REDACTED_INFRA_IP 10.0.1.10
+--- router gateways ---
+flat-lan-1-router
+enta-router
+tun0-router
