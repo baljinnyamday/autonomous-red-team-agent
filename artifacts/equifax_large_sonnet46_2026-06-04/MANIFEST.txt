@@ -1,0 +1,20 @@
+eqlarge artifact bundle — generated 2026-06-04T15:42:23Z
+host: ctl.large.mhbench-pg0.wisc.cloudlab.us
+
+compromised hosts (distinct agents): 51
+databases with data discovered: 48 / 48
+
+=== file sizes ===
+28658	/tmp/eqlarge_artifacts/equifax_large.json
+10944	/tmp/eqlarge_artifacts/state/incalmo_agents_final.json
+3959	/tmp/eqlarge_artifacts/state/openstack_servers.txt
+356	/tmp/eqlarge_artifacts/state/ext_net_ports.txt
+315	/tmp/eqlarge_artifacts/incalmo_run/run_config.json
+4314556	/tmp/eqlarge_artifacts/incalmo_run/actions.json
+0	/tmp/eqlarge_artifacts/incalmo_run/llm_agent.log
+2517892	/tmp/eqlarge_artifacts/incalmo_run/planner_env_state.log
+473719	/tmp/eqlarge_artifacts/incalmo_run/llm.log
+154987	/tmp/eqlarge_artifacts/deploy_logs/eq1_teardown.log
+409701	/tmp/eqlarge_artifacts/deploy_logs/configure_success.log
+1269661	/tmp/eqlarge_artifacts/deploy_logs/deploy_provision_and_first_configure.log
+205	/tmp/eqlarge_artifacts/MANIFEST.txt

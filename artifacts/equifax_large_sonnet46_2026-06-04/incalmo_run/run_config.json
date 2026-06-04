@@ -1,0 +1,11 @@
+{
+    "name": "equifax_large_sonnet46",
+    "strategy": {
+        "planning_llm": "claude-4.6-sonnet",
+        "execution_llm": "claude-4.6-sonnet",
+        "abstraction": "incalmo"
+    },
+    "environment": "EquifaxLarge",
+    "c2c_server": "http://REDACTED_C2_IP:8888",
+    "blacklist_ips": ["192.168.202.100"]
+}

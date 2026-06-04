@@ -1,0 +1,265 @@
+% ==========================================================================
+% References for: Authorized Agentic Red Teaming (MSc Background Report)
+% Verification status is tracked in lit-review.md (do NOT put % comments
+% INSIDE an entry -- BibTeX treats % as a literal, not a comment).
+% VERIFIED (checked vs arXiv 2026-05-30): deng2023pentestgpt, shen2024pentestagent,
+%   muzsai2024hacksynth, fang2024oneday, zhu2024zeroday, singer2025incalmo,
+%   udeshi2025dcipher, zhang2024cybench, phuong2024dangerous, xu2025survey.
+% VERIFIED (author lists checked vs arXiv API 2026-05-31): autopentester2025,
+%   cvebench2025, offsec2025tuning, dynamicrisk2025.
+% Numbering is Vancouver-style (numeric, in order of first citation) via unsrtnat.bst.
+% ==========================================================================
+
+% ---- Theme A: single-agent penetration-testing pipelines ----
+
+@misc{deng2023pentestgpt,
+  title        = {{PentestGPT}: An {LLM}-empowered Automatic Penetration Testing Tool},
+  author       = {Deng, Gelei and Liu, Yi and Mayoral-Vilches, V{\'i}ctor and Liu, Peng and Li, Yuekang and Xu, Yuan and Zhang, Tianwei and Liu, Yang and Pinzger, Martin and Rass, Stefan},
+  year         = {2023},
+  eprint       = {2308.06782},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CR},
+  howpublished = {arXiv preprint arXiv:2308.06782}
+}
+
+@article{shen2024pentestagent,
+  title   = {{PentestAgent}: Incorporating {LLM} Agents to Automated Penetration Testing},
+  author  = {Shen, Xiangmin and Wang, Lingzhi and Li, Zhenyuan and Chen, Yan and Zhao, Wencheng and Sun, Dawei and Wang, Jiashui and Ruan, Wei},
+  journal = {arXiv preprint arXiv:2411.05185},
+  year    = {2024},
+  doi     = {10.48550/arXiv.2411.05185},
+  url     = {https://arxiv.org/abs/2411.05185}
+}
+
+@misc{muzsai2024hacksynth,
+  title        = {{HackSynth}: {LLM} Agent and Evaluation Framework for Autonomous Penetration Testing},
+  author       = {Muzsai, Lajos and Imolai, David and Luk{\'a}cs, Andr{\'a}s},
+  year         = {2024},
+  eprint       = {2412.01778},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CR},
+  howpublished = {arXiv preprint arXiv:2412.01778}
+}
+
+@misc{autopentester2025,
+  title        = {{AutoPentester}: An {LLM} Agent-based Framework for Automated Pentesting},
+  author       = {Ginige, Yasod and Niroshan, Akila and Jain, Sajal and Seneviratne, Suranga},
+  year         = {2025},
+  eprint       = {2510.05605},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CR},
+  howpublished = {arXiv preprint arXiv:2510.05605}
+}
+
+% ---- Theme B: autonomous exploitation and the discovery gap ----
+
+@misc{fang2024oneday,
+  title        = {{LLM} Agents can Autonomously Exploit One-day Vulnerabilities},
+  author       = {Fang, Richard and Bindu, Rohan and Gupta, Akul and Kang, Daniel},
+  year         = {2024},
+  eprint       = {2404.08144},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CR},
+  howpublished = {arXiv preprint arXiv:2404.08144}
+}
+
+@misc{zhu2024zeroday,
+  title        = {Teams of {LLM} Agents can Exploit Zero-Day Vulnerabilities},
+  author       = {Zhu, Yuxuan and Kellermann, Antony and Gupta, Akul and Li, Philip and Fang, Richard and Bindu, Rohan and Kang, Daniel},
+  year         = {2024},
+  eprint       = {2406.01637},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.MA},
+  howpublished = {arXiv preprint arXiv:2406.01637}
+}
+
+@misc{cvebench2025,
+  title        = {{CVE-Bench}: A Benchmark for {AI} Agents' Ability to Exploit Real-World Web Application Vulnerabilities},
+  author       = {Zhu, Yuxuan and Kellermann, Antony and Bowman, Dylan and Li, Philip and Gupta, Akul and Danda, Adarsh and Fang, Richard and Jensen, Conner and Ihli, Eric and Benn, Jason and Geronimo, Jet and Dhir, Avi and Rao, Sudhit and Yu, Kaicheng and Stone, Twm and Kang, Daniel},
+  year         = {2025},
+  eprint       = {2503.17332},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CR},
+  howpublished = {arXiv preprint arXiv:2503.17332}
+}
+
+% ---- Theme C: multi-agent orchestration and multi-host networks ----
+
+@misc{singer2025incalmo,
+  title   = {{Incalmo}: An Autonomous {LLM}-assisted System for Red Teaming Multi-Host Networks},
+  author  = {Singer, Brian and Lucas, Keane and Adiga, Lakshmi and Jain, Meghna and Bauer, Lujo and Sekar, Vyas},
+  year    = {2025},
+  eprint  = {2501.16466},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CR},
+  doi     = {10.48550/arXiv.2501.16466},
+  url     = {https://arxiv.org/abs/2501.16466}
+}
+
+@misc{udeshi2025dcipher,
+  title        = {{D-CIPHER}: Dynamic Collaborative Intelligent Multi-Agent System with Planner and Heterogeneous Executors for Offensive Security},
+  author       = {Udeshi, Meet and Shao, Minghao and Xi, Haoran and Rani, Nanda and Milner, Kimberly and Putrevu, Venkata Sai Charan and Dolan-Gavitt, Brendan and Shukla, Sandeep Kumar and Krishnamurthy, Prashanth and Khorrami, Farshad and Karri, Ramesh and Shafique, Muhammad},
+  year         = {2025},
+  eprint       = {2502.10931},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CR},
+  howpublished = {arXiv preprint arXiv:2502.10931}
+}
+
+% ---- Theme D: benchmarks and evaluation ----
+
+@inproceedings{zhang2024cybench,
+  title        = {Cybench: A Framework for Evaluating Cybersecurity Capabilities and Risks of Language Models},
+  author       = {Zhang, Andy K. and Perry, Neil and Dulepet, Riya and Ji, Joey and Menders, Celeste and Lin, Justin W. and Jones, Eliot and Hussein, Gashon and Liu, Samantha and Jasper, Donovan and Peetathawatchai, Pura and Glenn, Ari and Sivashankar, Vikram and Zamoshchin, Daniel and Glikbarg, Leo and Askaryar, Derek and Yang, Mike and Zhang, Teddy and Alluri, Rishi and Tran, Nathan and Sangpisit, Rinnara and Yiorkadjis, Polycarpos and Osele, Kenny and Raghupathi, Gautham and Boneh, Dan and Ho, Daniel E. and Liang, Percy},
+  booktitle    = {International Conference on Learning Representations (ICLR)},
+  year         = {2025},
+  note         = {Oral presentation; arXiv:2408.08926}
+}
+
+@misc{offsec2025tuning,
+  title        = {Towards Effective Offensive Security {LLM} Agents: Hyperparameter Tuning, {LLM}-as-a-Judge, and a Lightweight {CTF} Benchmark},
+  author       = {Shao, Minghao and Rani, Nanda and Milner, Kimberly and Xi, Haoran and Udeshi, Meet and Aggarwal, Saksham and Putrevu, Venkata Sai Charan and Shukla, Sandeep Kumar and Krishnamurthy, Prashanth and Khorrami, Farshad and Karri, Ramesh and Shafique, Muhammad},
+  year         = {2025},
+  eprint       = {2508.05674},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CR},
+  howpublished = {arXiv preprint arXiv:2508.05674}
+}
+
+@misc{wang2026exploitgym,
+  title        = {{ExploitGym}: Can {AI} Agents Turn Security Vulnerabilities into Real Attacks?},
+  author       = {Wang, Zhun and Schiller, Nico and Li, Hongwei and Narayana, Srijiith Sesha and Nasr, Milad and Carlini, Nicholas and Qi, Xiangyu and Wallace, Eric and Bursztein, Elie and Invernizzi, Luca and Thomas, Kurt and Shoshitaishvili, Yan and Guo, Wenbo and He, Jingxuan and Holz, Thorsten and Song, Dawn},
+  year         = {2026},
+  eprint       = {2605.11086},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CR},
+  howpublished = {arXiv preprint arXiv:2605.11086}
+}
+
+% ---- Theme E: frontier-model risk, governance, and survey ----
+
+@misc{phuong2024dangerous,
+  title        = {Evaluating Frontier Models for Dangerous Capabilities},
+  author       = {Phuong, Mary and Aitchison, Matthew and Catt, Elliot and Cogan, Sarah and Kaskasoli, Alexandre and Krakovna, Victoria and Lindner, David and Rahtz, Matthew and Assael, Yannis and Hodkinson, Sarah and Howard, Heidi and Lieberum, Tom and Kumar, Ramana and Raad, Maria Abi and Webson, Albert and Ho, Lewis and Lin, Sharon and Farquhar, Sebastian and Hutter, Marcus and Deletang, Gregoire and Ruoss, Anian and El-Sayed, Seliem and Brown, Sasha and Dragan, Anca and Shah, Rohin and Dafoe, Allan and Shevlane, Toby},
+  year         = {2024},
+  eprint       = {2403.13793},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.LG},
+  howpublished = {arXiv preprint arXiv:2403.13793 (Google DeepMind)}
+}
+
+@misc{xu2025survey,
+  title        = {Forewarned is Forearmed: A Survey on Large Language Model-based Agents in Autonomous Cyberattacks},
+  author       = {Xu, Minrui and Fan, Jiani and Huang, Xinyu and others},
+  year         = {2025},
+  eprint       = {2505.12786},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CR},
+  howpublished = {arXiv preprint arXiv:2505.12786}
+}
+
+@misc{dynamicrisk2025,
+  title        = {Dynamic Risk Assessments for Offensive Cybersecurity Agents},
+  author       = {Wei, Boyi and Stroebl, Benedikt and Xu, Jiacen and Zhang, Joie and Li, Zhou and Henderson, Peter},
+  year         = {2025},
+  eprint       = {2505.18384},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CR},
+  howpublished = {arXiv preprint arXiv:2505.18384}
+}
+
+% ==========================================================================
+% Agent foundations: reasoning-acting (ReAct), tool use, memory, architectures
+% All VERIFIED against arXiv (2026-05-31).
+% ==========================================================================
+
+@inproceedings{yao2023react,
+  title     = {{ReAct}: Synergizing Reasoning and Acting in Language Models},
+  author    = {Yao, Shunyu and Zhao, Jeffrey and Yu, Dian and Du, Nan and Shafran, Izhak and Narasimhan, Karthik and Cao, Yuan},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2023},
+  note      = {arXiv:2210.03629}
+}
+
+@inproceedings{schick2023toolformer,
+  title     = {Toolformer: Language Models Can Teach Themselves to Use Tools},
+  author    = {Schick, Timo and Dwivedi-Yu, Jane and Dess{\`i}, Roberto and Raileanu, Roberta and Lomeli, Maria and Zettlemoyer, Luke and Cancedda, Nicola and Scialom, Thomas},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2023},
+  note      = {arXiv:2302.04761}
+}
+
+@misc{anthropic2024agents,
+  title        = {Building Effective Agents},
+  author       = {Schluntz, Erik and Zhang, Barry},
+  year         = {2024},
+  howpublished = {Anthropic Engineering Blog},
+  note         = {\url{https://www.anthropic.com/engineering/building-effective-agents}}
+}
+
+@inproceedings{shinn2023reflexion,
+  title     = {Reflexion: Language Agents with Verbal Reinforcement Learning},
+  author    = {Shinn, Noah and Cassano, Federico and Berman, Edward and Gopinath, Ashwin and Narasimhan, Karthik and Yao, Shunyu},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2023},
+  note      = {arXiv:2303.11366}
+}
+
+@inproceedings{park2023generative,
+  title     = {Generative Agents: Interactive Simulacra of Human Behavior},
+  author    = {Park, Joon Sung and O'Brien, Joseph C. and Cai, Carrie J. and Morris, Meredith Ringel and Liang, Percy and Bernstein, Michael S.},
+  booktitle = {Proceedings of the 36th Annual ACM Symposium on User Interface Software and Technology (UIST)},
+  year      = {2023},
+  note      = {arXiv:2304.03442}
+}
+
+@article{sumers2024coala,
+  title   = {Cognitive Architectures for Language Agents},
+  author  = {Sumers, Theodore R. and Yao, Shunyu and Narasimhan, Karthik and Griffiths, Thomas L.},
+  journal = {Transactions on Machine Learning Research (TMLR)},
+  year    = {2024},
+  note    = {arXiv:2309.02427}
+}
+
+@misc{packer2023memgpt,
+  title        = {{MemGPT}: Towards {LLMs} as Operating Systems},
+  author       = {Packer, Charles and Wooders, Sarah and Lin, Kevin and Fang, Vivian and Patil, Shishir G. and Stoica, Ion and Gonzalez, Joseph E.},
+  year         = {2023},
+  eprint       = {2310.08560},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.AI},
+  howpublished = {arXiv preprint arXiv:2310.08560}
+}
+
+@article{wang2024agentsurvey,
+  title   = {A Survey on Large Language Model based Autonomous Agents},
+  author  = {Wang, Lei and Ma, Chen and Feng, Xueyang and Zhang, Zeyu and Yang, Hao and Zhang, Jingsen and Chen, Zhiyuan and Tang, Jiakai and Chen, Xu and Lin, Yankai and Zhao, Wayne Xin and Wei, Zhewei and Wen, Ji-Rong},
+  journal = {Frontiers of Computer Science},
+  year    = {2024},
+  note    = {arXiv:2308.11432},
+  doi     = {10.1007/s11704-024-40231-1}
+}
+
+@misc{zhang2024memorysurvey,
+  title        = {A Survey on the Memory Mechanism of Large Language Model based Agents},
+  author       = {Zhang, Zeyu and Bo, Xiaohe and Ma, Chen and Li, Rui and Chen, Xu and Dai, Quanyu and Zhu, Jieming and Dong, Zhenhua and Wen, Ji-Rong},
+  year         = {2024},
+  eprint       = {2404.13501},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.AI},
+  howpublished = {arXiv preprint arXiv:2404.13501}
+}
+
+% ---- Theme E: experimental testbed / infrastructure ----
+
+@inproceedings{duplyakin2019cloudlab,
+  title     = {The Design and Operation of {CloudLab}},
+  author    = {Duplyakin, Dmitry and Ricci, Robert and Maricq, Aleksander and Wong, Gary and Duerig, Jonathon and Eide, Eric and Stoller, Leigh and Hibler, Mike and Johnson, David and Webb, Kirk and Akella, Aditya and Wang, Kuangching and Ricart, Glenn and Landweber, Larry and Elliott, Chip and Zink, Michael and Cecchet, Emmanuel and Kar, Snigdhaswin and Mishra, Prabodh},
+  booktitle = {2019 USENIX Annual Technical Conference (USENIX ATC 19)},
+  pages     = {1--14},
+  year      = {2019},
+  isbn      = {978-1-939133-03-8},
+  address   = {Renton, WA},
+  publisher = {USENIX Association},
+  url       = {https://www.usenix.org/conference/atc19/presentation/duplyakin}
+}

@@ -1,0 +1,33 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter*.2}%
+\contentsline {section}{\numberline {1.1}Problem statement}{1}{section*.3}%
+\contentsline {section}{\numberline {1.2}Aim and objectives}{2}{section*.4}%
+\contentsline {chapter}{\numberline {2}Literature Review}{3}{chapter*.9}%
+\contentsline {section}{\numberline {2.1}From LLMs to autonomous agents}{3}{section*.10}%
+\contentsline {section}{\numberline {2.2}Reasoning, acting, and tool use}{3}{section*.11}%
+\contentsline {section}{\numberline {2.3}Memory in language agents}{4}{section*.12}%
+\contentsline {section}{\numberline {2.4}Single-agent pipelines}{4}{section*.13}%
+\contentsline {section}{\numberline {2.5}Exploitation and the discovery gap}{4}{section*.14}%
+\contentsline {section}{\numberline {2.6}Multi-agent orchestration}{4}{section*.15}%
+\contentsline {section}{\numberline {2.7}Benchmarks and confounds}{5}{section*.16}%
+\contentsline {section}{\numberline {2.8}Comparative synthesis}{5}{section*.17}%
+\contentsline {section}{\numberline {2.9}Frontier-model risk and governance}{6}{section*.19}%
+\contentsline {section}{\numberline {2.10}Synthesis and research gaps}{6}{section*.20}%
+\contentsline {chapter}{\numberline {3}Progress to date}{7}{chapter*.21}%
+\contentsline {section}{\numberline {3.1}Architecture overview}{7}{section*.22}%
+\contentsline {section}{\numberline {3.2}A provider-agnostic agent}{8}{section*.25}%
+\contentsline {section}{\numberline {3.3}Tooling framework}{8}{section*.26}%
+\contentsline {section}{\numberline {3.4}Authorisation and scope}{9}{section*.27}%
+\contentsline {section}{\numberline {3.5}Observability}{9}{section*.28}%
+\contentsline {section}{\numberline {3.6}Preliminary benchmarking}{9}{section*.29}%
+\contentsline {section}{\numberline {3.7}Work in progress}{9}{section*.31}%
+\contentsline {section}{\numberline {3.8}Current limitations}{10}{section*.32}%
+\contentsline {chapter}{\numberline {4}Project Plan}{11}{chapter*.33}%
+\contentsline {section}{\numberline {4.1}Objectives and success criteria}{11}{section*.34}%
+\contentsline {section}{\numberline {4.2}Work plan and timeline}{11}{section*.35}%
+\contentsline {section}{\numberline {4.3}Benchmark selection}{12}{section*.37}%
+\contentsline {section}{\numberline {4.4}Operational definitions}{12}{section*.38}%
+\contentsline {section}{\numberline {4.5}Experimental testbed}{13}{section*.39}%
+\contentsline {section}{\numberline {4.6}Evaluation methodology}{13}{section*.40}%
+\contentsline {section}{\numberline {4.7}Risks and mitigations}{13}{section*.41}%
+\contentsline {section}{\numberline {4.8}Ethical and authorised-use considerations}{14}{section*.42}%

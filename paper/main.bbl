@@ -1,0 +1,222 @@
+\begin{thebibliography}{24}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Deng et~al.(2023)Deng, Liu, Mayoral-Vilches, Liu, Li, Xu, Zhang, Liu,
+  Pinzger, and Rass]{deng2023pentestgpt}
+Gelei Deng, Yi~Liu, V{\'i}ctor Mayoral-Vilches, Peng Liu, Yuekang Li, Yuan Xu,
+  Tianwei Zhang, Yang Liu, Martin Pinzger, and Stefan Rass.
+\newblock {PentestGPT}: An {LLM}-empowered automatic penetration testing tool.
+\newblock arXiv preprint arXiv:2308.06782, 2023.
+
+\bibitem[Fang et~al.(2024)Fang, Bindu, Gupta, and Kang]{fang2024oneday}
+Richard Fang, Rohan Bindu, Akul Gupta, and Daniel Kang.
+\newblock {LLM} agents can autonomously exploit one-day vulnerabilities.
+\newblock arXiv preprint arXiv:2404.08144, 2024.
+
+\bibitem[Singer et~al.(2025)Singer, Lucas, Adiga, Jain, Bauer, and
+  Sekar]{singer2025incalmo}
+Brian Singer, Keane Lucas, Lakshmi Adiga, Meghna Jain, Lujo Bauer, and Vyas
+  Sekar.
+\newblock {Incalmo}: An autonomous {LLM}-assisted system for red teaming
+  multi-host networks, 2025.
+\newblock URL \url{https://arxiv.org/abs/2501.16466}.
+
+\bibitem[Xu et~al.(2025)Xu, Fan, Huang, et~al.]{xu2025survey}
+Minrui Xu, Jiani Fan, Xinyu Huang, et~al.
+\newblock Forewarned is forearmed: A survey on large language model-based
+  agents in autonomous cyberattacks.
+\newblock arXiv preprint arXiv:2505.12786, 2025.
+
+\bibitem[Schluntz and Zhang(2024)]{anthropic2024agents}
+Erik Schluntz and Barry Zhang.
+\newblock Building effective agents.
+\newblock Anthropic Engineering Blog, 2024.
+\newblock
+  \url{https://www.anthropic.com/engineering/building-effective-agents}.
+
+\bibitem[Shao et~al.(2025)Shao, Rani, Milner, Xi, Udeshi, Aggarwal, Putrevu,
+  Shukla, Krishnamurthy, Khorrami, Karri, and Shafique]{offsec2025tuning}
+Minghao Shao, Nanda Rani, Kimberly Milner, Haoran Xi, Meet Udeshi, Saksham
+  Aggarwal, Venkata Sai~Charan Putrevu, Sandeep~Kumar Shukla, Prashanth
+  Krishnamurthy, Farshad Khorrami, Ramesh Karri, and Muhammad Shafique.
+\newblock Towards effective offensive security {LLM} agents: Hyperparameter
+  tuning, {LLM}-as-a-judge, and a lightweight {CTF} benchmark.
+\newblock arXiv preprint arXiv:2508.05674, 2025.
+
+\bibitem[Zhang et~al.(2025)Zhang, Perry, Dulepet, Ji, Menders, Lin, Jones,
+  Hussein, Liu, Jasper, Peetathawatchai, Glenn, Sivashankar, Zamoshchin,
+  Glikbarg, Askaryar, Yang, Zhang, Alluri, Tran, Sangpisit, Yiorkadjis, Osele,
+  Raghupathi, Boneh, Ho, and Liang]{zhang2024cybench}
+Andy~K. Zhang, Neil Perry, Riya Dulepet, Joey Ji, Celeste Menders, Justin~W.
+  Lin, Eliot Jones, Gashon Hussein, Samantha Liu, Donovan Jasper, Pura
+  Peetathawatchai, Ari Glenn, Vikram Sivashankar, Daniel Zamoshchin, Leo
+  Glikbarg, Derek Askaryar, Mike Yang, Teddy Zhang, Rishi Alluri, Nathan Tran,
+  Rinnara Sangpisit, Polycarpos Yiorkadjis, Kenny Osele, Gautham Raghupathi,
+  Dan Boneh, Daniel~E. Ho, and Percy Liang.
+\newblock Cybench: A framework for evaluating cybersecurity capabilities and
+  risks of language models.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}, 2025.
+\newblock Oral presentation; arXiv:2408.08926.
+
+\bibitem[Wang et~al.(2026)Wang, Schiller, Li, Narayana, Nasr, Carlini, Qi,
+  Wallace, Bursztein, Invernizzi, Thomas, Shoshitaishvili, Guo, He, Holz, and
+  Song]{wang2026exploitgym}
+Zhun Wang, Nico Schiller, Hongwei Li, Srijiith~Sesha Narayana, Milad Nasr,
+  Nicholas Carlini, Xiangyu Qi, Eric Wallace, Elie Bursztein, Luca Invernizzi,
+  Kurt Thomas, Yan Shoshitaishvili, Wenbo Guo, Jingxuan He, Thorsten Holz, and
+  Dawn Song.
+\newblock {ExploitGym}: Can {AI} agents turn security vulnerabilities into real
+  attacks?
+\newblock arXiv preprint arXiv:2605.11086, 2026.
+
+\bibitem[Yao et~al.(2023)Yao, Zhao, Yu, Du, Shafran, Narasimhan, and
+  Cao]{yao2023react}
+Shunyu Yao, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan,
+  and Yuan Cao.
+\newblock {ReAct}: Synergizing reasoning and acting in language models.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}, 2023.
+\newblock arXiv:2210.03629.
+
+\bibitem[Schick et~al.(2023)Schick, Dwivedi-Yu, Dess{\`i}, Raileanu, Lomeli,
+  Zettlemoyer, Cancedda, and Scialom]{schick2023toolformer}
+Timo Schick, Jane Dwivedi-Yu, Roberto Dess{\`i}, Roberta Raileanu, Maria
+  Lomeli, Luke Zettlemoyer, Nicola Cancedda, and Thomas Scialom.
+\newblock Toolformer: Language models can teach themselves to use tools.
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, 2023.
+\newblock arXiv:2302.04761.
+
+\bibitem[Shinn et~al.(2023)Shinn, Cassano, Berman, Gopinath, Narasimhan, and
+  Yao]{shinn2023reflexion}
+Noah Shinn, Federico Cassano, Edward Berman, Ashwin Gopinath, Karthik
+  Narasimhan, and Shunyu Yao.
+\newblock Reflexion: Language agents with verbal reinforcement learning.
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, 2023.
+\newblock arXiv:2303.11366.
+
+\bibitem[Wang et~al.(2024)Wang, Ma, Feng, Zhang, Yang, Zhang, Chen, Tang, Chen,
+  Lin, Zhao, Wei, and Wen]{wang2024agentsurvey}
+Lei Wang, Chen Ma, Xueyang Feng, Zeyu Zhang, Hao Yang, Jingsen Zhang, Zhiyuan
+  Chen, Jiakai Tang, Xu~Chen, Yankai Lin, Wayne~Xin Zhao, Zhewei Wei, and
+  Ji-Rong Wen.
+\newblock A survey on large language model based autonomous agents.
+\newblock \emph{Frontiers of Computer Science}, 2024.
+\newblock \doi{10.1007/s11704-024-40231-1}.
+\newblock arXiv:2308.11432.
+
+\bibitem[Sumers et~al.(2024)Sumers, Yao, Narasimhan, and
+  Griffiths]{sumers2024coala}
+Theodore~R. Sumers, Shunyu Yao, Karthik Narasimhan, and Thomas~L. Griffiths.
+\newblock Cognitive architectures for language agents.
+\newblock \emph{Transactions on Machine Learning Research (TMLR)}, 2024.
+\newblock arXiv:2309.02427.
+
+\bibitem[Zhang et~al.(2024)Zhang, Bo, Ma, Li, Chen, Dai, Zhu, Dong, and
+  Wen]{zhang2024memorysurvey}
+Zeyu Zhang, Xiaohe Bo, Chen Ma, Rui Li, Xu~Chen, Quanyu Dai, Jieming Zhu,
+  Zhenhua Dong, and Ji-Rong Wen.
+\newblock A survey on the memory mechanism of large language model based
+  agents.
+\newblock arXiv preprint arXiv:2404.13501, 2024.
+
+\bibitem[Park et~al.(2023)Park, O'Brien, Cai, Morris, Liang, and
+  Bernstein]{park2023generative}
+Joon~Sung Park, Joseph~C. O'Brien, Carrie~J. Cai, Meredith~Ringel Morris, Percy
+  Liang, and Michael~S. Bernstein.
+\newblock Generative agents: Interactive simulacra of human behavior.
+\newblock In \emph{Proceedings of the 36th Annual ACM Symposium on User
+  Interface Software and Technology (UIST)}, 2023.
+\newblock arXiv:2304.03442.
+
+\bibitem[Packer et~al.(2023)Packer, Wooders, Lin, Fang, Patil, Stoica, and
+  Gonzalez]{packer2023memgpt}
+Charles Packer, Sarah Wooders, Kevin Lin, Vivian Fang, Shishir~G. Patil, Ion
+  Stoica, and Joseph~E. Gonzalez.
+\newblock {MemGPT}: Towards {LLMs} as operating systems.
+\newblock arXiv preprint arXiv:2310.08560, 2023.
+
+\bibitem[Muzsai et~al.(2024)Muzsai, Imolai, and
+  Luk{\'a}cs]{muzsai2024hacksynth}
+Lajos Muzsai, David Imolai, and Andr{\'a}s Luk{\'a}cs.
+\newblock {HackSynth}: {LLM} agent and evaluation framework for autonomous
+  penetration testing.
+\newblock arXiv preprint arXiv:2412.01778, 2024.
+
+\bibitem[Shen et~al.(2024)Shen, Wang, Li, Chen, Zhao, Sun, Wang, and
+  Ruan]{shen2024pentestagent}
+Xiangmin Shen, Lingzhi Wang, Zhenyuan Li, Yan Chen, Wencheng Zhao, Dawei Sun,
+  Jiashui Wang, and Wei Ruan.
+\newblock {PentestAgent}: Incorporating {LLM} agents to automated penetration
+  testing.
+\newblock \emph{arXiv preprint arXiv:2411.05185}, 2024.
+\newblock \doi{10.48550/arXiv.2411.05185}.
+\newblock URL \url{https://arxiv.org/abs/2411.05185}.
+
+\bibitem[Ginige et~al.(2025)Ginige, Niroshan, Jain, and
+  Seneviratne]{autopentester2025}
+Yasod Ginige, Akila Niroshan, Sajal Jain, and Suranga Seneviratne.
+\newblock {AutoPentester}: An {LLM} agent-based framework for automated
+  pentesting.
+\newblock arXiv preprint arXiv:2510.05605, 2025.
+
+\bibitem[Zhu et~al.(2025)Zhu, Kellermann, Bowman, Li, Gupta, Danda, Fang,
+  Jensen, Ihli, Benn, Geronimo, Dhir, Rao, Yu, Stone, and Kang]{cvebench2025}
+Yuxuan Zhu, Antony Kellermann, Dylan Bowman, Philip Li, Akul Gupta, Adarsh
+  Danda, Richard Fang, Conner Jensen, Eric Ihli, Jason Benn, Jet Geronimo, Avi
+  Dhir, Sudhit Rao, Kaicheng Yu, Twm Stone, and Daniel Kang.
+\newblock {CVE-Bench}: A benchmark for {AI} agents' ability to exploit
+  real-world web application vulnerabilities.
+\newblock arXiv preprint arXiv:2503.17332, 2025.
+
+\bibitem[Zhu et~al.(2024)Zhu, Kellermann, Gupta, Li, Fang, Bindu, and
+  Kang]{zhu2024zeroday}
+Yuxuan Zhu, Antony Kellermann, Akul Gupta, Philip Li, Richard Fang, Rohan
+  Bindu, and Daniel Kang.
+\newblock Teams of {LLM} agents can exploit zero-day vulnerabilities.
+\newblock arXiv preprint arXiv:2406.01637, 2024.
+
+\bibitem[Udeshi et~al.(2025)Udeshi, Shao, Xi, Rani, Milner, Putrevu,
+  Dolan-Gavitt, Shukla, Krishnamurthy, Khorrami, Karri, and
+  Shafique]{udeshi2025dcipher}
+Meet Udeshi, Minghao Shao, Haoran Xi, Nanda Rani, Kimberly Milner, Venkata
+  Sai~Charan Putrevu, Brendan Dolan-Gavitt, Sandeep~Kumar Shukla, Prashanth
+  Krishnamurthy, Farshad Khorrami, Ramesh Karri, and Muhammad Shafique.
+\newblock {D-CIPHER}: Dynamic collaborative intelligent multi-agent system with
+  planner and heterogeneous executors for offensive security.
+\newblock arXiv preprint arXiv:2502.10931, 2025.
+
+\bibitem[Phuong et~al.(2024)Phuong, Aitchison, Catt, Cogan, Kaskasoli,
+  Krakovna, Lindner, Rahtz, Assael, Hodkinson, Howard, Lieberum, Kumar, Raad,
+  Webson, Ho, Lin, Farquhar, Hutter, Deletang, Ruoss, El-Sayed, Brown, Dragan,
+  Shah, Dafoe, and Shevlane]{phuong2024dangerous}
+Mary Phuong, Matthew Aitchison, Elliot Catt, Sarah Cogan, Alexandre Kaskasoli,
+  Victoria Krakovna, David Lindner, Matthew Rahtz, Yannis Assael, Sarah
+  Hodkinson, Heidi Howard, Tom Lieberum, Ramana Kumar, Maria~Abi Raad, Albert
+  Webson, Lewis Ho, Sharon Lin, Sebastian Farquhar, Marcus Hutter, Gregoire
+  Deletang, Anian Ruoss, Seliem El-Sayed, Sasha Brown, Anca Dragan, Rohin Shah,
+  Allan Dafoe, and Toby Shevlane.
+\newblock Evaluating frontier models for dangerous capabilities.
+\newblock arXiv preprint arXiv:2403.13793 (Google DeepMind), 2024.
+
+\bibitem[Duplyakin et~al.(2019)Duplyakin, Ricci, Maricq, Wong, Duerig, Eide,
+  Stoller, Hibler, Johnson, Webb, Akella, Wang, Ricart, Landweber, Elliott,
+  Zink, Cecchet, Kar, and Mishra]{duplyakin2019cloudlab}
+Dmitry Duplyakin, Robert Ricci, Aleksander Maricq, Gary Wong, Jonathon Duerig,
+  Eric Eide, Leigh Stoller, Mike Hibler, David Johnson, Kirk Webb, Aditya
+  Akella, Kuangching Wang, Glenn Ricart, Larry Landweber, Chip Elliott, Michael
+  Zink, Emmanuel Cecchet, Snigdhaswin Kar, and Prabodh Mishra.
+\newblock The design and operation of {CloudLab}.
+\newblock In \emph{2019 USENIX Annual Technical Conference (USENIX ATC 19)},
+  pages 1--14, Renton, WA, 2019. USENIX Association.
+\newblock ISBN 978-1-939133-03-8.
+\newblock URL
+  \url{https://www.usenix.org/conference/atc19/presentation/duplyakin}.
+
+\end{thebibliography}

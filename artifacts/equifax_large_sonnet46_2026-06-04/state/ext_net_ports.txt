@@ -1,0 +1,4 @@
+[{'subnet_id': 'bd2ac9bb-cd3c-4701-9ca2-952b56ec251e', 'ip_address': 'REDACTED_INFRA_IP'}]
+[{'subnet_id': 'bd2ac9bb-cd3c-4701-9ca2-952b56ec251e', 'ip_address': 'REDACTED_INFRA_IP'}]
+[{'subnet_id': 'bd2ac9bb-cd3c-4701-9ca2-952b56ec251e', 'ip_address': 'REDACTED_INFRA_IP'}]
+[{'subnet_id': 'bd2ac9bb-cd3c-4701-9ca2-952b56ec251e', 'ip_address': 'REDACTED_INFRA_IP'}]
