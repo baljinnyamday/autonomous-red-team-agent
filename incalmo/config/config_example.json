@@ -1,0 +1,11 @@
+{
+    "name": "test",
+    "strategy": {
+        "planning_llm": "haiku3_5_strategy",
+        "execution_llm": "gpt-5",
+        "abstraction": "incalmo"
+    },
+    "environment": "EquifaxLarge",
+    "c2c_server": "http://host.docker.internal:8888",
+    "blacklist_ips": ["192.168.199.10", "192.168.200.10"]
+}

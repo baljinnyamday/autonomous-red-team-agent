@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "transcripts": {
+    "/Users/artisan/.cursor/projects/Users-artisan-coding-incalmo/agent-transcripts/3d756807-5228-492e-901d-3122bd8b0bc1/3d756807-5228-492e-901d-3122bd8b0bc1.jsonl": {
+      "mtimeMs": 1776685001067,
+      "lastProcessedAt": "2026-04-20T11:39:52Z"
+    },
+    "/Users/artisan/.cursor/projects/Users-artisan-coding-incalmo/agent-transcripts/3d756807-5228-492e-901d-3122bd8b0bc1/subagents/c6aa1be3-4a84-4985-af95-770270c23fe8.jsonl": {
+      "mtimeMs": 1776685057281,
+      "lastProcessedAt": "2026-04-20T11:39:52Z"
+    },
+    "/Users/artisan/.cursor/projects/Users-artisan-coding-incalmo/agent-transcripts/5513739d-8ace-4f06-8d84-180b54a66788/5513739d-8ace-4f06-8d84-180b54a66788.jsonl": {
+      "mtimeMs": 1773418569360,
+      "lastProcessedAt": "2026-04-20T11:39:52Z"
+    },
+    "/Users/artisan/.cursor/projects/Users-artisan-coding-incalmo/agent-transcripts/b2034e3d-a6e2-409a-b809-a8806c8fcb85/b2034e3d-a6e2-409a-b809-a8806c8fcb85.jsonl": {
+      "mtimeMs": 1773415951026,
+      "lastProcessedAt": "2026-04-20T11:39:52Z"
+    },
+    "/Users/artisan/.cursor/projects/Users-artisan-coding-incalmo/agent-transcripts/b3c3b68c-03db-40eb-a613-8eb72da6ce1b/b3c3b68c-03db-40eb-a613-8eb72da6ce1b.jsonl": {
+      "mtimeMs": 1776684995294,
+      "lastProcessedAt": "2026-04-20T11:39:52Z"
+    },
+    "/Users/artisan/.cursor/projects/Users-artisan-coding-incalmo/agent-transcripts/fa3fc85d-0409-4fef-bd03-46129ca7b38b/fa3fc85d-0409-4fef-bd03-46129ca7b38b.jsonl": {
+      "mtimeMs": 1773416371587,
+      "lastProcessedAt": "2026-04-20T11:39:52Z"
+    },
+    "/Users/artisan/.cursor/projects/Users-artisan-coding-incalmo/agent-transcripts/fe224237-11db-4bf3-9b27-a64641d609a8/fe224237-11db-4bf3-9b27-a64641d609a8.jsonl": {
+      "mtimeMs": 1775591134326,
+      "lastProcessedAt": "2026-04-20T11:39:52Z"
+    }
+  }
+}

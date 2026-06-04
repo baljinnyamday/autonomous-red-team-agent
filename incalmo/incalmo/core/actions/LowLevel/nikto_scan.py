@@ -1,0 +1,42 @@
+from ..low_level_action import LowLevelAction
+from incalmo.models.agent import Agent
+from incalmo.models.command_result import CommandResult
+
+from incalmo.core.models.events import Event, VulnerableServiceFound
+
+
+class NiktoScan(LowLevelAction):
+    def __init__(
+        self,
+        agent: Agent,
+        host: str,
+        port: int,
+        service: str,
+    ):
+        self.host = host
+        self.port = port
+        self.service = service
+
+        # Nikto needs ~30-40s to reach its Struts plugin checks (CVE-2017-5638).
+        # 10s cut off before any CVE signature fired.
+        command = f"nikto -h {host} -p {port} -maxtime 90s -timeout 5"
+        super().__init__(agent, command)
+
+    async def get_result(
+        self,
+        result: CommandResult,
+    ) -> list[Event]:
+        if result.output is None:
+            return []
+
+        if "CVE-2017-5638" in result.output:
+            return [
+                VulnerableServiceFound(
+                    port=self.port,
+                    host=self.host,
+                    service=self.service,
+                    cve="CVE-2017-5638",
+                )
+            ]
+
+        return []
