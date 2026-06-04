@@ -33,12 +33,12 @@ def test_analysis_slash_command_reports_usage_history_cost_and_audit(tmp_path: P
         {
             "timestamp": "2026-05-29T12:00:02+00:00",
             "event_type": "tool_call",
-            "tool_name": "bash",
+            "tool_name": "exec",
         },
         {
             "timestamp": "2026-05-29T12:00:03+00:00",
             "event_type": "tool_result",
-            "tool_name": "bash",
+            "tool_name": "exec",
             "success": True,
         },
         {
@@ -86,7 +86,7 @@ def test_analysis_slash_command_reports_usage_history_cost_and_audit(tmp_path: P
         "audit events · events=6, tasks=1, model_turns=1, tool_calls=1, tool_results=1, "
         "tool_success=1, tool_errors=0, completed_runs=1, failed_runs=0"
     ) in output
-    assert "tools · bash=1" in output
+    assert "tools · exec=1" in output
     assert "audit timing · first=2026-05-29T12:00:00+00:00" in output
     assert "chat history · messages=3, system=1, user=1, assistant=1, tool=0" in output
     assert f"audit_log={audit_log_path}" in output

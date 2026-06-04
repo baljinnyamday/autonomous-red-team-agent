@@ -77,7 +77,7 @@ def test_audit_observer_round_trips_through_load_audit(tmp_path: Path) -> None:
         LoopEvent(
             type="tool_call",
             iteration=1,
-            tool_name="bash",
+            tool_name="exec",
             call_id="call_1",
             arguments={"command": "ls"},
         )
@@ -166,7 +166,11 @@ def test_usage_summary_from_audit_counts_cache_hits() -> None:
 def test_render_audit_pretty_prints_recorded_run() -> None:
     records = [
         {"event_type": "thinking", "text": "I will list the directory"},
-        {"event_type": "tool_call", "tool_name": "bash", "arguments": {"command": "ls ~"}},
+        {
+            "event_type": "tool_call",
+            "tool_name": "exec",
+            "arguments": {"host": "operator", "command": "ls ~"},
+        },
         {"event_type": "tool_result", "success": True, "output": "report.txt"},
         {
             "event_type": "usage",
@@ -186,7 +190,7 @@ def test_render_audit_pretty_prints_recorded_run() -> None:
 
     output = console.export_text()
     assert "thinking" in output
-    assert "bash" in output
+    assert "exec" in output
     assert "command: ls ~" in output
     assert "report.txt" in output
     assert "cached_input=250 (25.0%)" in output

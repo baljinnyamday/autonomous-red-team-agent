@@ -20,9 +20,11 @@ uv run main.py --help
 ```
 
 `uv run main.py` starts the simple agent loop. Its default config uses the OpenAI
-Responses provider (`AGENT_PROVIDER=openai`) and registers the local `bash` tool.
+Responses provider (`AGENT_PROVIDER=openai`) and registers `exec` (host-scoped
+commands via local shell or on-host HTTP runner) and `finish`.
 Set `OPENAI_API_KEY` and `AUTHORIZED_ENGAGEMENT=true` in `.env` before running
-an agent task. Describe hosts and scope in the task prompt or engagement metadata.
+an agent task. Seed multi-host scope with `ENGAGEMENT_TOPOLOGY_PATH` (see
+`examples/engagement-topology.example.yaml`).
 Interactive `main.py` sessions keep chat history for the current process and write
 observable user, assistant, tool, and usage events under `AUDIT_LOG_PATH` using
 dated per-run logs like `.runs/YYYY-MM-DD/analytics/run-0001.jsonl`.

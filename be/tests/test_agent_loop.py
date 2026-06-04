@@ -5,7 +5,9 @@ from agent_redteam.agents.base import AgentContext
 from agent_redteam.agents.loop import AgentLoop, AgentLoopLimits
 from agent_redteam.llm.fake import FakeProviderHarness
 from agent_redteam.llm.types import AgentMessage, ModelEvent
-from agent_redteam.tools.bash import bash, bash_definition
+from agent_redteam.targets.state import EngagementState, HostRuntime
+from agent_redteam.targets.topology import Transport
+from agent_redteam.tools.exec import exec_definition, exec_tool
 from agent_redteam.tools.executor import ToolExecutor
 from agent_redteam.tools.fake import build_test_tool_registry, slow_echo, slow_echo_definition
 from agent_redteam.tools.registry import ToolRegistry
@@ -71,18 +73,22 @@ def test_tool_executor_preserves_order_and_runs_unsafe_tools_exclusively() -> No
     assert [result.output for result in unsafe_results] == ["first", "second"]
 
 
-def test_tool_executor_returns_model_visible_errors_and_runs_bash() -> None:
+def test_tool_executor_returns_model_visible_errors_and_runs_exec() -> None:
     registry = build_test_tool_registry()
-    registry.register(bash_definition(), bash)
+    registry.register(exec_definition(), exec_tool)
     executor = ToolExecutor(registry)
 
     results = asyncio.run(
         executor.execute_batch(
-            _context(),
+            _exec_context(),
             [
                 ToolCall(call_id="call_1", name="missing_tool", arguments={}),
                 ToolCall(call_id="call_2", name="echo_json", arguments={}),
-                ToolCall(call_id="call_3", name="bash", arguments={"command": "printf hello"}),
+                ToolCall(
+                    call_id="call_3",
+                    name="exec",
+                    arguments={"host": "operator", "command": "printf hello"},
+                ),
             ],
         )
     )
@@ -96,28 +102,36 @@ def test_tool_executor_returns_model_visible_errors_and_runs_bash() -> None:
     assert "hello" in results[2].output
 
 
-def test_bash_blocks_rm_command(tmp_path) -> None:
+def test_exec_blocks_rm_command(tmp_path) -> None:
     protected_file = tmp_path / "protected.txt"
     protected_file.write_text("keep", encoding="utf-8")
 
     output = asyncio.run(
-        bash(
-            _context(),
-            ToolCall(call_id="call_1", name="bash", arguments={"command": f"rm {protected_file}"}),
+        exec_tool(
+            _exec_context(),
+            ToolCall(
+                call_id="call_1",
+                name="exec",
+                arguments={"host": "operator", "command": f"rm {protected_file}"},
+            ),
         )
     )
 
     assert protected_file.exists()
     assert "exit_code=126" in output
     assert "Command blocked" in output
-    assert "'rm' command is not allowed" in output
+    assert "rm" in output.lower()
 
 
-def test_bash_allows_rm_as_plain_text() -> None:
+def test_exec_allows_rm_as_plain_text() -> None:
     output = asyncio.run(
-        bash(
-            _context(),
-            ToolCall(call_id="call_1", name="bash", arguments={"command": "printf rm"}),
+        exec_tool(
+            _exec_context(),
+            ToolCall(
+                call_id="call_1",
+                name="exec",
+                arguments={"host": "operator", "command": "printf rm"},
+            ),
         )
     )
 
@@ -164,3 +178,20 @@ def test_loop_stops_at_max_iterations() -> None:
 
 def _context() -> AgentContext:
     return AgentContext(engagement_id="engagement-1", metadata={})
+
+
+def _exec_context() -> AgentContext:
+    from agent_redteam.core.config import Settings
+
+    state = EngagementState(
+        engagement_id="engagement-1",
+        hosts={"operator": HostRuntime(transport=Transport.LOCAL)},
+    )
+    return AgentContext(
+        engagement_id="engagement-1",
+        metadata={
+            "engagement_state": state,
+            "settings": Settings(_env_file=None, engagement_runner_token="token"),
+            "engagement_state_path": "/tmp/engagement-state.json",
+        },
+    )

@@ -60,7 +60,7 @@ def test_main_args_parses_optional_task() -> None:
     assert args.task == "scan internal segment"
 
 
-def test_default_agent_registry_contains_only_bash() -> None:
+def test_default_agent_registry_contains_exec_and_finish() -> None:
     registry = _build_registry()
 
-    assert [tool.name for tool in registry.definitions()] == ["bash"]
+    assert [tool.name for tool in registry.definitions()] == ["exec", "finish"]

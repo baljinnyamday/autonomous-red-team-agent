@@ -8,7 +8,13 @@ def _record_long_run(history: ExpandableHistory) -> list[str]:
     record = history.observer()
     lines = [f"line {n}" for n in range(20)]
     record(LoopEvent(type="run_started", text="grab the file"))
-    record(LoopEvent(type="tool_call", tool_name="bash", arguments={"command": "ls ~"}))
+    record(
+        LoopEvent(
+            type="tool_call",
+            tool_name="exec",
+            arguments={"host": "operator", "command": "ls ~"},
+        )
+    )
     record(LoopEvent(type="tool_result", success=True, output="\n".join(lines)))
     return lines
 

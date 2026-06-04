@@ -40,12 +40,29 @@ class Settings(BaseSettings):
     anthropic_model: str = "claude-sonnet-4-5"
     audit_log_path: str = ".runs"
     log_level: str = "INFO"
+    engagement_topology_path: str | None = None
+    engagement_state_path: str | None = None
+    engagement_runner_token: SecretStr | None = None
+    bash_timeout_seconds: float | None = None
+    runner_port: int = 8765
+    default_exec_timeout_seconds: float = 3600.0
+
+    def effective_exec_timeout_seconds(self) -> float | None:
+        if self.bash_timeout_seconds is not None:
+            return self.bash_timeout_seconds
+        return self.default_exec_timeout_seconds
 
     def require_openai_api_key(self) -> str:
         return _required_secret_value(self.openai_api_key, "OPENAI_API_KEY")
 
     def require_anthropic_api_key(self) -> str:
         return _required_secret_value(self.anthropic_api_key, "ANTHROPIC_API_KEY")
+
+    def require_runner_token(self) -> str:
+        return _required_secret_value(
+            self.engagement_runner_token,
+            "ENGAGEMENT_RUNNER_TOKEN",
+        )
 
     @field_validator("engagement_id", mode="before")
     @classmethod
@@ -65,11 +82,21 @@ class Settings(BaseSettings):
         "openai_api_key",
         "anthropic_api_key",
         "openai_prompt_cache_key",
+        "engagement_topology_path",
+        "engagement_state_path",
+        "engagement_runner_token",
         mode="before",
     )
     @classmethod
     def _blank_optional_to_none(cls, value: object) -> object:
         if value == "":
+            return None
+        return value
+
+    @field_validator("bash_timeout_seconds", mode="before")
+    @classmethod
+    def _blank_timeout_to_none(cls, value: object) -> object:
+        if value == "" or value is None:
             return None
         return value
 

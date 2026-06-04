@@ -1,0 +1,15 @@
+engagement_id: eng-example
+notes: Example multi-host lab topology for exec/runner development.
+hosts:
+  - id: operator
+    transport: local
+  - id: jump
+    transport: ssh_pending
+    address: bastion.lab.example
+    user: ubuntu
+  - id: web
+    transport: ssh_pending
+    address: 10.0.0.12
+    user: ubuntu
+    via:
+      - jump
