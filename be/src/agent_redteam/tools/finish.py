@@ -9,8 +9,7 @@ FINISH_TOOL_NAME = "finish"
 
 class FinishArgs(ToolArgs):
     reason: str = Field(
-        default="",
-        description="Short summary of why the engagement objective is complete.",
+        description="Why the engagement objective is complete (one short paragraph).",
     )
 
 
@@ -18,9 +17,11 @@ def finish_definition() -> ToolDefinition:
     return ToolDefinition(
         name=FINISH_TOOL_NAME,
         description=(
-            "Declare the engagement objective complete and end the autonomous run. "
-            "Call this only when the objective is genuinely met, and do not call any "
-            "further tools afterward."
+            "End the autonomous run when the engagement objective is complete.\n\n"
+            "Usage:\n"
+            "- Call once when the objective is genuinely met or in-scope actions are "
+            "exhausted.\n"
+            "- Do not call any further tools after finish."
         ),
         input_schema=tool_input_schema(FinishArgs),
         input_model=FinishArgs,
@@ -31,6 +32,4 @@ def finish_definition() -> ToolDefinition:
 
 async def finish(_context: AgentContext, tool_call: ToolCall) -> str:
     arguments = FinishArgs.model_validate(tool_call.arguments or {})
-    if arguments.reason:
-        return f"Objective marked complete: {arguments.reason}"
-    return "Objective marked complete."
+    return f"Objective marked complete: {arguments.reason}"

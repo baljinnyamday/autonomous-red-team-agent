@@ -4,7 +4,7 @@ from typing import Literal
 from pydantic import Field
 
 from agent_redteam.agents.base import AgentContext
-from agent_redteam.core.config import Settings, get_settings
+from agent_redteam.core.config import DEFAULT_GREP_TIMEOUT_SECONDS, Settings, get_settings
 from agent_redteam.execution.result import CommandResult
 from agent_redteam.execution.run_on_host import execute_on_host
 from agent_redteam.targets.state import EngagementState
@@ -21,37 +21,36 @@ _SUCCESS_EXIT_CODES = frozenset({0, 1, 141})
 
 class GrepArgs(ToolArgs):
     host: str = Field(description="Topology host id to search on.")
-    pattern: str = Field(description="Regular expression pattern to search for in file contents.")
+    pattern: str = Field(
+        description='Regular expression pattern (ripgrep/grep -E syntax, e.g. "password|token").',
+    )
     path: str | None = Field(
         default=None,
-        description=(
-            "File or directory to search. Pass null to search from the host working directory."
-        ),
+        description="File or directory to search (maps to rg PATH).",
     )
     glob: str | None = Field(
         default=None,
-        description='Include filter (e.g. "*.conf", "*.{yaml,yml}"). Pass null for all files.',
+        description='Include filter (e.g. "*.conf", "*.{yaml,yml}"). Maps to rg --glob.',
     )
-    max_matches: int | None = Field(
-        default=None,
+    max_matches: int = Field(
+        default=DEFAULT_MAX_MATCHES,
         ge=1,
         le=10000,
-        description=(
-            "Maximum number of output lines to return (1-10000). "
-            "Pass null for the default cap (100)."
-        ),
+        description="Maximum output lines to return (1-10000).",
     )
-    ignore_case: bool | None = Field(
-        default=None,
-        description="Case-insensitive search. Pass null for case-sensitive.",
+    ignore_case: bool = Field(
+        default=False,
+        description="Case-insensitive search (-i).",
     )
-    output_mode: GrepOutputMode | None = Field(
-        default=None,
-        description=(
-            'Output mode: "content" shows matching lines (default), '
-            '"files" shows file paths only, "count" shows match counts per file. '
-            "Pass null for content mode."
-        ),
+    output_mode: GrepOutputMode = Field(
+        default="content",
+        description='"content" | "files" | "count".',
+    )
+    timeout_seconds: float = Field(
+        default=DEFAULT_GREP_TIMEOUT_SECONDS,
+        ge=1,
+        le=3600,
+        description="Wall-clock limit in seconds (1-3600).",
     )
 
 
@@ -59,10 +58,16 @@ def grep_definition() -> ToolDefinition:
     return ToolDefinition(
         name="grep",
         description=(
-            "Search file contents on an engagement topology host using ripgrep when available, "
-            "with a grep -r fallback. Prefer this over hand-rolled find | grep for config and "
-            "secret hunting. Returns matching lines (path:line:content), file paths, or counts "
-            "depending on output_mode. Use bash to read full files after promising matches."
+            "Search file contents on an engagement topology host. Uses ripgrep when "
+            "available, otherwise grep -rE.\n\n"
+            "Usage:\n"
+            "- ALWAYS use grep for regex content search. NEVER invoke grep or rg via bash.\n"
+            '- Supports full regex syntax (e.g. "secret|password", "flag\\\\{[^}]+\\\\}").\n'
+            '- Filter files with glob (e.g. "*.conf", "*.{yaml,yml}").\n'
+            "- output_mode content returns path:line:match; files returns paths only; "
+            "count returns per-file totals.\n"
+            "- Use bash to read full files after promising matches.\n"
+            "- Narrow path and glob before searching large trees (e.g. entire $HOME)."
         ),
         input_schema=tool_input_schema(GrepArgs),
         input_model=GrepArgs,
@@ -77,25 +82,26 @@ async def grep_tool(context: AgentContext, tool_call: ToolCall) -> str:
     settings = _settings_from_context(context)
 
     command = build_grep_command(arguments)
+    timeout = settings.resolved_grep_timeout_seconds(arguments.timeout_seconds)
     result, new_state = await execute_on_host(
         state,
         arguments.host,
         command,
         settings,
+        timeout_seconds=timeout,
     )
     context.metadata["engagement_state"] = new_state
-    return format_grep_result(result, max_matches=_effective_max_matches(arguments.max_matches))
+    return format_grep_result(result, max_matches=arguments.max_matches)
 
 
 def build_grep_command(arguments: GrepArgs) -> str:
     search_path = arguments.path or DEFAULT_SEARCH_PATH
-    max_matches = _effective_max_matches(arguments.max_matches)
-    ignore_case = bool(arguments.ignore_case)
-    output_mode = arguments.output_mode or "content"
+    ignore_case = arguments.ignore_case
+    output_mode = arguments.output_mode
 
     quoted_pattern = shlex.quote(arguments.pattern)
     quoted_path = shlex.quote(search_path)
-    quoted_max = shlex.quote(str(max_matches))
+    quoted_max = shlex.quote(str(arguments.max_matches))
 
     rg_mode_flags = _rg_output_flags(output_mode)
     grep_mode_flags = _grep_output_flags(output_mode)
@@ -131,7 +137,7 @@ def build_grep_command(arguments: GrepArgs) -> str:
         part
         for part in (
             "grep",
-            "-rnI",
+            "-rnIE",
             case_flag,
             grep_include,
             grep_mode_flags,
@@ -151,7 +157,10 @@ def build_grep_command(arguments: GrepArgs) -> str:
 
 def format_grep_result(result: CommandResult, *, max_matches: int) -> str:
     if result.timed_out:
-        return "Search timed out. Narrow path, glob, or pattern and retry."
+        return (
+            "Search timed out. Narrow path, glob, or pattern and retry, "
+            "or increase timeout_seconds if the scope is intentional."
+        )
 
     stdout = _decode(result.stdout)
     stderr = _decode(result.stderr)
@@ -193,12 +202,6 @@ def _grep_output_flags(output_mode: GrepOutputMode) -> str:
     if output_mode == "count":
         return "-c"
     return ""
-
-
-def _effective_max_matches(max_matches: int | None) -> int:
-    if max_matches is None:
-        return DEFAULT_MAX_MATCHES
-    return max_matches
 
 
 def _decode(value: bytes) -> str:

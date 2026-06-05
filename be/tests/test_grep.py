@@ -21,11 +21,7 @@ from agent_redteam.tools.types import ToolCall
 
 
 def _settings(**overrides: object) -> Settings:
-    return Settings(
-        _env_file=None,
-        bash_timeout_seconds=None,
-        **overrides,
-    )
+    return Settings(_env_file=None, **overrides)
 
 
 def _local_state() -> EngagementState:
@@ -72,7 +68,7 @@ def test_build_grep_command_includes_rg_fallback_and_head() -> None:
     assert "command -v rg" in command
     assert command.startswith("set -o pipefail; ")
     assert "rg --no-config" in command
-    assert "grep -rnI" in command
+    assert "grep -rnIE" in command
     assert "head -n 50" in command
     assert "-i" in command
     assert "--glob '*.conf'" in command
@@ -86,10 +82,6 @@ def test_build_grep_command_quotes_special_characters() -> None:
             host="operator",
             pattern="it's a $secret",
             path="/tmp/my dir",
-            glob=None,
-            max_matches=None,
-            ignore_case=None,
-            output_mode=None,
         )
     )
 
@@ -97,15 +89,27 @@ def test_build_grep_command_quotes_special_characters() -> None:
     assert "it's a $secret" in command or "it'" in command
 
 
+def test_build_grep_command_uses_extended_regex_fallback() -> None:
+    command = build_grep_command(
+        GrepArgs(
+            host="operator",
+            pattern=r"flag\{|FLAG\{|secret|token",
+            path="/home/azureuser",
+            glob=None,
+            max_matches=200,
+            ignore_case=True,
+            output_mode="content",
+        )
+    )
+
+    assert "grep -rnIE -i" in command
+
+
 def test_build_grep_command_files_and_count_modes() -> None:
     files_cmd = build_grep_command(
         GrepArgs(
             host="operator",
             pattern="password",
-            path=None,
-            glob=None,
-            max_matches=None,
-            ignore_case=None,
             output_mode="files",
         )
     )
@@ -113,10 +117,6 @@ def test_build_grep_command_files_and_count_modes() -> None:
         GrepArgs(
             host="operator",
             pattern="password",
-            path=None,
-            glob=None,
-            max_matches=None,
-            ignore_case=None,
             output_mode="count",
         )
     )
@@ -189,10 +189,6 @@ def test_local_grep_finds_planted_secret(tmp_path: Path) -> None:
                     "host": "operator",
                     "pattern": "hunter2",
                     "path": str(search_dir),
-                    "glob": None,
-                    "max_matches": None,
-                    "ignore_case": None,
-                    "output_mode": None,
                 },
             ),
         )
@@ -218,10 +214,6 @@ def test_local_grep_invalid_regex_surfaces_error(tmp_path: Path) -> None:
                     "host": "operator",
                     "pattern": "[",
                     "path": str(search_dir),
-                    "glob": None,
-                    "max_matches": None,
-                    "ignore_case": None,
-                    "output_mode": None,
                 },
             ),
         )
@@ -247,9 +239,6 @@ def test_local_grep_respects_glob(tmp_path: Path) -> None:
                     "pattern": "token=",
                     "path": str(search_dir),
                     "glob": "*.conf",
-                    "max_matches": None,
-                    "ignore_case": None,
-                    "output_mode": None,
                 },
             ),
         )
@@ -275,9 +264,6 @@ def test_local_grep_files_mode(tmp_path: Path) -> None:
                     "host": "operator",
                     "pattern": "secret=",
                     "path": str(search_dir),
-                    "glob": None,
-                    "max_matches": None,
-                    "ignore_case": None,
                     "output_mode": "files",
                 },
             ),
@@ -290,23 +276,148 @@ def test_local_grep_files_mode(tmp_path: Path) -> None:
     assert "secret=1" not in output
 
 
+def test_grep_tool_passes_agent_timeout_override(tmp_path: Path) -> None:
+    captured: list[float | None] = []
+
+    async def fake_execute_on_host(
+        state: EngagementState,
+        host_id: str,
+        command: str,
+        settings: Settings,
+        *,
+        timeout_seconds: float | None = None,
+        run_command=None,
+    ) -> tuple[CommandResult, EngagementState]:
+        captured.append(timeout_seconds)
+        return CommandResult(exit_code=1, stdout=b"", stderr=b"", timed_out=False), state
+
+    import agent_redteam.tools.grep as grep_module
+
+    original = grep_module.execute_on_host
+    grep_module.execute_on_host = fake_execute_on_host
+    try:
+        asyncio.run(
+            grep_tool(
+                _context(tmp_path, settings=_settings(grep_timeout_seconds=120.0)),
+                ToolCall(
+                    call_id="g-timeout",
+                    name="grep",
+                    arguments={
+                        "host": "operator",
+                        "pattern": "secret",
+                        "path": "/tmp",
+                        "timeout_seconds": 30.0,
+                    },
+                ),
+            )
+        )
+    finally:
+        grep_module.execute_on_host = original
+
+    assert captured == [30.0]
+
+
+def test_grep_tool_uses_settings_default_timeout_when_unset(tmp_path: Path) -> None:
+    """Omit defaulted fields; env grep_timeout_seconds applies when timeout is still 120."""
+    captured: list[float | None] = []
+
+    async def fake_execute_on_host(
+        state: EngagementState,
+        host_id: str,
+        command: str,
+        settings: Settings,
+        *,
+        timeout_seconds: float | None = None,
+        run_command=None,
+    ) -> tuple[CommandResult, EngagementState]:
+        captured.append(timeout_seconds)
+        return CommandResult(exit_code=1, stdout=b"", stderr=b"", timed_out=False), state
+
+    import agent_redteam.tools.grep as grep_module
+
+    original = grep_module.execute_on_host
+    grep_module.execute_on_host = fake_execute_on_host
+    try:
+        asyncio.run(
+            grep_tool(
+                _context(tmp_path, settings=_settings(grep_timeout_seconds=90.0)),
+                ToolCall(
+                    call_id="g-default-timeout",
+                    name="grep",
+                    arguments={
+                        "host": "operator",
+                        "pattern": "secret",
+                        "path": "/tmp",
+                    },
+                ),
+            )
+        )
+    finally:
+        grep_module.execute_on_host = original
+
+    assert captured == [90.0]
+
+
+def test_format_grep_result_timeout_message_mentions_retry_and_override() -> None:
+    result = CommandResult(exit_code=None, stdout=b"", stderr=b"", timed_out=True)
+    output = format_grep_result(result, max_matches=100)
+
+    assert "timed out" in output.lower()
+    assert "timeout_seconds" in output
+
+
+def test_grep_args_rejects_null_on_non_nullable_fields() -> None:
+    with pytest.raises(ValidationError):
+        GrepArgs.model_validate(
+            {
+                "host": "operator",
+                "pattern": "secret",
+                "path": None,
+                "glob": None,
+                "max_matches": None,
+                "ignore_case": None,
+                "output_mode": None,
+                "timeout_seconds": None,
+            }
+        )
+
+
 def test_grep_args_rejects_zero_max_matches() -> None:
     with pytest.raises(ValidationError):
         GrepArgs(
             host="operator",
             pattern="secret",
-            path=None,
-            glob=None,
             max_matches=0,
-            ignore_case=None,
-            output_mode=None,
+        )
+
+
+def test_grep_args_rejects_invalid_timeout() -> None:
+    with pytest.raises(ValidationError):
+        GrepArgs(
+            host="operator",
+            pattern="secret",
+            timeout_seconds=0,
         )
 
 
 def test_grep_schema_is_strict_openai_compatible() -> None:
+    from agent_redteam.core.config import DEFAULT_GREP_TIMEOUT_SECONDS
+    from agent_redteam.tools.grep import DEFAULT_MAX_MATCHES
+
     schema = grep_definition().input_schema
     properties = schema["properties"]
     assert schema["additionalProperties"] is False
     assert schema["required"] == list(properties.keys())
-    for prop_schema in properties.values():
-        assert "default" not in prop_schema
+    assert properties["timeout_seconds"]["default"] == DEFAULT_GREP_TIMEOUT_SECONDS
+    assert properties["max_matches"]["default"] == DEFAULT_MAX_MATCHES
+    assert properties["ignore_case"]["default"] is False
+    assert properties["output_mode"]["default"] == "content"
+    assert properties["path"]["default"] is None
+    assert "default" not in properties["host"]
+    assert "default" not in properties["pattern"]
+
+
+def test_grep_tool_description_has_usage_without_defaults_section() -> None:
+    description = grep_definition().description
+    assert "Usage:" in description
+    assert "Defaults:" not in description
