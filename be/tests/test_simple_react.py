@@ -35,7 +35,7 @@ def test_load_base_system_prompt_from_packaged_markdown() -> None:
 
     assert prompt
     assert prompt == prompt.strip()
-    assert "exec" in prompt
+    assert "bash" in prompt
 
 
 def test_run_task_uses_topology_system_prompt() -> None:

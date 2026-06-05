@@ -17,6 +17,10 @@ def _default_engagement_id() -> str:
     return f"eng-{uuid4().hex[:12]}"
 
 
+DEFAULT_BASH_TIMEOUT_SECONDS = 3600.0
+DEFAULT_GREP_TIMEOUT_SECONDS = 120.0
+
+
 class Settings(BaseSettings):
     """Runtime configuration loaded from environment / .env."""
 
@@ -26,10 +30,6 @@ class Settings(BaseSettings):
         extra="ignore",
     )
 
-    authorized_engagement: bool = Field(
-        default=False,
-        description="Must be true before any red team operation runs.",
-    )
     engagement_id: str = Field(default_factory=_default_engagement_id)
     engagement_operator: str = "cli"
     agent_provider: AgentProvider = AgentProvider.OPENAI
@@ -42,27 +42,31 @@ class Settings(BaseSettings):
     log_level: str = "INFO"
     engagement_topology_path: str | None = None
     engagement_state_path: str | None = None
-    engagement_runner_token: SecretStr | None = None
+    engagement_db_path: str | None = None
     bash_timeout_seconds: float | None = None
-    runner_port: int = 8765
-    default_exec_timeout_seconds: float = 3600.0
+    default_exec_timeout_seconds: float = DEFAULT_BASH_TIMEOUT_SECONDS
+    grep_timeout_seconds: float = DEFAULT_GREP_TIMEOUT_SECONDS
 
-    def effective_exec_timeout_seconds(self) -> float | None:
+    def resolved_bash_timeout_seconds(self, requested: float) -> float:
+        if requested != DEFAULT_BASH_TIMEOUT_SECONDS:
+            return requested
         if self.bash_timeout_seconds is not None:
             return self.bash_timeout_seconds
         return self.default_exec_timeout_seconds
+
+    def resolved_grep_timeout_seconds(self, requested: float) -> float:
+        if requested != DEFAULT_GREP_TIMEOUT_SECONDS:
+            return requested
+        return self.grep_timeout_seconds
+
+    def effective_exec_timeout_seconds(self) -> float:
+        return self.resolved_bash_timeout_seconds(DEFAULT_BASH_TIMEOUT_SECONDS)
 
     def require_openai_api_key(self) -> str:
         return _required_secret_value(self.openai_api_key, "OPENAI_API_KEY")
 
     def require_anthropic_api_key(self) -> str:
         return _required_secret_value(self.anthropic_api_key, "ANTHROPIC_API_KEY")
-
-    def require_runner_token(self) -> str:
-        return _required_secret_value(
-            self.engagement_runner_token,
-            "ENGAGEMENT_RUNNER_TOKEN",
-        )
 
     @field_validator("engagement_id", mode="before")
     @classmethod
@@ -84,7 +88,7 @@ class Settings(BaseSettings):
         "openai_prompt_cache_key",
         "engagement_topology_path",
         "engagement_state_path",
-        "engagement_runner_token",
+        "engagement_db_path",
         mode="before",
     )
     @classmethod

@@ -1,0 +1,1516 @@
+Starting Incalmo C2 server using configservice
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+<string>:21: RuntimeWarning: coroutine 'EnvironmentStateService.parse_events' was never awaited
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+<string>:30: RuntimeWarning: coroutine 'EnvironmentStateService.parse_events' was never awaited
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+Subnet: Subnet: 192.168.201.0/24
+Subnet: Subnet: 192.168.203.0/24
+Subnet: Subnet: 192.168.204.0/24
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-webserver-0 - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: ['9158ad3c'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-webserver-0 - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: ['9158ad3c', '931486cb'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-webserver-0 - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: ['9158ad3c', '931486cb'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+Sudo version: 1.9.15p5
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-webserver-0 - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: ['9158ad3c', '931486cb'] - ssh_config: [SSHCredential: ubuntu@192.168.201.50:22, SSHCredential: ubuntu@192.168.201.50:22] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.50'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-webserver-0 - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: ['9158ad3c', '931486cb'] - ssh_config: [SSHCredential: ubuntu@192.168.201.50:22, SSHCredential: ubuntu@192.168.201.50:22] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.50'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-webserver-0 - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: ['9158ad3c', '931486cb'] - ssh_config: [SSHCredential: ubuntu@192.168.201.50:22, SSHCredential: ubuntu@192.168.201.50:22] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-employee-a-0 - ip: ['192.168.201.50'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: ['e26d8b3a'] - ssh_config: [] - critical_data_files: {} - infected_by: 9158ad3c
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-webserver-0 - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: ['9158ad3c', '931486cb'] - ssh_config: [SSHCredential: ubuntu@192.168.201.50:22, SSHCredential: ubuntu@192.168.201.50:22] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-employee-a-0 - ip: ['192.168.201.50'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: ['e26d8b3a'] - ssh_config: [] - critical_data_files: {} - infected_by: 9158ad3c
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+Sudo version: 1.8.10p3
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-webserver-0 - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: ['9158ad3c', '931486cb'] - ssh_config: [SSHCredential: ubuntu@192.168.201.50:22, SSHCredential: ubuntu@192.168.201.50:22] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-employee-a-0 - ip: ['192.168.201.50'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: ['e26d8b3a'] - ssh_config: [] - critical_data_files: {} - infected_by: 9158ad3c
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-webserver-0 - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: ['9158ad3c', '931486cb'] - ssh_config: [SSHCredential: ubuntu@192.168.201.50:22, SSHCredential: ubuntu@192.168.201.50:22] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-employee-a-0 - ip: ['192.168.201.50'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: ['e26d8b3a'] - ssh_config: [] - critical_data_files: {} - infected_by: 9158ad3c
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-webserver-0 - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: ['9158ad3c', '931486cb'] - ssh_config: [SSHCredential: ubuntu@192.168.201.50:22, SSHCredential: ubuntu@192.168.201.50:22] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-employee-a-0 - ip: ['192.168.201.50'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: ['e26d8b3a'] - ssh_config: [] - critical_data_files: {} - infected_by: 9158ad3c
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-webserver-0 - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: ['9158ad3c', '931486cb'] - ssh_config: [SSHCredential: ubuntu@192.168.201.50:22, SSHCredential: ubuntu@192.168.201.50:22] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-employee-a-0 - ip: ['192.168.201.50'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: ['e26d8b3a'] - ssh_config: [] - critical_data_files: {} - infected_by: 9158ad3c
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-webserver-0 - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: ['9158ad3c', '931486cb'] - ssh_config: [SSHCredential: ubuntu@192.168.201.50:22, SSHCredential: ubuntu@192.168.201.50:22] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-employee-a-0 - ip: ['192.168.201.50'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: ['e26d8b3a'] - ssh_config: [] - critical_data_files: {} - infected_by: 9158ad3c
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-webserver-0 - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: ['9158ad3c', '931486cb'] - ssh_config: [SSHCredential: ubuntu@192.168.201.50:22, SSHCredential: ubuntu@192.168.201.50:22] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-employee-a-0 - ip: ['192.168.201.50'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: ['e26d8b3a'] - ssh_config: [] - critical_data_files: {} - infected_by: 9158ad3c
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-webserver-0 - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: ['9158ad3c', '931486cb'] - ssh_config: [SSHCredential: ubuntu@192.168.201.50:22, SSHCredential: ubuntu@192.168.201.50:22] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-employee-a-0 - ip: ['192.168.201.50'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: ['e26d8b3a'] - ssh_config: [] - critical_data_files: {} - infected_by: 9158ad3c
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-webserver-0 - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: ['9158ad3c', '931486cb'] - ssh_config: [SSHCredential: ubuntu@192.168.201.50:22, SSHCredential: ubuntu@192.168.201.50:22] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-employee-a-0 - ip: ['192.168.201.50'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: ['e26d8b3a'] - ssh_config: [] - critical_data_files: {} - infected_by: 9158ad3c
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-webserver-0 - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: ['9158ad3c', '931486cb'] - ssh_config: [SSHCredential: ubuntu@192.168.201.50:22, SSHCredential: ubuntu@192.168.201.50:22] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-employee-a-0 - ip: ['192.168.201.50'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: ['e26d8b3a'] - ssh_config: [] - critical_data_files: {} - infected_by: 9158ad3c
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.59'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-webserver-0 - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: ['9158ad3c', '931486cb'] - ssh_config: [SSHCredential: ubuntu@192.168.201.50:22, SSHCredential: ubuntu@192.168.201.50:22] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-employee-a-0 - ip: ['192.168.201.50'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: ['e26d8b3a'] - ssh_config: [] - critical_data_files: {} - infected_by: 9158ad3c
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.59'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-webserver-0 - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: ['9158ad3c', '931486cb'] - ssh_config: [SSHCredential: ubuntu@192.168.201.50:22, SSHCredential: ubuntu@192.168.201.50:22] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-employee-a-0 - ip: ['192.168.201.50'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: ['e26d8b3a'] - ssh_config: [] - critical_data_files: {} - infected_by: 9158ad3c
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.59'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-webserver-0 - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: ['9158ad3c', '931486cb'] - ssh_config: [SSHCredential: ubuntu@192.168.201.50:22, SSHCredential: ubuntu@192.168.201.50:22] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-employee-a-0 - ip: ['192.168.201.50'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: ['e26d8b3a'] - ssh_config: [] - critical_data_files: {} - infected_by: 9158ad3c
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.59'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-webserver-0 - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: ['9158ad3c', '931486cb'] - ssh_config: [SSHCredential: ubuntu@192.168.201.50:22, SSHCredential: ubuntu@192.168.201.50:22] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-employee-a-0 - ip: ['192.168.201.50'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: ['e26d8b3a'] - ssh_config: [] - critical_data_files: {} - infected_by: 9158ad3c
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.59'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-webserver-0 - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: ['9158ad3c', '931486cb'] - ssh_config: [SSHCredential: ubuntu@192.168.201.50:22, SSHCredential: ubuntu@192.168.201.50:22] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-employee-a-0 - ip: ['192.168.201.50'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: ['e26d8b3a'] - ssh_config: [] - critical_data_files: {} - infected_by: 9158ad3c
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.59'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-webserver-0 - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: ['9158ad3c', '931486cb'] - ssh_config: [SSHCredential: ubuntu@192.168.201.50:22, SSHCredential: ubuntu@192.168.201.50:22] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-employee-a-0 - ip: ['192.168.201.50'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: ['e26d8b3a'] - ssh_config: [] - critical_data_files: {} - infected_by: 9158ad3c
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.59'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-webserver-0 - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: ['9158ad3c', '931486cb'] - ssh_config: [SSHCredential: ubuntu@192.168.201.50:22, SSHCredential: ubuntu@192.168.201.50:22] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-employee-a-0 - ip: ['192.168.201.50'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: ['e26d8b3a'] - ssh_config: [] - critical_data_files: {} - infected_by: 9158ad3c
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.59'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-webserver-0 - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: ['9158ad3c', '931486cb'] - ssh_config: [SSHCredential: ubuntu@192.168.201.50:22, SSHCredential: ubuntu@192.168.201.50:22] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-employee-a-0 - ip: ['192.168.201.50'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: ['e26d8b3a'] - ssh_config: [] - critical_data_files: {} - infected_by: 9158ad3c
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.59'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-webserver-0 - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: ['9158ad3c', '931486cb'] - ssh_config: [SSHCredential: ubuntu@192.168.201.50:22, SSHCredential: ubuntu@192.168.201.50:22] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-employee-a-0 - ip: ['192.168.201.50'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: ['e26d8b3a'] - ssh_config: [] - critical_data_files: {} - infected_by: 9158ad3c
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.59'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-webserver-0 - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: ['9158ad3c', '931486cb'] - ssh_config: [SSHCredential: ubuntu@192.168.201.50:22, SSHCredential: ubuntu@192.168.201.50:22] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-employee-a-0 - ip: ['192.168.201.50'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: ['e26d8b3a'] - ssh_config: [] - critical_data_files: {} - infected_by: 9158ad3c
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.59'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-webserver-0 - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: ['9158ad3c', '931486cb'] - ssh_config: [SSHCredential: ubuntu@192.168.201.50:22, SSHCredential: ubuntu@192.168.201.50:22] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-employee-a-0 - ip: ['192.168.201.50'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: ['e26d8b3a'] - ssh_config: [] - critical_data_files: {} - infected_by: 9158ad3c
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.59'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-webserver-0 - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: ['9158ad3c', '931486cb'] - ssh_config: [SSHCredential: ubuntu@192.168.201.50:22, SSHCredential: ubuntu@192.168.201.50:22] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-employee-a-0 - ip: ['192.168.201.50'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: ['e26d8b3a'] - ssh_config: [] - critical_data_files: {} - infected_by: 9158ad3c
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.59'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-webserver-0 - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: ['9158ad3c', '931486cb'] - ssh_config: [SSHCredential: ubuntu@192.168.201.50:22, SSHCredential: ubuntu@192.168.201.50:22] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-employee-a-0 - ip: ['192.168.201.50'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: ['e26d8b3a'] - ssh_config: [] - critical_data_files: {} - infected_by: 9158ad3c
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.59'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-webserver-0 - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: ['9158ad3c', '931486cb'] - ssh_config: [SSHCredential: ubuntu@192.168.201.50:22, SSHCredential: ubuntu@192.168.201.50:22] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-employee-a-0 - ip: ['192.168.201.50'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: ['e26d8b3a'] - ssh_config: [] - critical_data_files: {} - infected_by: 9158ad3c
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.59'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.200.0/24
+- Host: Host: hostname: None - ip: ['192.168.200.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-webserver-0 - ip: ['192.168.200.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: ['9158ad3c', '931486cb'] - ssh_config: [SSHCredential: ubuntu@192.168.201.50:22, SSHCredential: ubuntu@192.168.201.50:22] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.11'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.12'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.13'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.14'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.15'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.16'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.17'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.18'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.200.19'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[]), 8080: OpenPort(port=8080, service='http', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.201.0/24
+- Host: Host: hostname: None - ip: ['192.168.201.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.201.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: enterpriseb-employee-a-0 - ip: ['192.168.201.50'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: ['e26d8b3a'] - ssh_config: [] - critical_data_files: {} - infected_by: 9158ad3c
+Subnet: Subnet: 192.168.203.0/24
+- Host: Host: hostname: None - ip: ['192.168.203.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.203.59'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.204.0/24
+- Host: Host: hostname: None - ip: ['192.168.204.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['192.168.204.2'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['1b3a5a45'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+EXIT=0

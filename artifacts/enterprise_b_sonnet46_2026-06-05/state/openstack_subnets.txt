@@ -1,0 +1,6 @@
+enterpriseb-employee_b_subnet-subnet 192.168.204.0/24
+enterpriseb-employee_a_subnet-subnet 192.168.201.0/24
+enterpriseb-management_subnet 10.0.1.0/24
+enterpriseb-database_subnet-subnet 192.168.203.0/24
+enterpriseb-webserver_subnet-subnet 192.168.200.0/24
+enterpriseb-attacker_subnet-subnet 192.168.202.0/24

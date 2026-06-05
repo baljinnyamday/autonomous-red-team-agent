@@ -12,7 +12,6 @@ Python backend for **authorized agentic red teaming**: multi-agent orchestration
 ```bash
 cd be
 cp .env.example .env
-# Set AUTHORIZED_ENGAGEMENT=true before running anything.
 
 uv sync --all-groups
 uv run redteam --help
@@ -20,10 +19,10 @@ uv run main.py --help
 ```
 
 `uv run main.py` starts the simple agent loop. Its default config uses the OpenAI
-Responses provider (`AGENT_PROVIDER=openai`) and registers `exec` (host-scoped
-commands via local shell or on-host HTTP runner) and `finish`.
-Set `OPENAI_API_KEY` and `AUTHORIZED_ENGAGEMENT=true` in `.env` before running
-an agent task. Seed multi-host scope with `ENGAGEMENT_TOPOLOGY_PATH` (see
+Responses provider (`AGENT_PROVIDER=openai`) and registers `bash` (host-scoped
+commands via local shell or direct SSH) and `finish`.
+Set `OPENAI_API_KEY` in `.env` before running an agent task. Seed multi-host
+scope with `ENGAGEMENT_TOPOLOGY_PATH` (see
 `examples/engagement-topology.example.yaml`).
 Interactive `main.py` sessions keep chat history for the current process and write
 observable user, assistant, tool, and usage events under `AUDIT_LOG_PATH` using
@@ -52,15 +51,10 @@ be/
 │   ├── api/               # HTTP API (versioned routes)
 │   ├── cli/               # `redteam` CLI entry point
 │   ├── core/              # Config, logging, shared exceptions
-│   ├── guardrails/        # Authorization and in-scope enforcement
-│   ├── orchestration/     # Multi-agent workflows and guardrail enforcement
+│   ├── orchestration/     # Multi-agent workflows
 │   ├── schemas/           # Shared Pydantic DTOs
 │   ├── targets/           # Authorized target definitions
 │   └── techniques/        # Technique / playbook registry
 ├── scripts/               # Operational helpers (non-package)
-└── docs/                  # Architecture and authorized-use policy
+└── docs/                  # Architecture notes
 ```
-
-## Authorized use
-
-This codebase is intended **only** for engagements with explicit written authorization. See [docs/authorized-use.md](docs/authorized-use.md). Runtime guardrails in `guardrails/` require explicit authorization before agents execute.

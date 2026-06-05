@@ -70,6 +70,47 @@ def test_supervisor_stops_on_wall_clock_duration() -> None:
     assert outcome.cycles == 1
 
 
+def test_bash_schema_is_strict_openai_compatible() -> None:
+    from agent_redteam.core.config import DEFAULT_BASH_TIMEOUT_SECONDS
+    from agent_redteam.tools.bash import bash_definition
+
+    schema = bash_definition().input_schema
+    properties = schema["properties"]
+    assert schema["additionalProperties"] is False
+    assert schema["required"] == list(properties.keys())
+    assert properties["timeout_seconds"]["default"] == DEFAULT_BASH_TIMEOUT_SECONDS
+    assert "default" not in properties["host"]
+    assert "default" not in properties["command"]
+
+
+def test_finish_schema_lists_reason_as_required_for_strict_openai_tools() -> None:
+    schema = finish_definition().input_schema
+    assert schema["required"] == ["reason"]
+    assert "default" not in schema["properties"]["reason"]
+
+
+def test_read_topology_schema_is_strict_openai_compatible() -> None:
+    from agent_redteam.tools.topology import read_topology_definition
+
+    schema = read_topology_definition().input_schema
+    assert schema["additionalProperties"] is False
+    assert schema["required"] == ["host"]
+    assert schema["properties"]["host"]["default"] is None
+
+
+def test_update_topology_schema_is_strict_openai_compatible() -> None:
+    from agent_redteam.tools.topology import update_topology_definition
+
+    schema = update_topology_definition().input_schema
+    properties = schema["properties"]
+    assert schema["additionalProperties"] is False
+    assert schema["required"] == list(properties.keys())
+    assert properties["overwrite_connection"]["default"] is False
+    assert "default" not in properties["host"]
+    service_schema = schema["$defs"]["ServiceFinding"]
+    assert service_schema["required"] == list(service_schema["properties"].keys())
+
+
 def test_parse_duration_accepts_units_and_rejects_bad_input() -> None:
     assert parse_duration("30m") == 1800
     assert parse_duration("45s") == 45

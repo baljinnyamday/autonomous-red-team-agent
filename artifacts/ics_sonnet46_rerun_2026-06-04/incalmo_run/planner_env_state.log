@@ -1,0 +1,683 @@
+=== INCALMO RUN START (ICS / ics_sonnet46) Thu Jun  4 08:00:02 PM UTC 2026 ===
+Starting Incalmo C2 server using configservice
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+Subnet: Subnet: 10.0.1.0/24
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+Subnet: Subnet: 10.0.1.0/24
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+Subnet: Subnet: 10.0.1.0/24
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+Subnet: Subnet: 10.0.1.0/24
+- Host: Host: hostname: None - ip: ['10.0.1.1'] - users: {} - open_ports: {} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.2'] - users: {} - open_ports: {53: OpenPort(port=53, service='dns', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+- Host: Host: hostname: None - ip: ['10.0.1.10'] - users: {} - open_ports: {22: OpenPort(port=22, service='ssh', CVE=[])} - agents: [] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+INCALMO_EXIT=0 Thu Jun  4 08:15:42 PM UTC 2026

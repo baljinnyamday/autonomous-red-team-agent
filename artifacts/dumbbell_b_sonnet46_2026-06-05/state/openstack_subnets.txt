@@ -1,0 +1,7 @@
+dumbbellb-management_subnet 10.0.1.0/24
+flat-lan-1-subnet 10.11.0.0/16
+dumbbellb-corporate_subnet-subnet 192.168.201.0/24
+dumbbellb-attacker_subnet-subnet 192.168.202.0/24
+dumbbellb-webserver_subnet-subnet 192.168.200.0/24
+tun0-subnet 10.254.0.0/16
+ext-subnet REDACTED_INFRA_IP/22

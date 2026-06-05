@@ -168,7 +168,7 @@ def test_render_audit_pretty_prints_recorded_run() -> None:
         {"event_type": "thinking", "text": "I will list the directory"},
         {
             "event_type": "tool_call",
-            "tool_name": "exec",
+            "tool_name": "bash",
             "arguments": {"host": "operator", "command": "ls ~"},
         },
         {"event_type": "tool_result", "success": True, "output": "report.txt"},
@@ -190,10 +190,11 @@ def test_render_audit_pretty_prints_recorded_run() -> None:
 
     output = console.export_text()
     assert "thinking" in output
-    assert "exec" in output
+    assert "bash" in output
     assert "command: ls ~" in output
     assert "report.txt" in output
-    assert "cached_input=250 (25.0%)" in output
+    assert "cached_input=250" in output
+    assert "(25.0%)" in output
     assert "Here is the file." in output
 
 

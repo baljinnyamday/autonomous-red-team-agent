@@ -63,10 +63,11 @@ class ToolExecutor:
         try:
             output = await self._registry.call(context, tool_call)
         except Exception as exc:  # pragma: no cover - defensive boundary
+            message = str(exc).strip() or f"Tool {tool_call.name!r} failed."
             return ToolResult(
                 call_id=tool_call.call_id,
                 success=False,
-                output=f"Tool {tool_call.name!r} failed.",
+                output=f"[{type(exc).__name__}] {message}",
                 error=type(exc).__name__,
             )
 

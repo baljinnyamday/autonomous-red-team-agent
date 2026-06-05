@@ -1,0 +1,78 @@
+=== INCALMO RUN START (ICS / ics_sonnet46) Thu Jun  4 07:50:14 PM UTC 2026 ===
+Starting Incalmo C2 server using configservice
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+[DEBUG] Current environment state: EnvironmentStateService: 
+Subnet: Subnet: 192.168.202.0/24
+- Host: Host: hostname: kali - ip: ['192.168.202.100'] - users: {} - open_ports: {} - agents: ['964fd74e'] - ssh_config: [] - critical_data_files: {} - infected_by: None
+
+Traceback (most recent call last):
+  File "/users/dayan/incalmo/main.py", line 15, in <module>
+    asyncio.run(main())
+    ~~~~~~~~~~~^^^^^^^^
+  File "/users/dayan/.local/share/uv/python/cpython-3.13.13-linux-x86_64-gnu/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/users/dayan/.local/share/uv/python/cpython-3.13.13-linux-x86_64-gnu/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/users/dayan/.local/share/uv/python/cpython-3.13.13-linux-x86_64-gnu/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/users/dayan/incalmo/main.py", line 11, in main
+    await run_incalmo_strategy(config, task_id="main_task")
+  File "/users/dayan/incalmo/incalmo/incalmo_runner.py", line 19, in run_incalmo_strategy
+    result = await strategy.main()
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/users/dayan/incalmo/incalmo/core/strategies/incalmo_strategy.py", line 82, in main
+    self.environment_state_service.update_host_agents(agents)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/users/dayan/incalmo/incalmo/core/services/environment_state_service.py", line 189, in update_host_agents
+    all_hosts = self.network.get_all_hosts()
+  File "/users/dayan/incalmo/incalmo/core/models/network/network.py", line 13, in get_all_hosts
+    for host in subnet.hosts:
+                ^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'hosts'
+INCALMO_EXIT=1 Thu Jun  4 07:51:20 PM UTC 2026

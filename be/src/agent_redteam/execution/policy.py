@@ -2,7 +2,7 @@ import shlex
 
 RM_COMMAND_WARNING = "Command blocked: the 'rm' command is not allowed."
 SSH_COMMAND_WARNING = (
-    "Command blocked: do not invoke ssh in commands. Use exec(host=...) for remote hosts."
+    "Command blocked: do not invoke ssh in commands. Use bash(host=...) for remote hosts."
 )
 SHELL_SEPARATORS = {";", "&&", "||", "|", "(", ")"}
 SHELL_COMMAND_WRAPPERS = {"command", "exec", "nohup", "time"}

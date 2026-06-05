@@ -36,14 +36,24 @@ from agent_redteam.cli.slash import (
 from agent_redteam.core.audit import AuditRecorder, audit_observer
 from agent_redteam.core.config import AgentProvider, Settings, get_settings
 from agent_redteam.core.exceptions import ConfigurationError
-from agent_redteam.guardrails import require_authorized_engagement
 from agent_redteam.llm.claude import ClaudeMessagesHarness
 from agent_redteam.llm.openai import OpenAIResponsesHarness
 from agent_redteam.llm.types import AgentMessage, ProviderHarness
-from agent_redteam.targets.state import EngagementState, default_state_path, load_engagement_state
-from agent_redteam.tools.exec import exec_definition, exec_tool
+from agent_redteam.targets.state import (
+    EngagementState,
+    default_db_path,
+    load_engagement_state,
+)
+from agent_redteam.tools.bash import bash_definition, bash_tool
 from agent_redteam.tools.finish import finish, finish_definition
+from agent_redteam.tools.grep import grep_definition, grep_tool
 from agent_redteam.tools.registry import ToolRegistry
+from agent_redteam.tools.topology import (
+    read_topology_definition,
+    read_topology_tool,
+    update_topology_definition,
+    update_topology_tool,
+)
 
 SYSTEM_PROMPT_FILE = "system.md"
 
@@ -52,25 +62,27 @@ def main(argv: Sequence[str] | None = None) -> None:
     settings = get_settings()
     args = _parse_args(argv)
 
-    require_authorized_engagement(settings)
-
     console = Console()
     provider = _build_provider(settings)
     audit = AuditRecorder(settings.audit_log_path)
     registry = _build_registry()
     usage_events: list[dict[str, Any]] = []
     session_started_at = datetime.now(UTC)
-    engagement_state = load_engagement_state(settings)
-    state_path = default_state_path(settings)
+    engagement_state, engagement_store = load_engagement_state(settings)
+    db_path = default_db_path(settings)
     system_prompt_base = _load_base_system_prompt()
+    # The loaded state owns the effective engagement id (a pinned topology YAML id
+    # overrides the auto-generated settings id). Bind the runtime to it so bash and
+    # update_topology read and write the same engagement partition in SQLite.
     context = AgentContext(
-        engagement_id=settings.engagement_id,
+        engagement_id=engagement_state.engagement_id,
         metadata={
             "operator": settings.engagement_operator,
             "provider": settings.agent_provider,
             "settings": settings,
             "engagement_state": engagement_state,
-            "engagement_state_path": str(state_path),
+            "engagement_store": engagement_store,
+            "engagement_db_path": str(db_path),
             "system_prompt_base": system_prompt_base,
         },
     )
@@ -91,7 +103,7 @@ def main(argv: Sequence[str] | None = None) -> None:
 
     model = _provider_model(settings)
     console.print(f"[dim]provider={settings.agent_provider} model={model}[/dim]")
-    console.print(f"[dim]engagement_id={settings.engagement_id}[/dim]")
+    console.print(f"[dim]engagement_id={context.engagement_id}[/dim]")
     console.print(f"[dim]audit_log={settings.audit_log_path}[/dim]")
 
     history = [
@@ -198,6 +210,9 @@ async def _run_task(
             )
         ]
     )
+    # Reused interactive history carries the original system message; refresh its
+    # topology block so prior-task discoveries are reflected on the next turn.
+    _refresh_topology_system_message(messages, context)
     messages.append(AgentMessage(role="user", content=task))
     return await loop.run(
         context,
@@ -327,9 +342,9 @@ def _refresh_topology_system_message(
     messages: list[AgentMessage],
     context: AgentContext,
 ) -> None:
-    base = context.metadata["system_prompt_base"]
-    state = context.metadata["engagement_state"]
-    if not isinstance(state, EngagementState):
+    base = context.metadata.get("system_prompt_base")
+    state = context.metadata.get("engagement_state")
+    if not isinstance(base, str) or not isinstance(state, EngagementState):
         return
     content = _system_prompt_with_topology(base, state)
     for index, message in enumerate(messages):
@@ -344,7 +359,10 @@ def _refresh_topology_system_message(
 
 def _build_registry() -> ToolRegistry:
     registry = ToolRegistry()
-    registry.register(exec_definition(), exec_tool)
+    registry.register(bash_definition(), bash_tool)
+    registry.register(grep_definition(), grep_tool)
+    registry.register(read_topology_definition(), read_topology_tool)
+    registry.register(update_topology_definition(), update_topology_tool)
     registry.register(finish_definition(), finish)
     return registry
 

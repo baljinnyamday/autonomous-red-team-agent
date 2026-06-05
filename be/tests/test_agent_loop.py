@@ -1,5 +1,6 @@
 import asyncio
 import time
+from pathlib import Path
 
 from agent_redteam.agents.base import AgentContext
 from agent_redteam.agents.loop import AgentLoop, AgentLoopLimits
@@ -7,7 +8,7 @@ from agent_redteam.llm.fake import FakeProviderHarness
 from agent_redteam.llm.types import AgentMessage, ModelEvent
 from agent_redteam.targets.state import EngagementState, HostRuntime
 from agent_redteam.targets.topology import Transport
-from agent_redteam.tools.exec import exec_definition, exec_tool
+from agent_redteam.tools.bash import bash_definition, bash_tool
 from agent_redteam.tools.executor import ToolExecutor
 from agent_redteam.tools.fake import build_test_tool_registry, slow_echo, slow_echo_definition
 from agent_redteam.tools.registry import ToolRegistry
@@ -73,20 +74,20 @@ def test_tool_executor_preserves_order_and_runs_unsafe_tools_exclusively() -> No
     assert [result.output for result in unsafe_results] == ["first", "second"]
 
 
-def test_tool_executor_returns_model_visible_errors_and_runs_exec() -> None:
+def test_tool_executor_returns_model_visible_errors_and_runs_bash(tmp_path: Path) -> None:
     registry = build_test_tool_registry()
-    registry.register(exec_definition(), exec_tool)
+    registry.register(bash_definition(), bash_tool)
     executor = ToolExecutor(registry)
 
     results = asyncio.run(
         executor.execute_batch(
-            _exec_context(),
+            _bash_context(tmp_path),
             [
                 ToolCall(call_id="call_1", name="missing_tool", arguments={}),
                 ToolCall(call_id="call_2", name="echo_json", arguments={}),
                 ToolCall(
                     call_id="call_3",
-                    name="exec",
+                    name="bash",
                     arguments={"host": "operator", "command": "printf hello"},
                 ),
             ],
@@ -102,34 +103,32 @@ def test_tool_executor_returns_model_visible_errors_and_runs_exec() -> None:
     assert "hello" in results[2].output
 
 
-def test_exec_blocks_rm_command(tmp_path) -> None:
+def test_bash_allows_rm_command(tmp_path: Path) -> None:
     protected_file = tmp_path / "protected.txt"
     protected_file.write_text("keep", encoding="utf-8")
 
     output = asyncio.run(
-        exec_tool(
-            _exec_context(),
+        bash_tool(
+            _bash_context(tmp_path),
             ToolCall(
                 call_id="call_1",
-                name="exec",
+                name="bash",
                 arguments={"host": "operator", "command": f"rm {protected_file}"},
             ),
         )
     )
 
-    assert protected_file.exists()
-    assert "exit_code=126" in output
-    assert "Command blocked" in output
-    assert "rm" in output.lower()
+    assert not protected_file.exists()
+    assert "exit_code=0" in output
 
 
-def test_exec_allows_rm_as_plain_text() -> None:
+def test_bash_allows_rm_as_plain_text(tmp_path: Path) -> None:
     output = asyncio.run(
-        exec_tool(
-            _exec_context(),
+        bash_tool(
+            _bash_context(tmp_path),
             ToolCall(
                 call_id="call_1",
-                name="exec",
+                name="bash",
                 arguments={"host": "operator", "command": "printf rm"},
             ),
         )
@@ -180,18 +179,23 @@ def _context() -> AgentContext:
     return AgentContext(engagement_id="engagement-1", metadata={})
 
 
-def _exec_context() -> AgentContext:
+def _bash_context(tmp_path: Path) -> AgentContext:
     from agent_redteam.core.config import Settings
+    from agent_redteam.targets.store import EngagementStore
 
     state = EngagementState(
         engagement_id="engagement-1",
         hosts={"operator": HostRuntime(transport=Transport.LOCAL)},
     )
+    db_path = tmp_path / "engagement-loop-test.db"
+    store = EngagementStore.connect(db_path)
+    store.save_state(state)
     return AgentContext(
         engagement_id="engagement-1",
         metadata={
             "engagement_state": state,
-            "settings": Settings(_env_file=None, engagement_runner_token="token"),
-            "engagement_state_path": "/tmp/engagement-state.json",
+            "settings": Settings(_env_file=None),
+            "engagement_store": store,
+            "engagement_db_path": str(db_path),
         },
     )

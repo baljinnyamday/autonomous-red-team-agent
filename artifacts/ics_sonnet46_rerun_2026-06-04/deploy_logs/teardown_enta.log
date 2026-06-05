@@ -1,0 +1,88 @@
+=== TEARDOWN enta START Thu Jun  4 06:13:27 PM UTC 2026 ===
+Parsing spec: environments/non-generated/enterprise_a.json
+Tearing down topology 'enterprise_a'...
+2026-06-04 18:13:28,479  INFO      src.deployment.orchestrator  Tearing down topology: enterprise_a
+2026-06-04 18:13:31,410  INFO      src.deployment.host_deployer  Released floating IP: REDACTED_INFRA_IP
+2026-06-04 18:13:31,738  INFO      src.deployment.host_deployer  Deleting: enta-management_host
+2026-06-04 18:13:32,061  INFO      src.deployment.host_deployer  Deleting: enta-webserver_0
+2026-06-04 18:13:32,349  INFO      src.deployment.host_deployer  Deleting: enta-webserver_1
+2026-06-04 18:13:32,643  INFO      src.deployment.host_deployer  Deleting: enta-webserver_2
+2026-06-04 18:13:32,942  INFO      src.deployment.host_deployer  Deleting: enta-webserver_3
+2026-06-04 18:13:33,224  INFO      src.deployment.host_deployer  Deleting: enta-webserver_4
+2026-06-04 18:13:33,536  INFO      src.deployment.host_deployer  Deleting: enta-webserver_5
+2026-06-04 18:13:33,848  INFO      src.deployment.host_deployer  Deleting: enta-webserver_6
+2026-06-04 18:13:34,225  INFO      src.deployment.host_deployer  Deleting: enta-webserver_7
+2026-06-04 18:13:34,524  INFO      src.deployment.host_deployer  Deleting: enta-webserver_8
+2026-06-04 18:13:34,818  INFO      src.deployment.host_deployer  Deleting: enta-webserver_9
+2026-06-04 18:13:35,192  INFO      src.deployment.host_deployer  Deleting: enta-employee_a_0
+2026-06-04 18:13:35,507  INFO      src.deployment.host_deployer  Deleting: enta-employee_a_1
+2026-06-04 18:13:35,825  INFO      src.deployment.host_deployer  Deleting: enta-employee_a_2
+2026-06-04 18:13:36,113  INFO      src.deployment.host_deployer  Deleting: enta-employee_a_3
+2026-06-04 18:13:36,702  INFO      src.deployment.host_deployer  Deleting: enta-employee_a_4
+2026-06-04 18:13:37,018  INFO      src.deployment.host_deployer  Deleting: enta-employee_a_5
+2026-06-04 18:13:37,576  INFO      src.deployment.host_deployer  Deleting: enta-employee_a_6
+2026-06-04 18:13:37,905  INFO      src.deployment.host_deployer  Deleting: enta-employee_a_7
+2026-06-04 18:13:38,181  INFO      src.deployment.host_deployer  Deleting: enta-employee_a_8
+2026-06-04 18:13:38,456  INFO      src.deployment.host_deployer  Deleting: enta-employee_a_9
+2026-06-04 18:13:38,732  INFO      src.deployment.host_deployer  Deleting: enta-database_0
+2026-06-04 18:13:39,038  INFO      src.deployment.host_deployer  Deleting: enta-database_1
+2026-06-04 18:13:39,337  INFO      src.deployment.host_deployer  Deleting: enta-database_2
+2026-06-04 18:13:39,703  INFO      src.deployment.host_deployer  Deleting: enta-database_3
+2026-06-04 18:13:40,183  INFO      src.deployment.host_deployer  Deleting: enta-database_4
+2026-06-04 18:13:40,481  INFO      src.deployment.host_deployer  Deleting: enta-database_5
+2026-06-04 18:13:40,770  INFO      src.deployment.host_deployer  Deleting: enta-database_6
+2026-06-04 18:13:41,069  INFO      src.deployment.host_deployer  Deleting: enta-database_7
+2026-06-04 18:13:41,453  INFO      src.deployment.host_deployer  Deleting: enta-database_8
+2026-06-04 18:13:41,974  INFO      src.deployment.host_deployer  Deleting: enta-database_9
+2026-06-04 18:13:42,291  INFO      src.deployment.host_deployer  Deleting: enta-attacker
+2026-06-04 18:13:50,364  INFO      src.deployment.host_deployer  Deleted: enta-management_host
+2026-06-04 18:13:50,365  INFO      src.deployment.host_deployer  Deleted: enta-webserver_0
+2026-06-04 18:13:50,365  INFO      src.deployment.host_deployer  Deleted: enta-webserver_1
+2026-06-04 18:13:50,365  INFO      src.deployment.host_deployer  Deleted: enta-webserver_2
+2026-06-04 18:13:50,365  INFO      src.deployment.host_deployer  Deleted: enta-webserver_3
+2026-06-04 18:13:50,365  INFO      src.deployment.host_deployer  Deleted: enta-webserver_4
+2026-06-04 18:13:50,365  INFO      src.deployment.host_deployer  Deleted: enta-webserver_5
+2026-06-04 18:13:50,365  INFO      src.deployment.host_deployer  Deleted: enta-webserver_6
+2026-06-04 18:13:50,365  INFO      src.deployment.host_deployer  Deleted: enta-webserver_7
+2026-06-04 18:13:50,365  INFO      src.deployment.host_deployer  Deleted: enta-webserver_8
+2026-06-04 18:13:50,365  INFO      src.deployment.host_deployer  Deleted: enta-webserver_9
+2026-06-04 18:13:50,365  INFO      src.deployment.host_deployer  Deleted: enta-employee_a_0
+2026-06-04 18:13:50,365  INFO      src.deployment.host_deployer  Deleted: enta-employee_a_1
+2026-06-04 18:13:50,365  INFO      src.deployment.host_deployer  Deleted: enta-employee_a_2
+2026-06-04 18:13:50,365  INFO      src.deployment.host_deployer  Deleted: enta-employee_a_3
+2026-06-04 18:13:50,365  INFO      src.deployment.host_deployer  Deleted: enta-employee_a_4
+2026-06-04 18:13:50,365  INFO      src.deployment.host_deployer  Deleted: enta-employee_a_5
+2026-06-04 18:13:50,365  INFO      src.deployment.host_deployer  Deleted: enta-employee_a_6
+2026-06-04 18:13:50,365  INFO      src.deployment.host_deployer  Deleted: enta-employee_a_7
+2026-06-04 18:13:50,365  INFO      src.deployment.host_deployer  Deleted: enta-employee_a_8
+2026-06-04 18:13:50,366  INFO      src.deployment.host_deployer  Deleted: enta-employee_a_9
+2026-06-04 18:13:50,366  INFO      src.deployment.host_deployer  Deleted: enta-database_0
+2026-06-04 18:13:50,366  INFO      src.deployment.host_deployer  Deleted: enta-database_1
+2026-06-04 18:13:50,366  INFO      src.deployment.host_deployer  Deleted: enta-database_2
+2026-06-04 18:13:50,366  INFO      src.deployment.host_deployer  Deleted: enta-database_3
+2026-06-04 18:13:50,366  INFO      src.deployment.host_deployer  Deleted: enta-database_4
+2026-06-04 18:13:50,366  INFO      src.deployment.host_deployer  Deleted: enta-database_5
+2026-06-04 18:13:50,366  INFO      src.deployment.host_deployer  Deleted: enta-database_6
+2026-06-04 18:13:50,366  INFO      src.deployment.host_deployer  Deleted: enta-database_7
+2026-06-04 18:13:50,366  INFO      src.deployment.host_deployer  Deleted: enta-database_8
+2026-06-04 18:13:50,366  INFO      src.deployment.host_deployer  Deleted: enta-database_9
+2026-06-04 18:13:50,366  INFO      src.deployment.host_deployer  Deleted: enta-attacker
+2026-06-04 18:13:50,613  INFO      src.deployment.network_deployer  Deleted security group: enta-management_sg
+2026-06-04 18:13:50,766  INFO      src.deployment.network_deployer  Deleted security group: enta-webserver_subnet_sg
+2026-06-04 18:13:50,879  INFO      src.deployment.network_deployer  Deleted security group: enta-employee_a_subnet_sg
+2026-06-04 18:13:50,980  INFO      src.deployment.network_deployer  Deleted security group: enta-database_subnet_sg
+2026-06-04 18:13:51,076  INFO      src.deployment.network_deployer  Deleted security group: enta-attacker_subnet_sg
+2026-06-04 18:13:55,528  INFO      src.deployment.network_deployer  Deleted router
+2026-06-04 18:13:55,695  INFO      src.deployment.network_deployer  Deleted subnet: enta-webserver_subnet-subnet
+2026-06-04 18:13:55,834  INFO      src.deployment.network_deployer  Deleted subnet: enta-employee_a_subnet-subnet
+2026-06-04 18:13:56,020  INFO      src.deployment.network_deployer  Deleted subnet: enta-database_subnet-subnet
+2026-06-04 18:13:56,176  INFO      src.deployment.network_deployer  Deleted subnet: enta-attacker_subnet-subnet
+2026-06-04 18:13:56,462  INFO      src.deployment.network_deployer  Deleted network: enta-webserver_subnet
+2026-06-04 18:13:56,641  INFO      src.deployment.network_deployer  Deleted network: enta-employee_a_subnet
+2026-06-04 18:13:56,808  INFO      src.deployment.network_deployer  Deleted network: enta-database_subnet
+2026-06-04 18:13:56,982  INFO      src.deployment.network_deployer  Deleted network: enta-attacker_subnet
+2026-06-04 18:13:57,154  INFO      src.deployment.network_deployer  Deleted subnet: enta-management_subnet
+2026-06-04 18:13:57,534  INFO      src.deployment.network_deployer  Deleted network: enta-management_network
+2026-06-04 18:13:57,535  INFO      src.deployment.orchestrator  Teardown complete: enterprise_a
+Teardown complete.
+TEARDOWN_EXIT=0 Thu Jun  4 06:13:57 PM UTC 2026

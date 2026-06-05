@@ -1,0 +1,136 @@
+ 
+ -------------- celery@ctl.large.mhbench-pg0.wisc.cloudlab.us v5.5.3 (immunity)
+--- ***** ----- 
+-- ******* ---- Linux-5.15.0-177-generic-x86_64-with-glibc2.35 2026-06-04 10:43:19
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         incalmo_worker:0x7fc2e0cea900
+- ** ---------- .> transport:   sqlalchemy+sqlite:///celery.db
+- ** ---------- .> results:     sqlite:///celery_results.db
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[CELERY_APP] Using broker: sqlalchemy+sqlite:///celery.db
+[CELERY_APP] Using backend: db+sqlite:///celery_results.db
+ * Serving Flask app 'c2server'
+ * Debug mode: off
+[2026-06-04 11:04:07,175] WARNING in c2server: 404 Not Found: GET http://REDACTED_C2_IP:8888/favicon.ico
+[2026-06-04 11:04:59,993] WARNING in c2server: 404 Not Found: CONNECT http://www.shadowserver.org/443
+3.145.153.181 - - [04/Jun/2026 11:36:06] code 400, message Bad request version ('À\x14À')
+3.145.153.181 - - [04/Jun/2026 11:37:17] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03O\x8f´ã')
+[2026-06-04 12:10:54,541] WARNING in c2server: 404 Not Found: GET http://REDACTED_C2_IP:8888/api/v2/agents
+[2026-06-04 12:28:48,081] WARNING in c2server: 404 Not Found: GET http://REDACTED_C2_IP:8888/login
+[2026-06-04 13:08:43,567] WARNING in c2server: 404 Not Found: GET http://REDACTED_C2_IP/favicon.ico
+[2026-06-04 14:32:06,432] WARNING in c2server: 404 Not Found: GET http://127.0.0.1:8888/api/v2/agents
+[2026-06-04 14:32:47,518] WARNING in c2server: 404 Not Found: GET http://127.0.0.1:8888/api/agents
+[2026-06-04 14:32:47,542] WARNING in c2server: 404 Not Found: GET http://127.0.0.1:8888/api/v2/agents
+[2026-06-04 14:32:47,554] WARNING in c2server: 404 Not Found: GET http://127.0.0.1:8888/api/sessions
+[2026-06-04 14:32:47,564] WARNING in c2server: 404 Not Found: GET http://127.0.0.1:8888/sessions
+[2026-06-04 15:03:28,623] WARNING in c2server: 404 Not Found: GET http://REDACTED_C2_IP:8888/file/download/sandcat.go-linux
+[2026-06-04 15:03:37,666] ERROR in c2server: 405 Method Not Allowed: The method is not allowed for the requested URL.
+Traceback (most recent call last):
+  File "/users/dayan/incalmo/.venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/users/dayan/incalmo/.venv/lib/python3.13/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/users/dayan/incalmo/.venv/lib/python3.13/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/users/dayan/incalmo/.venv/lib/python3.13/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/users/dayan/incalmo/.venv/lib/python3.13/site-packages/werkzeug/routing/map.py", line 624, in match
+    raise MethodNotAllowed(valid_methods=list(e.have_match_for)) from None
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+[2026-06-04 15:03:37,698] WARNING in c2server: 404 Not Found: GET http://REDACTED_C2_IP:8888/sandcat.go-linux
+[2026-06-04 15:03:37,724] WARNING in c2server: 404 Not Found: GET http://REDACTED_C2_IP:8888/plugins/sandcat/payloads/sandcat.go-linux
+[2026-06-04 15:03:46,671] ERROR in c2server: 405 Method Not Allowed: The method is not allowed for the requested URL.
+Traceback (most recent call last):
+  File "/users/dayan/incalmo/.venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/users/dayan/incalmo/.venv/lib/python3.13/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/users/dayan/incalmo/.venv/lib/python3.13/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/users/dayan/incalmo/.venv/lib/python3.13/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/users/dayan/incalmo/.venv/lib/python3.13/site-packages/werkzeug/routing/map.py", line 624, in match
+    raise MethodNotAllowed(valid_methods=list(e.have_match_for)) from None
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+[2026-06-04 15:04:19,877] ERROR in c2server: 405 Method Not Allowed: The method is not allowed for the requested URL.
+Traceback (most recent call last):
+  File "/users/dayan/incalmo/.venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/users/dayan/incalmo/.venv/lib/python3.13/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/users/dayan/incalmo/.venv/lib/python3.13/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/users/dayan/incalmo/.venv/lib/python3.13/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/users/dayan/incalmo/.venv/lib/python3.13/site-packages/werkzeug/routing/map.py", line 624, in match
+    raise MethodNotAllowed(valid_methods=list(e.have_match_for)) from None
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+151.115.90.242 - - [04/Jun/2026 16:09:02] code 400, message Bad request version (":(a\x03\x06á\x9eèD«\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ")
+[2026-06-04 16:09:04,252] WARNING in c2server: 404 Not Found: GET http://REDACTED_C2_IP:8888/favicon.ico
+[2026-06-04 16:09:08,362] WARNING in c2server: 404 Not Found: GET http://REDACTED_C2_IP:8888/favicon.ico
+[2026-06-04 16:09:08,693] WARNING in c2server: 404 Not Found: GET http://REDACTED_C2_IP:8888/ads.txt
+[2026-06-04 16:09:08,942] WARNING in c2server: 404 Not Found: GET http://REDACTED_C2_IP:8888/app-ads.txt
+[2026-06-04 16:09:09,190] WARNING in c2server: 404 Not Found: GET http://REDACTED_C2_IP:8888/sellers.json
+[2026-06-04 16:18:11,000] WARNING in c2server: 404 Not Found: CONNECT http://www.google.com:443/443
+[2026-06-04 16:18:11,002] WARNING in c2server: 404 Not Found: CONNECT http://www.google.com:443/443
+[2026-06-04 16:18:11,004] WARNING in c2server: 404 Not Found: CONNECT http://www.google.com:443/443
+[2026-06-04 16:18:11,005] WARNING in c2server: 404 Not Found: CONNECT http://www.google.com:443/443
+[2026-06-04 16:18:11,007] WARNING in c2server: 404 Not Found: CONNECT http://www.google.com:443/443
+185.91.127.85 - - [04/Jun/2026 16:18:15] code 400, message Bad request syntax ('\x05\x02\x00\x02')
+185.91.127.85 - - [04/Jun/2026 16:18:15] code 400, message Bad request syntax ('\x05\x01\x00')
+185.91.127.85 - - [04/Jun/2026 16:18:15] code 400, message Bad request syntax ('\x05\x02\x00\x02')
+185.91.127.85 - - [04/Jun/2026 16:18:15] code 400, message Bad request syntax ('\x05\x02\x00\x02')
+185.91.127.85 - - [04/Jun/2026 16:18:15] code 400, message Bad request syntax ('\x04\x01\x01»\x8eû\x99w\x00')
+185.91.127.85 - - [04/Jun/2026 16:18:15] code 400, message Bad request syntax ('\x05\x02\x00\x02')
+[2026-06-04 18:28:01,000] WARNING in c2server: 404 Not Found: GET http://REDACTED_C2_IP:8888/login
+[2026-06-04 19:15:00,652] WARNING in c2server: 404 Not Found: GET http://REDACTED_C2_IP:8888/api/v2/agents
+[2026-06-04 19:15:09,670] WARNING in c2server: 404 Not Found: GET http://REDACTED_C2_IP:8888/api/v2/agents
+[2026-06-04 19:15:09,702] WARNING in c2server: 404 Not Found: GET http://REDACTED_C2_IP:8888/api/v2/agents
+[2026-06-04 19:15:09,733] WARNING in c2server: 404 Not Found: GET http://REDACTED_C2_IP:8888/api/v2/agents
+[2026-06-04 19:15:09,765] WARNING in c2server: 404 Not Found: GET http://REDACTED_C2_IP:8888/api/v2/agents
+[2026-06-04 19:15:09,797] WARNING in c2server: 404 Not Found: GET http://REDACTED_C2_IP:8888/api/v2/agents
+[2026-06-04 19:15:09,828] WARNING in c2server: 404 Not Found: GET http://REDACTED_C2_IP:8888/api/v2/agents
+[2026-06-04 19:15:09,859] WARNING in c2server: 404 Not Found: GET http://REDACTED_C2_IP:8888/api/v2/agents
+[2026-06-04 19:15:33,734] WARNING in c2server: 404 Not Found: GET http://REDACTED_C2_IP:8888/api/agents
+[2026-06-04 19:15:33,757] WARNING in c2server: 404 Not Found: GET http://REDACTED_C2_IP:8888/api/v1/agents
+[2026-06-04 19:31:15,699] WARNING in c2server: 404 Not Found: GET http://REDACTED_C2_IP:8888/api
+20.163.74.182 - - [04/Jun/2026 21:12:20] code 400, message Bad request syntax ('MGLNDD_REDACTED_C2_IP_8888')
+[2026-06-04 22:32:13,466] WARNING in c2server: 404 Not Found: GET http://REDACTED_C2_IP:8888/system_stats
+[2026-06-05 00:11:30,662] WARNING in c2server: 404 Not Found: GET http://REDACTED_C2_IP:8888/login
+198.235.24.246 - - [05/Jun/2026 00:19:44] code 400, message Bad request version ('À\x13À')
+198.235.24.246 - - [05/Jun/2026 00:19:44] code 400, message Bad request version ('À(À$À\x14À')
+20.65.195.35 - - [05/Jun/2026 02:42:27] code 400, message Bad request syntax ('MGLNDD_REDACTED_C2_IP_8888')
+66.132.172.194 - - [05/Jun/2026 03:15:49] code 400, message Bad request version ('À\x14À')
+66.132.172.194 - - [05/Jun/2026 03:15:55] code 400, message Bad request version ('À\x14À')
+66.132.172.194 - - [05/Jun/2026 03:15:55] code 505, message Invalid HTTP version (2.0)
+[2026-06-05 03:15:55,174] WARNING in c2server: 404 Not Found: GET http://REDACTED_C2_IP:8888/favicon.ico
+66.132.172.194 - - [05/Jun/2026 03:15:58] code 400, message Bad request version ('À\x14À')
+[2026-06-05 03:15:58,205] WARNING in c2server: 404 Not Found: GET http://REDACTED_C2_IP:8888/wiki
+199.45.154.115 - - [05/Jun/2026 03:35:21] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03\x05iÏ\x81.\xad\x01%ðÎ\x82á')
+199.45.154.115 - - [05/Jun/2026 03:35:28] code 400, message Bad request version ('À\x14À')
+199.45.154.115 - - [05/Jun/2026 03:35:29] code 505, message Invalid HTTP version (2.0)
+[2026-06-05 03:35:29,992] WARNING in c2server: 404 Not Found: GET http://REDACTED_C2_IP:8888/favicon.ico
+199.45.154.115 - - [05/Jun/2026 03:35:33] code 400, message Bad request version ('À\x14À')
+[2026-06-05 03:35:33,823] WARNING in c2server: 404 Not Found: GET http://REDACTED_C2_IP:8888/login
+[2026-06-05 05:46:06,516] WARNING in c2server: 404 Not Found: GET http://REDACTED_C2_IP:8888/login
+64.62.197.48 - - [05/Jun/2026 05:58:36] code 400, message Bad request version ('À\x14À')
+3.144.142.34 - - [05/Jun/2026 08:17:02] code 400, message Bad request version ('À\x14À')
+3.144.142.34 - - [05/Jun/2026 08:18:15] code 400, message Bad request version ('À\x14À')
+[2026-06-05 08:31:38,109] WARNING in c2server: 404 Not Found: GET http://REDACTED_C2_IP:8888/favicon.ico
+[2026-06-05 08:32:12,916] WARNING in c2server: 404 Not Found: CONNECT http://www.shadowserver.org/443
+[2026-06-05 11:32:49,088] WARNING in c2server: 404 Not Found: GET http://REDACTED_C2_IP:8888/login
+[2026-06-05 12:00:58,727] WARNING in c2server: 404 Not Found: CONNECT http://httpbin.org:443/443
+[2026-06-05 12:41:31,313] WARNING in c2server: 404 Not Found: GET http://REDACTED_C2_IP:8888/api/agents

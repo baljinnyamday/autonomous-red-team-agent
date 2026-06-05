@@ -12,18 +12,17 @@ def test_settings_loads_env_file_and_defaults_to_openai(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    for env_name in ("AUTHORIZED_ENGAGEMENT", "AGENT_PROVIDER", "OPENAI_API_KEY"):
+    for env_name in ("AGENT_PROVIDER", "OPENAI_API_KEY"):
         monkeypatch.delenv(env_name, raising=False)
 
     env_file = tmp_path / ".env"
     env_file.write_text(
-        "AUTHORIZED_ENGAGEMENT=true\nOPENAI_API_KEY=sk-from-env-file\n",
+        "OPENAI_API_KEY=sk-from-env-file\n",
         encoding="utf-8",
     )
 
     settings = Settings(_env_file=env_file)
 
-    assert settings.authorized_engagement is True
     assert settings.agent_provider is AgentProvider.OPENAI
     assert settings.require_openai_api_key() == "sk-from-env-file"
 
@@ -60,7 +59,38 @@ def test_main_args_parses_optional_task() -> None:
     assert args.task == "scan internal segment"
 
 
-def test_default_agent_registry_contains_exec_and_finish() -> None:
+def test_resolved_bash_timeout_seconds_prefers_override_then_env_then_default() -> None:
+    settings = Settings(
+        _env_file=None,
+        bash_timeout_seconds=900.0,
+        default_exec_timeout_seconds=3600.0,
+    )
+
+    assert settings.resolved_bash_timeout_seconds(3600.0) == 900.0
+    assert settings.resolved_bash_timeout_seconds(30.0) == 30.0
+
+    fallback = Settings(
+        _env_file=None,
+        bash_timeout_seconds=None,
+        default_exec_timeout_seconds=1800.0,
+    )
+    assert fallback.resolved_bash_timeout_seconds(3600.0) == 1800.0
+
+
+def test_resolved_grep_timeout_seconds_prefers_override_then_default() -> None:
+    settings = Settings(_env_file=None, grep_timeout_seconds=90.0)
+
+    assert settings.resolved_grep_timeout_seconds(120.0) == 90.0
+    assert settings.resolved_grep_timeout_seconds(15.0) == 15.0
+
+
+def test_default_agent_registry_contains_bash_topology_and_finish() -> None:
     registry = _build_registry()
 
-    assert [tool.name for tool in registry.definitions()] == ["exec", "finish"]
+    assert [tool.name for tool in registry.definitions()] == [
+        "bash",
+        "grep",
+        "read_topology",
+        "update_topology",
+        "finish",
+    ]

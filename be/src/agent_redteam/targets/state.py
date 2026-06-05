@@ -1,16 +1,23 @@
 from __future__ import annotations
 
-import json
 import re
 from pathlib import Path
+from typing import TYPE_CHECKING
 
 import yaml
 from pydantic import BaseModel, Field
 
 from agent_redteam.core.config import Settings
 from agent_redteam.core.exceptions import ConfigurationError
-from agent_redteam.targets.scope import TargetScope
-from agent_redteam.targets.topology import EngagementTopology, Transport
+from agent_redteam.targets.topology import (
+    CredentialFinding,
+    EngagementTopology,
+    ServiceFinding,
+    Transport,
+)
+
+if TYPE_CHECKING:
+    from agent_redteam.targets.store import EngagementStore
 
 _SAFE_ID_PATTERN = re.compile(r"^[a-zA-Z0-9._-]+$")
 
@@ -20,8 +27,13 @@ class HostRuntime(BaseModel):
     address: str | None = None
     user: str | None = None
     via: list[str] = Field(default_factory=list)
-    runner_endpoint: str | None = None
-    runner_ready_announced: bool = False
+    os: str | None = None
+    hostname: str | None = None
+    arch: str | None = None
+    tags: list[str] = Field(default_factory=list)
+    services: list[ServiceFinding] = Field(default_factory=list)
+    credentials: list[CredentialFinding] = Field(default_factory=list)
+    notes: list[str] = Field(default_factory=list)
 
 
 class EngagementState(BaseModel):
@@ -37,7 +49,13 @@ class EngagementState(BaseModel):
                 address=seed.address,
                 user=seed.user,
                 via=list(seed.via),
-                runner_endpoint=seed.runner_endpoint,
+                os=seed.os,
+                hostname=seed.hostname,
+                arch=seed.arch,
+                tags=list(seed.tags),
+                services=list(seed.services),
+                credentials=list(seed.credentials),
+                notes=list(seed.notes),
             )
             for seed in topology.hosts
         }
@@ -47,68 +65,85 @@ class EngagementState(BaseModel):
             notes=topology.notes,
         )
 
-    @classmethod
-    def load(cls, path: Path) -> EngagementState:
-        data = json.loads(path.read_text(encoding="utf-8"))
-        return cls.model_validate(data)
-
-    def merge_runtime(self, other: EngagementState) -> EngagementState:
-        if other.engagement_id != self.engagement_id:
-            return self
-
-        merged_hosts = dict(self.hosts)
-        for host_id, persisted in other.hosts.items():
-            if host_id not in merged_hosts:
-                continue
-            merged_hosts[host_id] = _merge_host_runtime(merged_hosts[host_id], persisted)
-        return self.model_copy(update={"hosts": merged_hosts})
-
-    def persist(self, path: Path) -> None:
-        path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_text(
-            self.model_dump_json(indent=2),
-            encoding="utf-8",
-        )
-
-    def set_runner(self, host_id: str, endpoint: str) -> EngagementState:
-        host = self._require_host(host_id)
-        updated = host.model_copy(
-            update={
-                "transport": Transport.RUNNER,
-                "runner_endpoint": endpoint.rstrip("/"),
-            }
-        )
-        hosts = dict(self.hosts)
-        hosts[host_id] = updated
-        return self.model_copy(update={"hosts": hosts})
-
-    def mark_runner_announced(self, host_id: str) -> EngagementState:
-        host = self._require_host(host_id)
-        hosts = dict(self.hosts)
-        hosts[host_id] = host.model_copy(update={"runner_ready_announced": True})
-        return self.model_copy(update={"hosts": hosts})
-
-    def validate_host_in_scope(self, host_id: str, scope: TargetScope | None) -> None:
-        self._require_host(host_id)
-        if scope is not None and scope.hosts and host_id not in scope.hosts:
-            msg = f"Host {host_id!r} is not in the authorized target scope."
-            raise ConfigurationError(msg)
-
     def topology_prompt_block(self) -> str:
         lines = [f"engagement_id: {self.engagement_id}"]
         if self.notes:
             lines.append(f"notes: {self.notes}")
         lines.append("hosts:")
         for host_id, host in sorted(self.hosts.items()):
-            endpoint = (
-                host.runner_endpoint
-                if host.transport is Transport.RUNNER
-                else host.address or "(local)"
-            )
+            endpoint = host.address or "(local)"
             via = f" via={','.join(host.via)}" if host.via else ""
+            extras: list[str] = []
+            if host.tags:
+                extras.append(f"tags={','.join(host.tags)}")
+            if host.services:
+                extras.append(f"services={len(host.services)}")
+            if host.credentials:
+                extras.append(f"creds={len(host.credentials)}")
+            if host.os:
+                extras.append(f"os={host.os}")
+            extra = f" {' '.join(extras)}" if extras else ""
             lines.append(
-                f"  - {host_id}: transport={host.transport.value} endpoint={endpoint}{via}"
+                f"  - {host_id}: transport={host.transport.value} endpoint={endpoint}{via}{extra}"
             )
+        return "\n".join(lines)
+
+    def topology_report(self, *, host_id: str | None = None) -> str:
+        host_ids = [host_id] if host_id else sorted(self.hosts)
+        if host_id and host_id not in self.hosts:
+            msg = f"Unknown host {host_id!r}. Use a host id from the engagement topology."
+            raise ConfigurationError(msg)
+
+        lines = [f"engagement_id: {self.engagement_id}"]
+        if self.notes:
+            lines.append(f"notes: {self.notes}")
+        lines.append("hosts:")
+        for current_id in host_ids:
+            host = self.hosts[current_id]
+            endpoint = host.address or "(local)"
+            lines.append(f"  {current_id}:")
+            lines.append(f"    transport: {host.transport.value}")
+            lines.append(f"    endpoint: {endpoint}")
+            if host.user:
+                lines.append(f"    user: {host.user}")
+            if host.via:
+                lines.append(f"    via: {','.join(host.via)}")
+            if host.os:
+                lines.append(f"    os: {host.os}")
+            if host.hostname:
+                lines.append(f"    hostname: {host.hostname}")
+            if host.arch:
+                lines.append(f"    arch: {host.arch}")
+            if host.tags:
+                lines.append(f"    tags: {', '.join(host.tags)}")
+            for service in host.services:
+                parts = [
+                    part
+                    for part in (
+                        f"port={service.port}" if service.port is not None else None,
+                        f"protocol={service.protocol}" if service.protocol else None,
+                        f"product={service.product}" if service.product else None,
+                        f"url={service.url}" if service.url else None,
+                        f"notes={service.notes}" if service.notes else None,
+                    )
+                    if part
+                ]
+                lines.append(f"    service: {' '.join(parts)}")
+            for credential in host.credentials:
+                parts = [
+                    part
+                    for part in (
+                        f"username={credential.username}" if credential.username else None,
+                        f"secret={credential.secret}" if credential.secret else None,
+                        f"type={credential.type}" if credential.type else None,
+                        f"source={credential.source}" if credential.source else None,
+                        f"notes={credential.notes}" if credential.notes else None,
+                    )
+                    if part
+                ]
+                lines.append(f"    credential: {' '.join(parts)}")
+            for note in host.notes:
+                lines.append(f"    note: {note}")
         return "\n".join(lines)
 
     def _require_host(self, host_id: str) -> HostRuntime:
@@ -119,18 +154,6 @@ class EngagementState(BaseModel):
         return host
 
 
-def _merge_host_runtime(seed: HostRuntime, persisted: HostRuntime) -> HostRuntime:
-    if persisted.transport is Transport.RUNNER and persisted.runner_endpoint:
-        return seed.model_copy(
-            update={
-                "transport": Transport.RUNNER,
-                "runner_endpoint": persisted.runner_endpoint,
-                "runner_ready_announced": persisted.runner_ready_announced,
-            }
-        )
-    return seed
-
-
 def load_topology_yaml(path: Path) -> EngagementTopology:
     raw = yaml.safe_load(path.read_text(encoding="utf-8"))
     if not isinstance(raw, dict):
@@ -139,45 +162,33 @@ def load_topology_yaml(path: Path) -> EngagementTopology:
     return EngagementTopology.model_validate(raw)
 
 
-def default_state_path(settings: Settings) -> Path:
-    if settings.engagement_state_path:
-        return Path(settings.engagement_state_path)
-    audit_parent = Path(settings.audit_log_path).parent
+def default_db_path(settings: Settings) -> Path:
+    if settings.engagement_db_path:
+        return Path(settings.engagement_db_path)
+    audit_path = Path(settings.audit_log_path)
+    audit_root = audit_path.parent if audit_path.suffix else audit_path
     safe_id = settings.engagement_id
     if _SAFE_ID_PATTERN.fullmatch(safe_id):
-        return audit_parent / f"engagement-state-{safe_id}.json"
-    return audit_parent / "engagement-state.json"
+        return audit_root / f"engagement-{safe_id}.db"
+    return audit_root / "engagement.db"
 
 
-def load_engagement_state(settings: Settings) -> EngagementState:
+def load_engagement_state(settings: Settings) -> tuple[EngagementState, EngagementStore]:
+    from agent_redteam.targets.store import EngagementStore
+
     engagement_id = settings.engagement_id
+    store = EngagementStore.connect(default_db_path(settings))
+    effective_id = engagement_id
+    topology_notes: str | None = None
+
     if settings.engagement_topology_path:
-        topology_path = Path(settings.engagement_topology_path)
-        topology = load_topology_yaml(topology_path)
-        seed_id = topology.engagement_id or engagement_id
-        state = EngagementState.from_topology(topology, engagement_id=seed_id)
-        state_path = default_state_path(settings)
-        if state_path.exists():
-            persisted = EngagementState.load(state_path)
-            if persisted.engagement_id == seed_id:
-                state = state.merge_runtime(persisted)
-            state = state.model_copy(
-                update={"engagement_id": seed_id, "notes": topology.notes or state.notes}
-            )
-        state.persist(state_path)
-        return state
+        topology = load_topology_yaml(Path(settings.engagement_topology_path))
+        effective_id = topology.engagement_id or engagement_id
+        topology_notes = topology.notes
+        store.seed_from_topology(topology, engagement_id=effective_id)
 
-    state_path = default_state_path(settings)
-    if state_path.exists():
-        persisted = EngagementState.load(state_path)
-        if persisted.engagement_id == engagement_id:
-            return persisted
-
-    state = EngagementState(
-        engagement_id=engagement_id,
-        hosts={
-            "operator": HostRuntime(transport=Transport.LOCAL),
-        },
-    )
-    state.persist(state_path)
-    return state
+    store.ensure_local_host(effective_id)
+    state = store.load_state(effective_id)
+    if topology_notes:
+        state = state.model_copy(update={"notes": topology_notes or state.notes})
+    return state, store

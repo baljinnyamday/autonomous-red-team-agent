@@ -1,15 +1,22 @@
 engagement_id: eng-example
-notes: Example multi-host lab topology for exec/runner development.
+notes: Example multi-host lab topology for bash/SSH development.
 hosts:
   - id: operator
     transport: local
   - id: jump
-    transport: ssh_pending
+    transport: remote
     address: bastion.lab.example
     user: ubuntu
   - id: web
-    transport: ssh_pending
+    transport: remote
     address: 10.0.0.12
     user: ubuntu
     via:
       - jump
+    tags:
+      - web
+    services:
+      - port: 443
+        protocol: tcp
+        product: nginx
+        url: https://10.0.0.12/

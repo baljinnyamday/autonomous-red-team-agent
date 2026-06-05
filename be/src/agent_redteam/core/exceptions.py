@@ -4,7 +4,3 @@ class RedTeamError(Exception):
 
 class ConfigurationError(RedTeamError):
     """Raised when runtime configuration is missing or invalid."""
-
-
-class AuthorizationError(RedTeamError):
-    """Raised when an operation lacks explicit authorization."""

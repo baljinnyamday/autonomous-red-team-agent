@@ -1,0 +1,5 @@
+REDACTED_INFRA_IP 10.0.1.10
+--- routers ---
+flat-lan-1-router
+tun0-router
+ics-router
