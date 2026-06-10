@@ -5,3 +5,26 @@
 
 # OS
 .DS_Store
+
+# Secrets — never commit real credentials
+.env
+*.env
+.env.*
+!.env.example
+
+# SSH private keys — keep out of the repo by default
+id_rsa
+id_ed25519
+id_ecdsa
+id_dsa
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+
+# Exception: Docker CTF simulation keys are intentional fixture files
+# (fresh keys, never reused elsewhere)
+!incalmo/docker/**/id_rsa
+!incalmo/docker/**/id_rsa.pub
+!incalmo/docker/**/authorized_keys
