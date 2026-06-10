@@ -1,9 +1,0 @@
-{
-  "files.associations": {
-    "*.jsonl": "json"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "prettier.documentSelectors": ["**/*.json", "**/*.jsonc", "**/*.jsonl"]
-}

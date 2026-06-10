@@ -2,6 +2,7 @@
 .claude/
 .cursor/hooks/
 .playwright-mcp/
+.vscode/
 
 # OS
 .DS_Store
