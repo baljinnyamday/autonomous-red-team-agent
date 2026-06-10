@@ -32,6 +32,13 @@ class UpdateTopologyArgs(ToolArgs):
         default=None,
         description="Jump host ids required to reach this host, in order.",
     )
+    discovered_from: str | None = Field(
+        default=None,
+        description=(
+            "Host id this machine was discovered or reached from (provenance). "
+            "Must be an existing host. Set once when first recording the host."
+        ),
+    )
     os: str | None = Field(default=None, description="Operating system fingerprint.")
     hostname: str | None = Field(
         default=None,
@@ -113,6 +120,8 @@ async def update_topology_tool(context: AgentContext, tool_call: ToolCall) -> st
     settings = _settings_from_context(context)
     engagement_id = context.engagement_id or settings.engagement_id
 
+    _validate_discovered_from(store, engagement_id, arguments)
+
     exists = store.host_exists(engagement_id, arguments.host)
     if exists:
         _apply_existing_host_update(store, engagement_id, arguments)
@@ -160,10 +169,30 @@ def _create_host(store: EngagementStore, engagement_id: str, arguments: UpdateTo
         address=arguments.address,
         user=arguments.user,
         via=arguments.via,
+        discovered_from=arguments.discovered_from,
         os=arguments.os,
         hostname=arguments.hostname,
         arch=arguments.arch,
     )
+
+
+def _validate_discovered_from(
+    store: EngagementStore,
+    engagement_id: str,
+    arguments: UpdateTopologyArgs,
+) -> None:
+    origin = arguments.discovered_from
+    if origin is None:
+        return
+    if origin == arguments.host:
+        msg = f"discovered_from cannot point at the host itself ({origin!r})."
+        raise ConfigurationError(msg)
+    if not store.host_exists(engagement_id, origin):
+        msg = (
+            f"discovered_from {origin!r} is not a known host. Record the origin host first, "
+            "or use an existing host id you already hold."
+        )
+        raise ConfigurationError(msg)
 
 
 def _apply_existing_host_update(
@@ -190,6 +219,7 @@ def _apply_existing_host_update(
             address=arguments.address,
             user=arguments.user,
             via=arguments.via,
+            discovered_from=arguments.discovered_from,
             os=arguments.os,
             hostname=arguments.hostname,
             arch=arguments.arch,
@@ -217,6 +247,7 @@ def _apply_existing_host_update(
         address=arguments.address,
         user=arguments.user,
         via=arguments.via,
+        discovered_from=arguments.discovered_from,
         os=arguments.os,
         hostname=arguments.hostname,
         arch=arguments.arch,

@@ -44,6 +44,7 @@ class HostSeed(BaseModel):
     address: str | None = None
     user: str | None = None
     via: list[str] = Field(default_factory=list)
+    discovered_from: str | None = None
     os: str | None = None
     hostname: str | None = None
     arch: str | None = None

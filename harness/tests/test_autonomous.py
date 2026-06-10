@@ -106,6 +106,7 @@ def test_update_topology_schema_is_strict_openai_compatible() -> None:
     assert schema["additionalProperties"] is False
     assert schema["required"] == list(properties.keys())
     assert properties["overwrite_connection"]["default"] is False
+    assert properties["discovered_from"]["default"] is None
     assert "default" not in properties["host"]
     service_schema = schema["$defs"]["ServiceFinding"]
     assert service_schema["required"] == list(service_schema["properties"].keys())

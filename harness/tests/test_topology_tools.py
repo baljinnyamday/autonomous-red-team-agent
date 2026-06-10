@@ -56,6 +56,47 @@ def test_update_topology_records_discoveries(tmp_path: Path) -> None:
     assert len(state.hosts["web"].services) == 1
 
 
+def test_discovered_from_persists_and_reports(tmp_path: Path) -> None:
+    context = _context(tmp_path)
+    asyncio.run(
+        update_topology_tool(
+            context,
+            ToolCall(
+                call_id="u1",
+                name="update_topology",
+                arguments={
+                    "host": "web",
+                    "address": "10.0.0.12",
+                    "discovered_from": "operator",
+                },
+            ),
+        )
+    )
+    store = context.metadata["engagement_store"]
+    reloaded = store.load_state("eng-1")
+    assert reloaded.hosts["web"].discovered_from == "operator"
+    assert "discovered_from: operator" in reloaded.topology_report(host_id="web")
+
+
+def test_discovered_from_rejects_unknown_origin(tmp_path: Path) -> None:
+    context = _context(tmp_path)
+    with pytest.raises(ConfigurationError):
+        asyncio.run(
+            update_topology_tool(
+                context,
+                ToolCall(
+                    call_id="u1",
+                    name="update_topology",
+                    arguments={
+                        "host": "web",
+                        "address": "10.0.0.12",
+                        "discovered_from": "ghost",
+                    },
+                ),
+            )
+        )
+
+
 def test_read_topology_returns_verbose_report(tmp_path: Path) -> None:
     context = _context(tmp_path)
     asyncio.run(

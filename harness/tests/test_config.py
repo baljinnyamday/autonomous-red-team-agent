@@ -92,5 +92,6 @@ def test_default_agent_registry_contains_bash_topology_and_finish() -> None:
         "grep",
         "read_topology",
         "update_topology",
+        "transfer_file",
         "finish",
     ]

@@ -54,6 +54,7 @@ from agent_redteam.tools.topology import (
     update_topology_definition,
     update_topology_tool,
 )
+from agent_redteam.tools.transfer_file import transfer_file_definition, transfer_file_tool
 
 SYSTEM_PROMPT_FILE = "system.md"
 
@@ -363,6 +364,7 @@ def _build_registry() -> ToolRegistry:
     registry.register(grep_definition(), grep_tool)
     registry.register(read_topology_definition(), read_topology_tool)
     registry.register(update_topology_definition(), update_topology_tool)
+    registry.register(transfer_file_definition(), transfer_file_tool)
     registry.register(finish_definition(), finish)
     return registry
 

@@ -19,6 +19,8 @@ def _default_engagement_id() -> str:
 
 DEFAULT_BASH_TIMEOUT_SECONDS = 3600.0
 DEFAULT_GREP_TIMEOUT_SECONDS = 120.0
+DEFAULT_TRANSFER_TIMEOUT_SECONDS = 600.0
+DEFAULT_MAX_TRANSFER_BYTES = 50 * 1024 * 1024
 
 
 class Settings(BaseSettings):
@@ -46,6 +48,8 @@ class Settings(BaseSettings):
     bash_timeout_seconds: float | None = None
     default_exec_timeout_seconds: float = DEFAULT_BASH_TIMEOUT_SECONDS
     grep_timeout_seconds: float = DEFAULT_GREP_TIMEOUT_SECONDS
+    transfer_timeout_seconds: float = DEFAULT_TRANSFER_TIMEOUT_SECONDS
+    max_transfer_bytes: int = DEFAULT_MAX_TRANSFER_BYTES
 
     def resolved_bash_timeout_seconds(self, requested: float) -> float:
         if requested != DEFAULT_BASH_TIMEOUT_SECONDS:
@@ -58,6 +62,11 @@ class Settings(BaseSettings):
         if requested != DEFAULT_GREP_TIMEOUT_SECONDS:
             return requested
         return self.grep_timeout_seconds
+
+    def resolved_transfer_timeout_seconds(self, requested: float) -> float:
+        if requested != DEFAULT_TRANSFER_TIMEOUT_SECONDS:
+            return requested
+        return self.transfer_timeout_seconds
 
     def effective_exec_timeout_seconds(self) -> float:
         return self.resolved_bash_timeout_seconds(DEFAULT_BASH_TIMEOUT_SECONDS)

@@ -27,6 +27,7 @@ class HostRuntime(BaseModel):
     address: str | None = None
     user: str | None = None
     via: list[str] = Field(default_factory=list)
+    discovered_from: str | None = None
     os: str | None = None
     hostname: str | None = None
     arch: str | None = None
@@ -49,6 +50,7 @@ class EngagementState(BaseModel):
                 address=seed.address,
                 user=seed.user,
                 via=list(seed.via),
+                discovered_from=seed.discovered_from,
                 os=seed.os,
                 hostname=seed.hostname,
                 arch=seed.arch,
@@ -73,6 +75,7 @@ class EngagementState(BaseModel):
         for host_id, host in sorted(self.hosts.items()):
             endpoint = host.address or "(local)"
             via = f" via={','.join(host.via)}" if host.via else ""
+            origin = f" from={host.discovered_from}" if host.discovered_from else ""
             extras: list[str] = []
             if host.tags:
                 extras.append(f"tags={','.join(host.tags)}")
@@ -84,7 +87,8 @@ class EngagementState(BaseModel):
                 extras.append(f"os={host.os}")
             extra = f" {' '.join(extras)}" if extras else ""
             lines.append(
-                f"  - {host_id}: transport={host.transport.value} endpoint={endpoint}{via}{extra}"
+                f"  - {host_id}: transport={host.transport.value} "
+                f"endpoint={endpoint}{via}{origin}{extra}"
             )
         return "\n".join(lines)
 
@@ -108,6 +112,8 @@ class EngagementState(BaseModel):
                 lines.append(f"    user: {host.user}")
             if host.via:
                 lines.append(f"    via: {','.join(host.via)}")
+            if host.discovered_from:
+                lines.append(f"    discovered_from: {host.discovered_from}")
             if host.os:
                 lines.append(f"    os: {host.os}")
             if host.hostname:

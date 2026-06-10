@@ -1,8 +1,11 @@
 import shlex
 from pathlib import Path
+from typing import Literal
 
 from agent_redteam.core.exceptions import ConfigurationError
 from agent_redteam.targets.state import HostRuntime
+
+TransferDirection = Literal["upload", "download"]
 
 SSH_IDENTITY_FILE_TYPES = frozenset(
     {
@@ -61,6 +64,7 @@ def build_scp_command(
     target: str,
     via_chain: list[HostRuntime],
     identity_file: str | None = None,
+    direction: TransferDirection = "upload",
 ) -> list[str]:
     scp_args = ["scp", "-o", "BatchMode=yes"]
     if identity_file:
@@ -68,7 +72,11 @@ def build_scp_command(
     if via_chain:
         proxy = _proxy_command_for_chain(via_chain)
         scp_args.extend(["-o", f"ProxyCommand={proxy}"])
-    scp_args.extend([local_path, f"{target}:{remote_path}"])
+    remote_spec = f"{target}:{remote_path}"
+    if direction == "upload":
+        scp_args.extend([local_path, remote_spec])
+    else:
+        scp_args.extend([remote_spec, local_path])
     return scp_args
 
 

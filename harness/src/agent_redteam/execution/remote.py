@@ -5,7 +5,9 @@ from typing import Protocol
 
 from agent_redteam.execution.result import CommandResult
 from agent_redteam.execution.ssh import (
+    TransferDirection,
     build_remote_bash_command,
+    build_scp_command,
     build_ssh_command,
     build_ssh_target,
     ssh_identity_file,
@@ -41,6 +43,30 @@ async def run_ssh_command(
     )
     runner = run_command or _default_run_command
     return await runner(ssh_command, timeout_seconds=timeout_seconds)
+
+
+async def run_scp_command(
+    host: HostRuntime,
+    *,
+    local_path: str,
+    remote_path: str,
+    direction: TransferDirection,
+    timeout_seconds: float | None,
+    resolve_via: Callable[[str], HostRuntime],
+    run_command: CommandRunner | None = None,
+) -> CommandResult:
+    via_chain = [resolve_via(via_id) for via_id in host.via]
+    target = build_ssh_target(host)
+    scp_command = build_scp_command(
+        local_path=local_path,
+        remote_path=remote_path,
+        target=target,
+        via_chain=via_chain,
+        identity_file=ssh_identity_file(host),
+        direction=direction,
+    )
+    runner = run_command or _default_run_command
+    return await runner(scp_command, timeout_seconds=timeout_seconds)
 
 
 async def _default_run_command(

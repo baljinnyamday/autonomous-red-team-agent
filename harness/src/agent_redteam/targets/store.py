@@ -30,6 +30,7 @@ CREATE TABLE IF NOT EXISTS hosts (
     address TEXT,
     user TEXT,
     via_json TEXT NOT NULL DEFAULT '[]',
+    discovered_from TEXT,
     runner_endpoint TEXT,
     runner_ready_announced INTEGER NOT NULL DEFAULT 0,
     os TEXT,
@@ -85,6 +86,13 @@ class EngagementStore:
         self._conn = connection
         self._conn.row_factory = sqlite3.Row
         self._conn.executescript(_SCHEMA)
+        self._migrate()
+
+    def _migrate(self) -> None:
+        columns = {row["name"] for row in self._conn.execute("PRAGMA table_info(hosts)")}
+        if "discovered_from" not in columns:
+            self._conn.execute("ALTER TABLE hosts ADD COLUMN discovered_from TEXT")
+            self._conn.commit()
 
     @classmethod
     def connect(cls, path: Path) -> EngagementStore:
@@ -170,6 +178,7 @@ class EngagementStore:
                 address=row["address"],
                 user=row["user"],
                 via=json.loads(row["via_json"]),
+                discovered_from=row["discovered_from"],
                 os=row["os"],
                 hostname=row["hostname"],
                 arch=row["arch"],
@@ -197,6 +206,7 @@ class EngagementStore:
         address: str | None = None,
         user: str | None = None,
         via: list[str] | None = None,
+        discovered_from: str | None = None,
         os: str | None = None,
         hostname: str | None = None,
         arch: str | None = None,
@@ -231,6 +241,7 @@ class EngagementStore:
         if via is not None and not current_via:
             updates.append("via_json = ?")
             values.append(json.dumps(via))
+        add_if_missing("discovered_from", discovered_from, row["discovered_from"])
         add_if_missing("os", os, row["os"])
         add_if_missing("hostname", hostname, row["hostname"])
         add_if_missing("arch", arch, row["arch"])
@@ -252,6 +263,7 @@ class EngagementStore:
         address: str | None = None,
         user: str | None = None,
         via: list[str] | None = None,
+        discovered_from: str | None = None,
         os: str | None = None,
         hostname: str | None = None,
         arch: str | None = None,
@@ -271,6 +283,9 @@ class EngagementStore:
             if via is not None:
                 updates.append("via_json = ?")
                 values.append(json.dumps(via))
+            if discovered_from is not None:
+                updates.append("discovered_from = ?")
+                values.append(discovered_from)
             if os is not None:
                 updates.append("os = ?")
                 values.append(os)
@@ -292,8 +307,9 @@ class EngagementStore:
                 """
                 INSERT INTO hosts (
                     engagement_id, host_id, transport, address, user, via_json,
-                    runner_endpoint, runner_ready_announced, os, hostname, arch
-                ) VALUES (?, ?, ?, ?, ?, ?, NULL, 0, ?, ?, ?)
+                    discovered_from, runner_endpoint, runner_ready_announced,
+                    os, hostname, arch
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, NULL, 0, ?, ?, ?)
                 """,
                 (
                     engagement_id,
@@ -302,6 +318,7 @@ class EngagementStore:
                     address,
                     user,
                     json.dumps(via or []),
+                    discovered_from,
                     os,
                     hostname,
                     arch,
@@ -390,6 +407,7 @@ class EngagementStore:
                 address=host.address,
                 user=host.user,
                 via=list(host.via),
+                discovered_from=host.discovered_from,
                 os=host.os,
                 hostname=host.hostname,
                 arch=host.arch,
@@ -399,7 +417,7 @@ class EngagementStore:
                 """
                 UPDATE hosts SET
                     transport = ?, address = ?, user = ?, via_json = ?,
-                    os = ?, hostname = ?, arch = ?
+                    discovered_from = ?, os = ?, hostname = ?, arch = ?
                 WHERE engagement_id = ? AND host_id = ?
                 """,
                 (
@@ -407,6 +425,7 @@ class EngagementStore:
                     host.address,
                     host.user,
                     json.dumps(host.via),
+                    host.discovered_from,
                     host.os,
                     host.hostname,
                     host.arch,
@@ -437,8 +456,9 @@ class EngagementStore:
             """
             INSERT INTO hosts (
                 engagement_id, host_id, transport, address, user, via_json,
-                runner_endpoint, runner_ready_announced, os, hostname, arch
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, 0, ?, ?, ?)
+                discovered_from, runner_endpoint, runner_ready_announced,
+                os, hostname, arch
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, NULL, 0, ?, ?, ?)
             """,
             (
                 engagement_id,
@@ -447,7 +467,7 @@ class EngagementStore:
                 seed.address,
                 seed.user,
                 json.dumps(seed.via),
-                None,
+                seed.discovered_from,
                 seed.os,
                 seed.hostname,
                 seed.arch,
