@@ -1,0 +1,7 @@
+star6-ring_subnet ['d7a6542d-c19b-4464-ba49-1bfd4febd76f']
+star6-management_network ['0551db08-7d69-4de3-bba8-5415e3157592']
+flat-lan-1-net ['521e4e27-0c3d-4c3f-b379-93175a983b9d']
+star6-attacker_subnet ['ec1d5f62-b5eb-4511-a863-8992ffb904ae']
+manila_service_network []
+ext-net ['bd2ac9bb-cd3c-4701-9ca2-952b56ec251e']
+tun0-net ['b41cef8c-e103-40ed-a4cc-46945665a406']

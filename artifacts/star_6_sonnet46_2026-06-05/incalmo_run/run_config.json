@@ -1,0 +1,11 @@
+{
+    "name": "star_6_sonnet46",
+    "strategy": {
+        "planning_llm": "claude-4.6-sonnet",
+        "execution_llm": "claude-4.6-sonnet",
+        "abstraction": "incalmo"
+    },
+    "environment": "Star6Environment",
+    "c2c_server": "http://128.105.145.61:8888",
+    "blacklist_ips": ["192.168.202.100"]
+}
