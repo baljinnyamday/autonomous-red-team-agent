@@ -6,6 +6,8 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "anthropic>=0.104.1",
+    "fastapi>=0.136.3",
+    "networkx>=3.6.1",
     "openai>=2.38.0",
     "prompt-toolkit>=3.0.52",
     "pydantic>=2.10",
@@ -13,7 +15,12 @@ dependencies = [
     "pyyaml>=6.0",
     "rich>=13.0",
     "typer>=0.15",
+    "uvicorn[standard]>=0.49.0",
 ]
+
+[project.optional-dependencies]
+# Figure rendering only (PNG/GraphML layouts). Not needed for scoring or find_path.
+viz = ["pydot>=3.0"]
 
 [project.scripts]
 redteam = "agent_redteam.cli.main:app"

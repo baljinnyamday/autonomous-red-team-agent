@@ -74,6 +74,7 @@ export type ActivityEvent =
       status: NodeStatus
       access?: AccessLevel
       technique?: string
+      techniques?: string[]
       at: string
     }
   | { type: "edge.added"; edge: AttackEdge; at: string }

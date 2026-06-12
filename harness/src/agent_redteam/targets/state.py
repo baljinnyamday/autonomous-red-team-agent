@@ -11,6 +11,7 @@ from agent_redteam.core.config import Settings
 from agent_redteam.core.exceptions import ConfigurationError
 from agent_redteam.targets.topology import (
     CredentialFinding,
+    DefenseFinding,
     EngagementTopology,
     ServiceFinding,
     Transport,
@@ -34,6 +35,7 @@ class HostRuntime(BaseModel):
     tags: list[str] = Field(default_factory=list)
     services: list[ServiceFinding] = Field(default_factory=list)
     credentials: list[CredentialFinding] = Field(default_factory=list)
+    defenses: list[DefenseFinding] = Field(default_factory=list)
     notes: list[str] = Field(default_factory=list)
 
 
@@ -57,6 +59,7 @@ class EngagementState(BaseModel):
                 tags=list(seed.tags),
                 services=list(seed.services),
                 credentials=list(seed.credentials),
+                defenses=list(seed.defenses),
                 notes=list(seed.notes),
             )
             for seed in topology.hosts
@@ -83,6 +86,9 @@ class EngagementState(BaseModel):
                 extras.append(f"services={len(host.services)}")
             if host.credentials:
                 extras.append(f"creds={len(host.credentials)}")
+            if host.defenses:
+                present = [d.name or d.category or "?" for d in host.defenses if d.present]
+                extras.append(f"defenses={','.join(present)}" if present else "defenses=none")
             if host.os:
                 extras.append(f"os={host.os}")
             extra = f" {' '.join(extras)}" if extras else ""
@@ -148,6 +154,18 @@ class EngagementState(BaseModel):
                     if part
                 ]
                 lines.append(f"    credential: {' '.join(parts)}")
+            for defense in host.defenses:
+                parts = [
+                    part
+                    for part in (
+                        f"category={defense.category}" if defense.category else None,
+                        f"name={defense.name}" if defense.name else None,
+                        f"present={'yes' if defense.present else 'no'}",
+                        f"detail={defense.detail}" if defense.detail else None,
+                    )
+                    if part
+                ]
+                lines.append(f"    defense: {' '.join(parts)}")
             for note in host.notes:
                 lines.append(f"    note: {note}")
         return "\n".join(lines)
@@ -166,6 +184,16 @@ def load_topology_yaml(path: Path) -> EngagementTopology:
         msg = f"Invalid topology YAML at {path}: expected a mapping."
         raise ConfigurationError(msg)
     return EngagementTopology.model_validate(raw)
+
+
+def engagement_id_from_db_path(db_path: Path, override: str | None = None) -> str:
+    if override:
+        return override
+    stem = db_path.stem
+    if stem.startswith("engagement-"):
+        return stem.removeprefix("engagement-")
+    msg = f"cannot infer engagement id from {db_path.name!r}; pass --engagement-id"
+    raise ValueError(msg)
 
 
 def default_db_path(settings: Settings) -> Path:

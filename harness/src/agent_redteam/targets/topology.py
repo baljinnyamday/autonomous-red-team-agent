@@ -24,6 +24,21 @@ class ServiceFinding(BaseModel):
     notes: str | None = None
 
 
+class DefenseFinding(BaseModel):
+    category: str | None = None
+    name: str | None = None
+    present: bool = True
+    detail: str | None = None
+
+
+class AttemptRecord(BaseModel):
+    technique: str
+    target: str | None = None
+    outcome: str
+    detail: str | None = None
+    created_at: str | None = None
+
+
 class CredentialFinding(BaseModel):
     username: str | None = None
     secret: str | None = None
@@ -51,6 +66,7 @@ class HostSeed(BaseModel):
     tags: list[str] = Field(default_factory=list)
     services: list[ServiceFinding] = Field(default_factory=list)
     credentials: list[CredentialFinding] = Field(default_factory=list)
+    defenses: list[DefenseFinding] = Field(default_factory=list)
     notes: list[str] = Field(default_factory=list)
 
     @field_validator("transport", mode="before")

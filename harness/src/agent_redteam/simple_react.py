@@ -17,6 +17,7 @@ from agent_redteam.agents.autonomous import (
 from agent_redteam.agents.base import AgentContext
 from agent_redteam.agents.events import LoopEvent, LoopObserver, fan_out
 from agent_redteam.agents.loop import AgentLoop, AgentLoopResult
+from agent_redteam.api.server import serve_and_run
 from agent_redteam.cli.expand import ExpandableHistory
 from agent_redteam.cli.keyboard import listen_for_keyboard_events
 from agent_redteam.cli.live_input import live_slash_observer, start_slash_input_thread
@@ -39,15 +40,29 @@ from agent_redteam.core.exceptions import ConfigurationError
 from agent_redteam.llm.claude import ClaudeMessagesHarness
 from agent_redteam.llm.openai import OpenAIResponsesHarness
 from agent_redteam.llm.types import AgentMessage, ProviderHarness
+from agent_redteam.targets.graph import OPERATOR_HOST_ID
 from agent_redteam.targets.state import (
     EngagementState,
     default_db_path,
     load_engagement_state,
 )
 from agent_redteam.tools.bash import bash_definition, bash_tool
+from agent_redteam.tools.delegate import (
+    PROVIDER_HARNESS_KEY,
+    REGISTRY_FACTORY_KEY,
+    delegate_definition,
+    delegate_tool,
+)
+from agent_redteam.tools.find_path import find_path_definition, find_path_tool
 from agent_redteam.tools.finish import finish, finish_definition
 from agent_redteam.tools.grep import grep_definition, grep_tool
+from agent_redteam.tools.observe_defenses import (
+    observe_defenses_definition,
+    observe_defenses_tool,
+)
+from agent_redteam.tools.record_attempt import record_attempt_definition, record_attempt_tool
 from agent_redteam.tools.registry import ToolRegistry
+from agent_redteam.tools.scan import scan_definition, scan_tool
 from agent_redteam.tools.topology import (
     read_topology_definition,
     read_topology_tool,
@@ -66,7 +81,7 @@ def main(argv: Sequence[str] | None = None) -> None:
     console = Console()
     provider = _build_provider(settings)
     audit = AuditRecorder(settings.audit_log_path)
-    registry = _build_registry()
+    registry = _registry_from_settings(settings, include_delegate=True)
     usage_events: list[dict[str, Any]] = []
     session_started_at = datetime.now(UTC)
     engagement_state, engagement_store = load_engagement_state(settings)
@@ -85,6 +100,8 @@ def main(argv: Sequence[str] | None = None) -> None:
             "engagement_store": engagement_store,
             "engagement_db_path": str(db_path),
             "system_prompt_base": system_prompt_base,
+            PROVIDER_HARNESS_KEY: provider,
+            REGISTRY_FACTORY_KEY: lambda: _registry_from_settings(settings, include_delegate=False),
         },
     )
     history_view = ExpandableHistory(console)
@@ -268,18 +285,43 @@ def _run_autonomous_mode(
     )
 
     deadline = time.monotonic() + budget_seconds
-    outcome = asyncio.run(
-        run_autonomous(
-            context=context,
-            provider=provider,
-            registry=registry,
-            observer=observer,
-            objective=objective,
-            messages=messages,
-            deadline=deadline,
-            before_cycle=_refresh_topology_system_message,
+    serve_api = settings.api_enabled and not args.no_serve
+    if serve_api:
+        port = args.port if args.port is not None else settings.api_port
+        console.print(
+            f"[dim]dashboard api · http://{settings.api_host}:{port}/api/v1/engagements[/dim]"
         )
-    )
+        outcome = asyncio.run(
+            serve_and_run(
+                context=context,
+                provider=provider,
+                registry=registry,
+                observer=observer,
+                objective=objective,
+                messages=messages,
+                deadline=deadline,
+                before_cycle=_refresh_topology_system_message,
+                operator=settings.engagement_operator,
+                targets=_engagement_targets(context),
+                started_at=session_started_at,
+                host=settings.api_host,
+                port=port,
+                poll_interval=settings.topology_poll_interval_seconds,
+            )
+        )
+    else:
+        outcome = asyncio.run(
+            run_autonomous(
+                context=context,
+                provider=provider,
+                registry=registry,
+                observer=observer,
+                objective=objective,
+                messages=messages,
+                deadline=deadline,
+                before_cycle=_refresh_topology_system_message,
+            )
+        )
     audit.record(
         "autonomous_run_finished",
         engagement_id=context.engagement_id,
@@ -287,6 +329,16 @@ def _run_autonomous_mode(
         cycles=outcome.cycles,
     )
     _print_autonomous_summary(console, outcome)
+
+
+def _engagement_targets(context: AgentContext) -> list[str]:
+    """Non-operator host endpoints, for the dashboard's engagement target list."""
+    state: EngagementState = context.metadata["engagement_state"]
+    return [
+        host.address or host_id
+        for host_id, host in sorted(state.hosts.items())
+        if host_id != OPERATOR_HOST_ID
+    ]
 
 
 def _print_autonomous_summary(console: Console, outcome: AutonomousResult) -> None:
@@ -358,7 +410,7 @@ def _refresh_topology_system_message(
             return
 
 
-def _build_registry() -> ToolRegistry:
+def build_production_registry(optional: frozenset[str] = frozenset()) -> ToolRegistry:
     registry = ToolRegistry()
     registry.register(bash_definition(), bash_tool)
     registry.register(grep_definition(), grep_tool)
@@ -366,7 +418,24 @@ def _build_registry() -> ToolRegistry:
     registry.register(update_topology_definition(), update_topology_tool)
     registry.register(transfer_file_definition(), transfer_file_tool)
     registry.register(finish_definition(), finish)
+    if "scan" in optional:
+        registry.register(scan_definition(), scan_tool)
+    if "find_path" in optional:
+        registry.register(find_path_definition(), find_path_tool)
+    if "observe_defenses" in optional:
+        registry.register(observe_defenses_definition(), observe_defenses_tool)
+    if "record_attempt" in optional:
+        registry.register(record_attempt_definition(), record_attempt_tool)
+    if "delegate" in optional:
+        registry.register(delegate_definition(), delegate_tool)
     return registry
+
+
+def _registry_from_settings(settings: Settings, *, include_delegate: bool) -> ToolRegistry:
+    optional = settings.enabled_optional_tools()
+    if not include_delegate:
+        optional = optional - {"delegate"}
+    return build_production_registry(optional)
 
 
 def _build_provider(settings: Settings) -> ProviderHarness:
@@ -404,5 +473,16 @@ def _parse_args(argv: Sequence[str] | None) -> argparse.Namespace:
         "--duration",
         default="30m",
         help="Wall-clock budget for autonomous mode (e.g. 30m, 45s, 1h). Default 30m.",
+    )
+    parser.add_argument(
+        "--no-serve",
+        action="store_true",
+        help="Disable the live dashboard API server during an autonomous run.",
+    )
+    parser.add_argument(
+        "--port",
+        type=int,
+        default=None,
+        help="Port for the live dashboard API server (default from settings, 8000).",
     )
     return parser.parse_args(argv)

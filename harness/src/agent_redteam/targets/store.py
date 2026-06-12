@@ -9,7 +9,9 @@ from agent_redteam.core.exceptions import ConfigurationError
 from agent_redteam.targets.local_probe import LocalHostProbe, probe_local_host
 from agent_redteam.targets.state import EngagementState, HostRuntime
 from agent_redteam.targets.topology import (
+    AttemptRecord,
     CredentialFinding,
+    DefenseFinding,
     EngagementTopology,
     HostSeed,
     ServiceFinding,
@@ -73,6 +75,26 @@ CREATE TABLE IF NOT EXISTS host_notes (
     engagement_id TEXT NOT NULL,
     host_id TEXT NOT NULL,
     note TEXT NOT NULL,
+    created_at TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS defenses (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    engagement_id TEXT NOT NULL,
+    host_id TEXT NOT NULL,
+    category TEXT,
+    name TEXT,
+    present INTEGER NOT NULL DEFAULT 1,
+    detail TEXT
+);
+
+CREATE TABLE IF NOT EXISTS attempts (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    engagement_id TEXT NOT NULL,
+    technique TEXT NOT NULL,
+    target TEXT,
+    outcome TEXT NOT NULL,
+    detail TEXT,
     created_at TEXT NOT NULL
 );
 
@@ -185,6 +207,7 @@ class EngagementStore:
                 tags=self._load_tags(engagement_id, host_id),
                 services=self._load_services(engagement_id, host_id),
                 credentials=self._load_credentials(engagement_id, host_id),
+                defenses=self._load_defenses(engagement_id, host_id),
                 notes=self._load_notes(engagement_id, host_id),
             )
 
@@ -332,7 +355,16 @@ class EngagementStore:
         host_id: str,
         services: list[ServiceFinding],
     ) -> None:
+        existing = {
+            _service_identity(service) for service in self._load_services(engagement_id, host_id)
+        }
+        inserted = False
         for service in services:
+            identity = _service_identity(service)
+            if identity in existing:
+                continue
+            existing.add(identity)
+            inserted = True
             self._conn.execute(
                 """
                 INSERT INTO services (
@@ -349,7 +381,8 @@ class EngagementStore:
                     service.notes,
                 ),
             )
-        self._conn.commit()
+        if inserted:
+            self._conn.commit()
 
     def add_credentials(
         self,
@@ -386,6 +419,78 @@ class EngagementStore:
                 (engagement_id, host_id, tag),
             )
         self._conn.commit()
+
+    def add_defenses(
+        self,
+        engagement_id: str,
+        host_id: str,
+        defenses: list[DefenseFinding],
+    ) -> None:
+        for defense in defenses:
+            self._conn.execute(
+                """
+                INSERT INTO defenses (engagement_id, host_id, category, name, present, detail)
+                VALUES (?, ?, ?, ?, ?, ?)
+                """,
+                (
+                    engagement_id,
+                    host_id,
+                    defense.category,
+                    defense.name,
+                    1 if defense.present else 0,
+                    defense.detail,
+                ),
+            )
+        self._conn.commit()
+
+    def replace_defenses(
+        self,
+        engagement_id: str,
+        host_id: str,
+        defenses: list[DefenseFinding],
+    ) -> None:
+        """Overwrite a host's defenses with a fresh observation snapshot."""
+        self._conn.execute(
+            "DELETE FROM defenses WHERE engagement_id = ? AND host_id = ?",
+            (engagement_id, host_id),
+        )
+        self.add_defenses(engagement_id, host_id, defenses)
+
+    def add_attempt(self, engagement_id: str, attempt: AttemptRecord) -> None:
+        self._conn.execute(
+            """
+            INSERT INTO attempts (engagement_id, technique, target, outcome, detail, created_at)
+            VALUES (?, ?, ?, ?, ?, ?)
+            """,
+            (
+                engagement_id,
+                attempt.technique,
+                attempt.target,
+                attempt.outcome,
+                attempt.detail,
+                datetime.now(UTC).isoformat(),
+            ),
+        )
+        self._conn.commit()
+
+    def list_attempts(self, engagement_id: str) -> list[AttemptRecord]:
+        rows = self._conn.execute(
+            """
+            SELECT technique, target, outcome, detail, created_at
+            FROM attempts WHERE engagement_id = ? ORDER BY id
+            """,
+            (engagement_id,),
+        ).fetchall()
+        return [
+            AttemptRecord(
+                technique=row["technique"],
+                target=row["target"],
+                outcome=row["outcome"],
+                detail=row["detail"],
+                created_at=row["created_at"],
+            )
+            for row in rows
+        ]
 
     def add_note(self, engagement_id: str, host_id: str, note: str) -> None:
         self._conn.execute(
@@ -479,6 +584,8 @@ class EngagementStore:
             self.add_services(engagement_id, seed.id, seed.services)
         if seed.credentials:
             self.add_credentials(engagement_id, seed.id, seed.credentials)
+        if seed.defenses:
+            self.add_defenses(engagement_id, seed.id, seed.defenses)
         for note in seed.notes:
             self.add_note(engagement_id, seed.id, note)
 
@@ -529,6 +636,25 @@ class EngagementStore:
             for row in rows
         ]
 
+    def _load_defenses(self, engagement_id: str, host_id: str) -> list[DefenseFinding]:
+        rows = self._conn.execute(
+            """
+            SELECT category, name, present, detail
+            FROM defenses WHERE engagement_id = ? AND host_id = ?
+            ORDER BY id
+            """,
+            (engagement_id, host_id),
+        ).fetchall()
+        return [
+            DefenseFinding(
+                category=row["category"],
+                name=row["name"],
+                present=bool(row["present"]),
+                detail=row["detail"],
+            )
+            for row in rows
+        ]
+
     def _load_notes(self, engagement_id: str, host_id: str) -> list[str]:
         rows = self._conn.execute(
             """
@@ -538,3 +664,9 @@ class EngagementStore:
             (engagement_id, host_id),
         ).fetchall()
         return [row["note"] for row in rows]
+
+
+def _service_identity(
+    service: ServiceFinding,
+) -> tuple[int | None, str | None, str | None, str | None]:
+    return (service.port, service.protocol, service.product, service.url)

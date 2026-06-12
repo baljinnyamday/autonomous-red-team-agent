@@ -1,8 +1,10 @@
 import { useParams } from "react-router-dom"
+import { useEngagement } from "@/api/queries"
 import { ActivityFeed } from "@/components/ActivityFeed"
 import { NodeGraph } from "@/components/NodeGraph"
 import { NodeTable } from "@/components/NodeTable"
 import { StatCards } from "@/components/StatCards"
+import { Uptime } from "@/components/Uptime"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { useEventStream } from "@/hooks/useEventStream"
 
@@ -35,6 +37,7 @@ function Panel({
 export function Dashboard() {
   const { engagementId } = useParams<{ engagementId: string }>()
   const { state, connection } = useEventStream(engagementId ?? null)
+  const { data: engagement } = useEngagement(engagementId)
   const conn = CONNECTION_LABEL[connection]
 
   return (
@@ -45,6 +48,13 @@ export function Dashboard() {
           <h1 className="mt-1 font-mono text-2xl font-semibold tracking-tight">{engagementId}</h1>
         </div>
         <div className="flex items-center gap-5">
+          <div className="text-right">
+            <p className="label-mono">Uptime</p>
+            <p className="mt-1">
+              <Uptime since={engagement?.createdAt} />
+            </p>
+          </div>
+          <span className="h-8 w-px bg-border" />
           <div className="text-right">
             <p className="label-mono">Status</p>
             <p className="mt-1 font-mono text-sm uppercase tracking-wider text-primary">

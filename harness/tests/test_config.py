@@ -5,7 +5,7 @@ import pytest
 from agent_redteam.core.config import AgentProvider, Settings
 from agent_redteam.core.exceptions import ConfigurationError
 from agent_redteam.llm.openai import OpenAIResponsesHarness
-from agent_redteam.simple_react import _build_provider, _build_registry, _parse_args
+from agent_redteam.simple_react import _build_provider, _parse_args, build_production_registry
 
 
 def test_settings_loads_env_file_and_defaults_to_openai(
@@ -85,7 +85,7 @@ def test_resolved_grep_timeout_seconds_prefers_override_then_default() -> None:
 
 
 def test_default_agent_registry_contains_bash_topology_and_finish() -> None:
-    registry = _build_registry()
+    registry = build_production_registry()
 
     assert [tool.name for tool in registry.definitions()] == [
         "bash",
@@ -94,4 +94,24 @@ def test_default_agent_registry_contains_bash_topology_and_finish() -> None:
         "update_topology",
         "transfer_file",
         "finish",
+    ]
+
+
+def test_optional_tools_layer_onto_base_registry() -> None:
+    registry = build_production_registry(
+        frozenset({"scan", "find_path", "observe_defenses", "record_attempt", "delegate"}),
+    )
+
+    assert [tool.name for tool in registry.definitions()] == [
+        "bash",
+        "grep",
+        "read_topology",
+        "update_topology",
+        "transfer_file",
+        "finish",
+        "scan",
+        "find_path",
+        "observe_defenses",
+        "record_attempt",
+        "delegate",
     ]
