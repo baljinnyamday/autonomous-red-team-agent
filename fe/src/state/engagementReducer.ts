@@ -3,6 +3,7 @@ import {
   type AgentActivity,
   type EngagementState,
   MAX_ACTIVITY_LOG,
+  type RedTeamNode,
 } from "@/types/domain"
 
 export const initialEngagementState: EngagementState = {
@@ -46,22 +47,30 @@ export function applyEvent(state: EngagementState, event: ActivityEvent): Engage
       }
     }
 
-    // TODO(you): a brand-new host was found. Add it to `state.nodes` keyed by
-    // node.id without dropping existing nodes. (Hint: spread the map.)
     case "node.discovered":
-      return state
+      return { ...state, nodes: { ...state.nodes, [event.node.id]: event.node } }
 
-    // TODO(you): an existing node changed. Merge the new status/access/
-    // technique onto the existing node. Decide: what if nodeId is unknown —
-    // ignore the event, or create a stub node? Also set compromisedAt when
-    // status becomes "compromised". Append `technique` to the node's list.
-    case "node.status":
-      return state
+    case "node.status": {
+      const node = state.nodes[event.nodeId]
+      if (!node) return state // unknown host — wait for its node.discovered first
+      const becameCompromised = event.status === "compromised" && node.status !== "compromised"
+      const techniques =
+        event.techniques ??
+        (event.technique && !node.techniques.includes(event.technique)
+          ? [...node.techniques, event.technique]
+          : node.techniques)
+      const updated: RedTeamNode = {
+        ...node,
+        status: event.status,
+        access: event.access ?? node.access,
+        techniques,
+        compromisedAt: becameCompromised ? event.at : node.compromisedAt,
+      }
+      return { ...state, nodes: { ...state.nodes, [event.nodeId]: updated } }
+    }
 
-    // TODO(you): record a lateral-movement edge in `state.edges` keyed by
-    // edge.id. This is what draws the attack-path graph.
     case "edge.added":
-      return state
+      return { ...state, edges: { ...state.edges, [event.edge.id]: event.edge } }
 
     default: {
       // Exhaustiveness check: if you add an event type to the union and forget

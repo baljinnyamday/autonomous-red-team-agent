@@ -22,6 +22,9 @@ DEFAULT_GREP_TIMEOUT_SECONDS = 120.0
 DEFAULT_TRANSFER_TIMEOUT_SECONDS = 600.0
 DEFAULT_MAX_TRANSFER_BYTES = 50 * 1024 * 1024
 
+# Optional tools selectable per ablation arm via enabled_tools (base six are always on).
+OPTIONAL_TOOLS = frozenset({"scan", "find_path", "delegate", "observe_defenses", "record_attempt"})
+
 
 class Settings(BaseSettings):
     """Runtime configuration loaded from environment / .env."""
@@ -50,6 +53,27 @@ class Settings(BaseSettings):
     grep_timeout_seconds: float = DEFAULT_GREP_TIMEOUT_SECONDS
     transfer_timeout_seconds: float = DEFAULT_TRANSFER_TIMEOUT_SECONDS
     max_transfer_bytes: int = DEFAULT_MAX_TRANSFER_BYTES
+    # Optional tools layered on the base six for benchmark ablation arms. Comma-separated
+    # subset of OPTIONAL_TOOLS, or "all"; blank = base only.
+    enabled_tools: str = ""
+    # Live dashboard API: served in-process during autonomous runs so a frontend can
+    # watch topology, agent activity, status, and uptime.
+    api_enabled: bool = True
+    api_host: str = "127.0.0.1"
+    api_port: int = 8000
+    topology_poll_interval_seconds: float = 1.0
+
+    def enabled_optional_tools(self) -> frozenset[str]:
+        raw = self.enabled_tools.strip().lower()
+        if raw in {"", "base", "none"}:
+            return frozenset()
+        if raw == "all":
+            return OPTIONAL_TOOLS
+        return frozenset(
+            part.strip()
+            for part in raw.split(",")
+            if part.strip() in OPTIONAL_TOOLS
+        )
 
     def resolved_bash_timeout_seconds(self, requested: float) -> float:
         if requested != DEFAULT_BASH_TIMEOUT_SECONDS:

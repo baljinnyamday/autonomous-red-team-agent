@@ -97,6 +97,19 @@ def test_upsert_and_findings_round_trip(tmp_path: Path) -> None:
     assert host.notes == ["Found open port during scan"]
 
 
+def test_add_services_skips_duplicate_findings(tmp_path: Path) -> None:
+    store = EngagementStore.connect(tmp_path / "eng.db")
+    store.ensure_local_host("eng-1")
+    store.upsert_host("eng-1", "web", address="10.0.0.12")
+    finding = ServiceFinding(port=443, protocol="tcp", product="nginx")
+    store.add_services("eng-1", "web", [finding])
+    store.add_services("eng-1", "web", [finding])
+
+    services = store.load_state("eng-1").hosts["web"].services
+    assert len(services) == 1
+    assert services[0].port == 443
+
+
 def test_save_state_preserves_append_only_discoveries(tmp_path: Path) -> None:
     store = EngagementStore.connect(tmp_path / "eng.db")
     store.ensure_local_host("eng-1")

@@ -14,22 +14,18 @@ import argparse
 from pathlib import Path
 
 from agent_redteam.targets.graph import to_dot, to_mermaid
+from agent_redteam.targets.nx_graph import build_digraph
+from agent_redteam.targets.state import EngagementState, engagement_id_from_db_path
 from agent_redteam.targets.store import EngagementStore
 
-
-def _engagement_id(db_path: Path, override: str | None) -> str:
-    if override:
-        return override
-    stem = db_path.stem
-    if stem.startswith("engagement-"):
-        return stem.removeprefix("engagement-")
-    raise SystemExit(f"cannot infer engagement id from {db_path.name!r}; pass --engagement-id")
+_TEXT_FORMATS = ("mermaid", "dot")
+_NX_FORMATS = ("graphml", "png")
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("db", type=Path, help="path to .runs/engagement-<id>.db")
-    parser.add_argument("--format", choices=("mermaid", "dot"), default="mermaid")
+    parser.add_argument("--format", choices=(*_TEXT_FORMATS, *_NX_FORMATS), default="mermaid")
     parser.add_argument("--engagement-id", default=None, help="override inferred id")
     parser.add_argument("-o", "--output", type=Path, default=None, help="write to file")
     args = parser.parse_args()
@@ -38,13 +34,40 @@ def main() -> None:
         raise SystemExit(f"no such database: {args.db}")
 
     store = EngagementStore.connect(args.db)
-    state = store.load_state(_engagement_id(args.db, args.engagement_id))
-    rendered = to_dot(state) if args.format == "dot" else to_mermaid(state)
+    try:
+        engagement_id = engagement_id_from_db_path(args.db, args.engagement_id)
+    except ValueError as exc:
+        raise SystemExit(str(exc)) from exc
+    state = store.load_state(engagement_id)
 
+    if args.format in _NX_FORMATS:
+        _write_nx(state, args.format, args.output)
+        return
+
+    rendered = to_dot(state) if args.format == "dot" else to_mermaid(state)
     if args.output:
         args.output.write_text(rendered + "\n", encoding="utf-8")
     else:
         print(rendered)
+
+
+def _write_nx(state: EngagementState, fmt: str, output: Path | None) -> None:
+    import networkx as nx
+
+    graph = build_digraph(state)
+    if fmt == "graphml":
+        target = output or Path(f"topology-{state.engagement_id}.graphml")
+        nx.write_graphml(graph, target)
+        print(f"wrote {target}")
+        return
+    # png: needs the optional viz extra (pydot + graphviz binary)
+    try:
+        from networkx.drawing.nx_pydot import to_pydot
+    except ImportError as exc:  # pragma: no cover - environment-dependent
+        raise SystemExit("png export needs the viz extra: uv sync --extra viz") from exc
+    target = output or Path(f"topology-{state.engagement_id}.png")
+    to_pydot(graph).write_png(str(target))
+    print(f"wrote {target}")
 
 
 if __name__ == "__main__":
