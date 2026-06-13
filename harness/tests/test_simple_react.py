@@ -5,6 +5,7 @@ from agent_redteam.agents.events import LoopEvent, fan_out
 from agent_redteam.llm.fake import FakeProviderHarness
 from agent_redteam.llm.types import AgentMessage, ModelEvent
 from agent_redteam.simple_react import (
+    _engagement_targets,
     _load_base_system_prompt,
     _run_task,
     _system_prompt_with_topology,
@@ -96,6 +97,29 @@ def test_run_task_appends_new_task_to_existing_history() -> None:
         "new task",
         "new done",
     ]
+
+
+def test_engagement_targets_handles_missing_state() -> None:
+    context = AgentContext(engagement_id="engagement-1", metadata={})
+
+    assert _engagement_targets(context) == []
+
+
+def test_engagement_targets_returns_non_operator_endpoints() -> None:
+    state = EngagementState(
+        engagement_id="engagement-1",
+        hosts={
+            "operator": HostRuntime(transport=Transport.LOCAL),
+            "db": HostRuntime(transport=Transport.REMOTE),
+            "web": HostRuntime(transport=Transport.REMOTE, address="10.0.0.10"),
+        },
+    )
+    context = AgentContext(
+        engagement_id="engagement-1",
+        metadata={"engagement_state": state},
+    )
+
+    assert _engagement_targets(context) == ["db", "10.0.0.10"]
 
 
 def test_usage_observer_collects_usage_events() -> None:

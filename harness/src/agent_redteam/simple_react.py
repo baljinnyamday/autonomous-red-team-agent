@@ -333,7 +333,9 @@ def _run_autonomous_mode(
 
 def _engagement_targets(context: AgentContext) -> list[str]:
     """Non-operator host endpoints, for the dashboard's engagement target list."""
-    state: EngagementState = context.metadata["engagement_state"]
+    state = context.metadata.get("engagement_state")
+    if not isinstance(state, EngagementState):
+        return []
     return [
         host.address or host_id
         for host_id, host in sorted(state.hosts.items())
